@@ -83,6 +83,35 @@
                 </li>
                 <li
                 >
+
+
+                              <!-- Tipo de Documento  --> 
+                <a href="#">
+                    
+                        <i class="metismenu-icon pe-7s-rocket"></i>Tipo de Documento
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul      >
+                        <li>
+                            <a href="index.html" >
+                                <i class="metismenu-icon "></i>Mostrar Tipo de Documento
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboards-commerce.html" >
+                                <i class="metismenu-icon"></i>Crear Tipo de Documento
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li
+                >
+
+
+
+
+
+
                     <a href="#">
                         <i class="metismenu-icon pe-7s-browser"></i>Pages
                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>

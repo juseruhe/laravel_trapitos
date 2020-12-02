@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\TipoDocumentoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+//  Rutas de Tipo de Documento
+
+Route::get('tipo_documento',[TipoDocumentoController::class,'index'])->name('tipo_documento.index');
