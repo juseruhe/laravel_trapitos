@@ -93,12 +93,12 @@
                     </a>
                     <ul      >
                         <li>
-                            <a href="index.html" >
+                            <a href="{{route('tipo_documento.index')}}" >
                                 <i class="metismenu-icon "></i>Mostrar Tipo de Documento
                             </a>
                         </li>
                         <li>
-                            <a href="dashboards-commerce.html" >
+                            <a href="{{route('tipo_documento.create')}}" >
                                 <i class="metismenu-icon"></i>Crear Tipo de Documento
                             </a>
                         </li>

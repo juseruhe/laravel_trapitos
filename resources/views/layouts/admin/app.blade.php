@@ -84,10 +84,8 @@
                             </div>
                         </div>    </div>
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur corporis
-                cupiditate debitis deserunt, doloremque exercitationem iste labore minima, neque
-                odio quis recusandae rem reprehenderit saepe sequi temporibus voluptatem.
-                Cupiditate?
+
+                @yield('content')
             </div>
 @include('layouts.admin.components.footer')
         <!-- footer-->
