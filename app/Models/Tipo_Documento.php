@@ -16,6 +16,6 @@ class Tipo_Documento extends Model
 
     protected $fillable = [
 
-        'Nombre_Tipo_Documento','Siglas'
+        'Nombre_Tipo_Documento','Siglas',
     ];
 }
