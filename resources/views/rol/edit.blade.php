@@ -7,7 +7,7 @@
                 @csrf
                 @method('PUT')
                 <div class="form-group mt-4">
-                    <label for="name">Nombre del rol</label>
+                    <label for="name">Nombre del Rol</label>
                     <input name="Nombre_Rol" id="name" type="text" class="form-control" value="{{$rol->Nombre_Rol}}">
                 </div>
                <button type="submit" class="btn btn-primary">Guardar Nuevo Rol</button>

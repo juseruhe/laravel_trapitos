@@ -7,10 +7,10 @@
               <table class="table table-striped mt -30 mb 4 ">
                 <thead>
                 <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre del Equipo</th>
-                <th scope="col">FECHA CREACION</th>
-                <th scope="col">OPCIONES</th>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre del Rol</th>
+                <th scope="col">Fecha de Creación</th>
+                <th scope="col">Opciones</th>
                 </tr>
                 </thead>
                   <tbody>
