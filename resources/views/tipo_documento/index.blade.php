@@ -6,8 +6,7 @@
 
 <a href="{{route('tipo_documento.create')}}">Crear Tipo de Documento</a>
 
-<table class="table table-info">
-
+<table   class="table table-dark ">
 <tr>
 <td>ID</td>
 <td>Nombre del Tipo de Documento</td>
@@ -17,7 +16,7 @@
 
 <tr>
 @foreach($tipo_documentos as $tipo_documento)
-<td>{{$tipo_documento->id}} <td>
+<td>{{$tipo_documento->id}} </td>
 <td>{{$tipo_documento->Nombre_Tipo_Documento}}</td>
 <td>{{$tipo_documento->Siglas}}</td>
 <td>
@@ -27,9 +26,9 @@
 
 @method('DELETE')
 
-<a href="{{route('tipo_documento.edit',$tipo_documento->id)}}"> Editar</a>
-<a href="{{route('tipo_documento.show',$tipo_documento->id)}}">Detalles</a>
-<button onclick="confirm('¿Desea Eliminar el tipo de Documento?')"> Eliminar</button>
+<a class="btn btn-warning" href="{{route('tipo_documento.edit',$tipo_documento->id)}}"> Editar</a>
+<a class="btn btn-info" href="{{route('tipo_documento.show',$tipo_documento->id)}}">Detalles</a>
+<button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el tipo de Documento?')"> Eliminar</button>
 </form>
 </td>
 </tr>

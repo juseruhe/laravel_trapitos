@@ -2,7 +2,7 @@
 
 @section('content')
 
-<table>
+<table class="btn btn-dark">
 <tr>
 <td>ID</td>
 <td>Nombre Tipo de Documento</td>
