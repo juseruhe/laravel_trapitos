@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\TipoDocumentoController;
 use App\Http\Controllers\RolController;
+use App\Http\Controllers\GeneroController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +44,11 @@ Route::get('rol/edit/{id}',[RolController::class,'edit'])->name('rol.edit');
 Route::put('rol/{id}',[RolController::class,'update'])->name('rol.update');
 Route::delete('rol/{id}',[RolController::class,'destroy'])->name('rol.destroy');
 
+//genero
+Route::get('genero',[GeneroController::class,'index'])->name('genero.index');
+Route::get('genero/genero',[GeneroController::class,'create'])->name('genero.create');
+Route::post('genero',[GeneroController::class,'store'])->name('genero.store');
+Route::get('genero/{id}',[GeneroController::class,'show'])->name('genero.show');
+Route::get('genero/edit/{id}',[GeneroController::class,'edit'])->name('genero.edit');
+Route::put('genero/{id}',[GeneroController::class,'update'])->name('genero.update');
+Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.destroy');

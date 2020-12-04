@@ -85,13 +85,13 @@
                 >
 
 
-                              <!-- Tipo de Documento  --> 
+                              <!-- Tipo de Documento  -->
                 <a href="#">
-                    
+
                         <i class="metismenu-icon pe-7s-rocket"></i>Tipo de Documento
                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
-                    <ul      >
+                    <ul>
                         <li>
                             <a href="{{route('tipo_documento.index')}}" >
                                 <i class="metismenu-icon "></i>Mostrar Tipo de Documento
@@ -104,10 +104,51 @@
                         </li>
                     </ul>
                 </li>
-                <li
-                >
+                <li>
 
 
+                    <!-- Rol  -->
+                    <a href="#">
+
+                        <i class="metismenu-icon pe-7s-rocket"></i>Rol
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('rol.index')}}" >
+                                <i class="metismenu-icon "></i>Mostrar Rol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('rol.create')}}" >
+                                <i class="metismenu-icon"></i>Crear Rol
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+
+
+                    <!-- genero -->
+                    <a href="#">
+
+                        <i class="metismenu-icon pe-7s-rocket"></i>Genero
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('genero.index')}}" >
+                                <i class="metismenu-icon "></i>Mostrar Genero
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('genero.create')}}" >
+                                <i class="metismenu-icon"></i>Crear Genero
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
 
 
 
