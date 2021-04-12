@@ -1,47 +1,63 @@
-	<!---FOOOTER--->
-
-<div class="footer">
+<!-- Footer-->
+<footer class="footer text-center">
     <div class="container">
-<div class="footer-top-at">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Location</h4>
+                <p class="lead mb-0">
+                    2215 John Daniel Drive
+                    <br />
+                    Clark, MO 65243
+                </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Buscanos en redes</h4>
+                <img src="iconos/facebook (1).png" alt="facebook" width="40px">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="iconos/instagram.png" alt="instagram" width="40px">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="iconos/whatsapp.png" alt="whatsapp" width="40px">
+            </div>
 
-    <div class="col-md-4 amet-sed">
-    <h4>MORE INFO</h4>
-    <ul class="nav-bottom">
-            <li><a href="#">How to order</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="contact.html">Location</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Membership</a></li>	
-        </ul>	
+            <!-- Footer CONTACTANOS-->
+            <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">Buzòn</h4>
+                <p class="lead mb-0">
+                    Queremos saber tus opuniones sobre nuestra pagina, productos y servicios.
+                    <a href="contacto.html">PQR`S</a>
+                    .
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4 amet-sed ">
-    <h4>CONTACT US</h4>
-    
-        <p>
-Contrary to popular belief</p>
-        <p>The standard chunk</p>
-        <p>Office:  +12 34 995 0792</p>
-        <ul class="social">
-            <li><a href="#"><i> </i></a></li>						
-            <li><a href="#"><i class="twitter"> </i></a></li>
-            <li><a href="#"><i class="rss"> </i></a></li>
-            <li><a href="#"><i class="gmail"> </i></a></li>
-            
-        </ul>
-    </div>
-    <div class="col-md-4 amet-sed">
-        <h4>Newsletter</h4>
-        <p>Sign Up to get all news update
-and promo</p>
-        <form>
-            <input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-            <input type="submit" value="Sign up">
-        </form>
-    </div>
-    <div class="clearfix"> </div>
+</footer>
+
+<!-- Copyright Section-->
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright © Your Website 2020</small></div>
 </div>
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+<div class="scroll-to-top d-lg-none position-fixed">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
 </div>
-<div class="footer-class">
-<p >© 2015 New store . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-</div>
-</div>
+
+
+<!--SCRIPT-->
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
