@@ -6,7 +6,7 @@
                 <form action="{{route('genero.store')}}" method="POST">
                     @csrf
                     <div class="form-group mt-4">
-                        <label for="name">Nombre del Nuevo Rol</label>
+                        <label for="name">Nombre del Nuevo Genero</label>
                         <input name="Nombre_Genero" id="name" type="text" class="form-control">
                         <button type="submit" class="btn btn-primary">Guardar Nuevo Genero</button>
                         <a class="btn btn-sm btn-danger" href="{{route('genero.index')}}">Cancelar</a>

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a class="btn btn-primary mt-3 mb-4" href="{{ route('genero.create') }}">Crear Nuevo Rol</a>
+                <a class="btn btn-primary mt-3 mb-4" href="{{ route('genero.create') }}">Crear Nuevo Genero</a>
                 <table class="table table-striped mt -30 mb 4 ">
                     <thead>
                     <tr>

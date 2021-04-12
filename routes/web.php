@@ -17,12 +17,6 @@ use App\Http\Controllers\GeneroController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
 //  Rutas de Tipo de Documento
 
 Route::get('tipo_documento',[TipoDocumentoController::class,'index'])->name('tipo_documento.index');
@@ -52,3 +46,8 @@ Route::get('genero/{id}',[GeneroController::class,'show'])->name('genero.show');
 Route::get('genero/edit/{id}',[GeneroController::class,'edit'])->name('genero.edit');
 Route::put('genero/{id}',[GeneroController::class,'update'])->name('genero.update');
 Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.destroy');
+
+//index
+Route::get('/', function () {
+    return view('index');
+});
