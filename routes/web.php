@@ -7,6 +7,7 @@ use App\Http\Controllers\RolController;
 use App\Http\Controllers\GeneroController;
 Use App\Http\Controllers\CategoriaController;
 Use App\Http\Controllers\ClasificacionController;
+use App\Http\Controllers\MaterialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -73,6 +74,17 @@ Route::get('clasificacion/{id}',[ClasificacionController::class,'show'])->name('
 Route::get('clasificacion/edit/{id}',[ClasificacionController::class,'edit'])->name('clasificacion.edit');
 Route::put('clasificacion/{id}',[ClasificacionController::class,'update'])->name('clasificacion.update');
 Route::delete('clasificacion/{id}',[ClasificacionController::class,'destroy'])->name('clasificacion.destroy');
+
+// Material
+Route::get('material',[MaterialController::class,'index'])->name('material.index');
+Route::get('material/create',[MaterialController::class,'create'])->name('material.create');
+Route::post('material',[MaterialController::class,'store'])->name('material.store');
+Route::get('material/{id}',[MaterialController::class,'show'])->name('material.show');
+Route::get('material/edit/{id}',[MaterialController::class,'edit'])->name('material.edit');
+Route::put('material/{id}',[MaterialController::class,'update'])->name('material.update');
+Route::delete('material/{id}',[MaterialController::class,'destroy'])->name('material.destroy');
+
+
 
 
 
