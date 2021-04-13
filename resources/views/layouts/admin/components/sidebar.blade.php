@@ -174,34 +174,25 @@
                       
                     </ul>
                 </li>
-                <li
-                >
+                <li>
                     <a href="#">
-                        <i class="metismenu-icon pe-7s-plugin"></i>Applications
+                        <i class="metismenu-icon pe-7s-plugin"></i>Clasificación
                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
                     <ul
                     >
                         <li>
-                            <a href="apps-mailbox.html" >
-                                <i class="metismenu-icon"></i>Mailbox
+                            <a href="{{route('clasificacion.index')}}" >
+                                <i class="metismenu-icon"></i>Mostrar Clasificaciones
                             </a>
                         </li>
                         <li>
-                            <a href="apps-chat.html" >
-                                <i class="metismenu-icon"></i>Chat
+                            <a href="{{route('clasificacion.create')}}" >
+                                <i class="metismenu-icon"></i>Crear Clasificación
                             </a>
                         </li>
-                        <li>
-                            <a href="apps-faq-section.html" >
-                                <i class="metismenu-icon"></i>FAQ Section
-                            </a>
-                        </li>
-                        <li   >
-                            <a href="#">
-                                <i class="metismenu-icon"></i>Forums
-                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                            </a>
+                        
+                        </ul>
                             <ul   >
                                 <li>
                                     <a href="apps-forum-list.html" >

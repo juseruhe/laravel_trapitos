@@ -6,6 +6,7 @@ use App\Http\Controllers\TipoDocumentoController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\GeneroController;
 Use App\Http\Controllers\CategoriaController;
+Use App\Http\Controllers\ClasificacionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +65,15 @@ Route::put('categoria/{id}',[CategoriaController::class,'update'])->name('catego
 Route::delete('categoria/{id}',[CategoriaController::class,'destroy'])->name('categoria.destroy');
 
 
-//Clasificación
+// Clasificación
+Route::get('clasificacion',[ClasificacionController::class,'index'])->name('clasificacion.index');
+Route::get('clasificacion/create',[ClasificacionController::class,'create'])->name('clasificacion.create');
+Route::post('clasificacion',[ClasificacionController::class,'store'])->name('clasificacion.store');
+Route::get('clasificacion/{id}',[ClasificacionController::class,'show'])->name('clasificacion.show');
+Route::get('clasificacion/edit/{id}',[ClasificacionController::class,'edit'])->name('clasificacion.edit');
+Route::put('clasificacion/{id}',[ClasificacionController::class,'update'])->name('clasificacion.update');
+Route::delete('clasificacion/{id}',[ClasificacionController::class,'destroy'])->name('clasificacion.destroy');
+
 
 
 
