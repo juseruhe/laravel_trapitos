@@ -24,7 +24,7 @@
                         <span>
                             <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
                                 <span class="btn-icon-wrapper">
-                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                    <i class="fas fa-ellipsis-v fa-w-6"></i>
                                 </span>
                             </button>
                         </span>
@@ -36,8 +36,8 @@
                 <li class="app-sidebar__heading">Menu</li>
                 <li      >
                     <a href="#">
-                        <i class="metismenu-icon pe-7s-rocket"></i>Material
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        <i class="metismenu-icon fas fa-user"></i>Material
+                        <i class="metismenu-state-icon "></i>
                     </a>
                     <ul      >
                         <li>
@@ -52,9 +52,7 @@
                         </li>
                         
                       
-                            <ul  >
-                                
-                            </ul>
+                        
                         </li>
                         
                     </ul>
@@ -89,8 +87,8 @@
                     <!-- Rol  -->
                     <a href="#">
 
-                        <i class="metismenu-icon pe-7s-rocket"></i>Rol
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        <i class="metismenu-icon fas fa-user-tag"></i>Rol
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
                     <ul>
                         <li>
