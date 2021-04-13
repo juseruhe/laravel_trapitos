@@ -25,9 +25,9 @@
 
 @method('DELETE')
 
-<a class="btn btn-warning" href="{{route('material.edit', $material->id)}}"> Editar</a>
-<a class="btn btn-info" href="{{route('material.show', $material->id)}}">Detalles</a>
-<button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el Material ?')"> Eliminar</button>
+<a class="btn btn-warning" href="{{route('material.edit', $material->id)}}"> <i class="fas fa-edit"></i> Editar</a>
+<a class="btn btn-info" href="{{route('material.show', $material->id)}}"><i class="fas fa-eye"></i>  Detalles</a>
+<button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el Material ?')"> <i class="fas fa-eraser"></i> Eliminar</button>
 </form>
 </td>
 </tr>

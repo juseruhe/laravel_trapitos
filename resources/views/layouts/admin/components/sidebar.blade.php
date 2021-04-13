@@ -36,8 +36,8 @@
                 <li class="app-sidebar__heading">Menu</li>
                 <li      >
                     <a href="#">
-                        <i class="metismenu-icon fas fa-user"></i>Material
-                        <i class="metismenu-state-icon "></i>
+                        <i class="metismenu-icon fas fa-tshirt"></i>Material
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
                     </a>
                     <ul      >
                         <li>
@@ -64,8 +64,8 @@
                               <!-- Tipo de Documento  -->
                 <a href="#">
 
-                        <i class="metismenu-icon pe-7s-rocket"></i>Tipo de Documento
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        <i class="metismenu-icon fas fa-address-card"></i>Tipo de Documento
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
                     <ul>
                         <li>
@@ -109,8 +109,8 @@
                     <!-- genero -->
                     <a href="#">
 
-                        <i class="metismenu-icon pe-7s-rocket"></i>Genero
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        <i class="metismenu-icon fas fa-venus-mars"></i>Genero
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
                     <ul>
                         <li>
@@ -131,8 +131,8 @@
 
 
                     <a href="#">
-                        <i class="metismenu-icon pe-7s-browser"></i>Categoria
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        <i class="metismenu-icon fas fa-user-tie"></i>Categoria
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
                     <ul
 
@@ -152,8 +152,8 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon pe-7s-plugin"></i>Clasificación
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        <i class="metismenu-icon fas fa-book-open"></i>Clasificación
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
                     <ul
                     >
