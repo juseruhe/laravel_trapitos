@@ -4,7 +4,7 @@
 
 <h1> Tipos de Documentos</h1>
 
-<a href="{{route('tipo_documento.create')}}">Crear Tipo de Documento</a>
+<a href="{{route('tipo_documento.create')}}" class="btn btn-primary my-4">Crear Tipo de Documento</a>
 
 <table   class="table table-dark ">
 <tr>

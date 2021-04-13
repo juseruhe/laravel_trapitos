@@ -13,7 +13,7 @@
     <meta name="description" content="Wide selection of buttons that feature different styles for backgrounds, borders and hover options!">
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
-
+ 
 </head>
 
 <body>

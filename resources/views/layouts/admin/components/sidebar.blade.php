@@ -94,7 +94,7 @@
                     <ul>
                         <li>
                             <a href="{{route('tipo_documento.index')}}" >
-                                <i class="metismenu-icon "></i>Mostrar Tipo de Documento
+                                <i class="metismenu-icon"></i>Mostrar Tipo de Documento
                             </a>
                         </li>
                         <li>
@@ -102,6 +102,7 @@
                                 <i class="metismenu-icon"></i>Crear Tipo de Documento
                             </a>
                         </li>
+                        
                     </ul>
                 </li>
                 <li>
@@ -154,42 +155,23 @@
 
 
                     <a href="#">
-                        <i class="metismenu-icon pe-7s-browser"></i>Pages
+                        <i class="metismenu-icon pe-7s-browser"></i>Categoria
                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
                     <ul
 
                     >
                         <li>
-                            <a href="pages-login.html" >
-                                <i class="metismenu-icon"></i> Login
+                            <a href="{{route('categoria.index')}}" >
+                                <i class="metismenu-icon"></i> Mostrar Categorias
                             </a>
                         </li>
                         <li>
-                            <a href="pages-login-boxed.html" >
-                                <i class="metismenu-icon"></i>Login Boxed
+                            <a href="{{route('categoria.create')}}" >
+                                <i class="metismenu-icon"></i>Crear Categoria
                             </a>
                         </li>
-                        <li>
-                            <a href="pages-register.html" >
-                                <i class="metismenu-icon"></i>Register
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages-register-boxed.html" >
-                                <i class="metismenu-icon"></i>Register Boxed
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages-forgot-password.html" >
-                                <i class="metismenu-icon"></i>Forgot Password
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages-forgot-password-boxed.html" >
-                                <i class="metismenu-icon"></i>Forgot Password Boxed
-                            </a>
-                        </li>
+                      
                     </ul>
                 </li>
                 <li

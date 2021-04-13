@@ -34,9 +34,8 @@ class TipoDocumentoController extends Controller
 
   public function show($id){
 
-    $tipo_documentos= Tipo_Documento::select('tipo_documentos.id', 
-    'tipo_documentos.Nombre_Tipo_Documento','tipo_documentos.Siglas')
-      ->where('tipo_documentos.id', '=', $id)
+    $tipo_documentos= Tipo_Documento::find($id)
+      ->where('id', '=', $id)
       ->get();
 
       return view('tipo_documento.show', compact('tipo_documentos'));
@@ -45,10 +44,9 @@ class TipoDocumentoController extends Controller
 
 public function edit($id){
 
-    $tipo_documentos= Tipo_Documento::select('tipo_documentos.id', 
-    'tipo_documentos.Nombre_Tipo_Documento','tipo_documentos.Siglas')
-      ->where('tipo_documentos.id', '=', $id)
-      ->get();
+  $tipo_documentos= Tipo_Documento::find($id)
+  ->where('id', '=', $id)
+  ->get();
 
       return view('tipo_documento.edit', compact('tipo_documentos'));
 
