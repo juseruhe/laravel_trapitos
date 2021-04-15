@@ -4,7 +4,7 @@
 
 <h1> Tipos de Documentos</h1>
 
-<a href="{{route('tipo_documento.create')}}" class="btn btn-primary my-4">Crear Tipo de Documento</a>
+<a href="{{route('tipo_documento.create')}}" class="btn btn-primary my-4">Crear Tipo de Documento  <i class="fas fa-plus-square"></i></a>
 
 <table   class="table table-dark ">
 <tr>
@@ -26,9 +26,9 @@
 
 @method('DELETE')
 
-<a class="btn btn-warning" href="{{route('tipo_documento.edit',$tipo_documento->id)}}"> Editar</a>
-<a class="btn btn-info" href="{{route('tipo_documento.show',$tipo_documento->id)}}">Detalles</a>
-<button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el tipo de Documento?')"> Eliminar</button>
+<a class="btn btn-warning" href="{{route('tipo_documento.edit',$tipo_documento->id)}}"><i class="fas fa-edit"></i> Editar</a>
+<a class="btn btn-info" href="{{route('tipo_documento.show',$tipo_documento->id)}}"><i class="fas fa-eye"></i> Detalles</a>
+<button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el tipo de Documento?')"><i class="fas fa-eraser"></i> Eliminar</button>
 </form>
 </td>
 </tr>

@@ -5,7 +5,7 @@
 
 <h1> Materiales</h1>
 
-<a href="{{route('material.create')}}" class="btn btn-primary my-4">Crear Material</a>
+<a href="{{route('material.create')}}" class="btn btn-primary my-4">Crear Material  <i class="fas fa-plus-square"></i></a>
 
 <table   class="table table-dark ">
 <tr>

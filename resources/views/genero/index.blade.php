@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a class="btn btn-primary mt-3 mb-4" href="{{ route('genero.create') }}">Crear Nuevo Genero</a>
+                <a class="btn btn-primary mt-3 mb-4" href="{{ route('genero.create') }}">Crear Nuevo Genero <i class="fas fa-edit"></i> </a>
                 <table class="table table-striped mt -30 mb 4 ">
                     <thead>
                     <tr>
@@ -23,9 +23,9 @@
                                 <form action="{{ route('genero.destroy',$generos->id)}}"method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <a href="{{ route('genero.show',$generos->id)}}" class="btn btn-sm btn-info">Detalles</a>
-                                    <a href="{{ route('genero.edit',$generos->id)}}" class="btn btn-sm btn-warning">Editar</a>
-                                    <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                                    <a href="{{ route('genero.show',$generos->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
+                                    <a href="{{ route('genero.edit',$generos->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar</a>
+                                    <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
                                 </form>
                             </td>
                         </tr>

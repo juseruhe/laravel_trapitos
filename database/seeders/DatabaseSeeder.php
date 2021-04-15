@@ -2,7 +2,20 @@
 
 namespace Database\Seeders;
 
+use App\Models\Material;
 use Illuminate\Database\Seeder;
+
+use Database\Seeders\Tipo_DocumentoSeeder;
+
+use Database\Seeders\RolSeeder;
+
+use Database\Seeders\GeneroSeeder;
+
+use Database\Seeders\MaterialSeeder;
+
+use Database\Seeders\CategoriaSeeder;
+
+use Database\Seeders\ClasificacionSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,5 +27,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+
+        $this->call(Tipo_DocumentoSeeder::class);
+
+        $this->call(RolSeeder::class);
+
+        $this->call(GeneroSeeder::class);
+
+        $this->call(MaterialSeeder::class);
+
+        $this->call(CategoriaSeeder::class);
+
+        $this->call(ClasificacionSeeder::class);
+
     }
 }
