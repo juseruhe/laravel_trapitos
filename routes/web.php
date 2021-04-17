@@ -84,9 +84,9 @@ Route::get('material/edit/{id}',[MaterialController::class,'edit'])->name('mater
 Route::put('material/{id}',[MaterialController::class,'update'])->name('material.update');
 Route::delete('material/{id}',[MaterialController::class,'destroy'])->name('material.destroy');
 
-
-
-
-
+//usuario
+    Route::get('usuario', function () {
+        return view('usuario.login');
+    });
 
 
