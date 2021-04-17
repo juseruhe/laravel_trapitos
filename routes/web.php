@@ -8,6 +8,8 @@ use App\Http\Controllers\GeneroController;
 Use App\Http\Controllers\CategoriaController;
 Use App\Http\Controllers\ClasificacionController;
 use App\Http\Controllers\MaterialController;
+use App\Http\Controllers\UsuarioController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -85,8 +87,4 @@ Route::put('material/{id}',[MaterialController::class,'update'])->name('material
 Route::delete('material/{id}',[MaterialController::class,'destroy'])->name('material.destroy');
 
 //usuario
-    Route::get('usuario', function () {
-        return view('usuario.login');
-    });
-
-
+Route::get('usuario',[UsuarioController::class,'login'])->name('usuario.login');
