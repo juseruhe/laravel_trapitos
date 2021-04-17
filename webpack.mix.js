@@ -11,7 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.styles([
+ // Landing Page
+/*mix.styles([
     'resources/css2/bootstrap.css',
     'resources/css2/estilo.css',
     'resources/css2/estilo2.css',
@@ -31,4 +32,12 @@ mix.styles([
     'resources/js2/simpleCart.js',
     'resources/js2/tres.js',
     'resources/js2/uno.js'
-],'public/js2/app2.js');
+],'public/js2/app2.js');*/
+
+/* Administrador
+mix.styles([
+    'resources/architectui/css/style.css'
+],'public/css/app.css')
+    .scripts([
+    'resources/architectui/js/scripts.js',
+],'public/js/app.js');*/
