@@ -88,3 +88,10 @@ Route::delete('material/{id}',[MaterialController::class,'destroy'])->name('mate
 
 //usuario
 Route::get('usuario',[UsuarioController::class,'login'])->name('usuario.login');
+Route::get('usuario/inicio',[UsuarioController::class,'index'])->name('usuario.index');
+Route::get('usuario/create',[UsuarioController::class,'create'])->name('usuario.create');
+Route::post('usuario',[UsuarioController::class,'store'])->name('usuario.store');
+Route::get('usuario/{id}',[UsuarioController::class,'show'])->name('usuario.show');
+Route::get('usuario/edit/{id}',[UsuarioController::class,'edit'])->name('usuario.edit');
+Route::put('usuario/{id}',[UsuarioController::class,'update'])->name('usuario.update');
+Route::delete('usuario/{id}',[UsuarioController::class,'destroy'])->name('usuario.destroy');

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\rol;
+use App\Models\Usuario;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
@@ -11,36 +11,36 @@ class UsuarioController extends Controller
     public function login(){
         return view('usuario.login');
     }
-    /*
+
     public function index()
     {
-        $roles=rol::all();
-        return view('rol.index',compact('roles'));
+        $usuarios=Usuario::all();
+        return view('usuario.index',compact('usuarios'));
     }
     public function create(){
-        return view('rol.create');
+        return view('usuario.create');
     }
     public function store(Request $request){
-        $rol=rol::create($request->all());
-        return redirect()->route('rol.index');
+        $usuario=Usuario::create($request->all());
+        return redirect()->route('usuario.index');
     }
     public function show($id){
-        $rol=rol::find($id);
-        return view('rol.show',compact('rol'));
+        $usuario=Usuario::find($id);
+        return view('rol.show',compact('usuario'));
     }
     public function edit($id){
-        $rol=rol::find($id);
-        return view('rol.edit',compact('rol'));
+        $usuario=Usuario::find($id);
+        return view('rol.edit',compact('usuario'));
     }
 
     public function update(Request  $request, $id){
-        $rol=rol::find($id)->update($request->all());
-        return redirect()->route('rol.index');
+        $usuario=Usuario::find($id)->update($request->all());
+        return redirect()->route('usuario.index');
 
     }
     public function destroy($id){
-        $rol=rol::find($id)->delete();
-        return redirect()->route('rol.index');
+        $usuario=Usuario::find($id)->delete();
+        return redirect()->route('usuario.index');
     }
-    */
+
 }
