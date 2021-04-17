@@ -9,7 +9,9 @@ Use App\Http\Controllers\CategoriaController;
 Use App\Http\Controllers\ClasificacionController;
 use App\Http\Controllers\MaterialController;
 use App\Http\Controllers\UsuarioController;
-
+use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\TallaController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,7 +59,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-
 // Categoria
 Route::get('categoria',[CategoriaController::class,'index'])->name('categoria.index');
 Route::get('categoria/create',[CategoriaController::class,'create'])->name('categoria.create');
@@ -67,8 +68,8 @@ Route::get('categoria/edit/{id}',[CategoriaController::class,'edit'])->name('cat
 Route::put('categoria/{id}',[CategoriaController::class,'update'])->name('categoria.update');
 Route::delete('categoria/{id}',[CategoriaController::class,'destroy'])->name('categoria.destroy');
 
-
 // Clasificación
+
 Route::get('clasificacion',[ClasificacionController::class,'index'])->name('clasificacion.index');
 Route::get('clasificacion/create',[ClasificacionController::class,'create'])->name('clasificacion.create');
 Route::post('clasificacion',[ClasificacionController::class,'store'])->name('clasificacion.store');
@@ -87,7 +88,7 @@ Route::put('material/{id}',[MaterialController::class,'update'])->name('material
 Route::delete('material/{id}',[MaterialController::class,'destroy'])->name('material.destroy');
 
 //usuario
-Route::get('usuario',[UsuarioController::class,'login'])->name('usuario.login');
+
 Route::get('usuario/inicio',[UsuarioController::class,'index'])->name('usuario.index');
 Route::get('usuario/create',[UsuarioController::class,'create'])->name('usuario.create');
 Route::post('usuario',[UsuarioController::class,'store'])->name('usuario.store');
@@ -95,3 +96,29 @@ Route::get('usuario/{id}',[UsuarioController::class,'show'])->name('usuario.show
 Route::get('usuario/edit/{id}',[UsuarioController::class,'edit'])->name('usuario.edit');
 Route::put('usuario/{id}',[UsuarioController::class,'update'])->name('usuario.update');
 Route::delete('usuario/{id}',[UsuarioController::class,'destroy'])->name('usuario.destroy');
+
+//Login
+
+Route::get('login',[LoginController::class,'login'])->name('login.login');
+
+//Producto - talla
+
+Route::get('talla/inicio',[TallaController::class,'index'])->name('talla.index');
+Route::get('talla/create',[TallaController::class,'create'])->name('talla.create');
+Route::post('talla',[TallaController::class,'store'])->name('talla.store');
+Route::get('talla/{id}',[TallaController::class,'show'])->name('talla.show');
+Route::get('talla/edit/{id}',[TallaController::class,'edit'])->name('talla.edit');
+Route::put('talla/{id}',[TallaController::class,'update'])->name('talla.update');
+Route::delete('talla/{id}',[TallaController::class,'destroy'])->name('talla.destroy');
+
+//producto
+
+Route::get('producto/inicio',[ProductoController::class,'index'])->name('producto.index');
+Route::get('producto/create',[ProductoController::class,'create'])->name('producto.create');
+Route::post('producto',[ProductoController::class,'store'])->name('producto.store');
+Route::get('producto/{id}',[ProductoController::class,'show'])->name('producto.show');
+Route::get('producto/edit/{id}',[ProductoController::class,'edit'])->name('producto.edit');
+Route::put('producto/{id}',[ProductoController::class,'update'])->name('producto.update');
+Route::delete('producto/{id}',[ProductoController::class,'destroy'])->name('producto.destroy');
+
+

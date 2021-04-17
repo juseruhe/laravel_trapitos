@@ -7,12 +7,7 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
-
-    public function login(){
-        return view('usuario.login');
-    }
-
-    public function index()
+        public function index()
     {
         $usuarios=Usuario::all();
         return view('usuario.index',compact('usuarios'));
