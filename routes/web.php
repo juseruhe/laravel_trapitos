@@ -12,6 +12,7 @@ use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\TallaController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,11 +56,10 @@ Route::put('genero/{id}',[GeneroController::class,'update'])->name('genero.updat
 Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.destroy');
 
 //index
-Route::get('/', function () {
-    return view('index');
-});
+    Route::get('/',[IndexController::class,'index'])->name('index.index');
 
 // Categoria
+
 Route::get('categoria',[CategoriaController::class,'index'])->name('categoria.index');
 Route::get('categoria/create',[CategoriaController::class,'create'])->name('categoria.create');
 Route::post('categoria',[CategoriaController::class,'store'])->name('categoria.store');
@@ -103,7 +103,7 @@ Route::get('login',[LoginController::class,'login'])->name('login.login');
 
 //Producto - talla
 
-Route::get('talla/inicio',[TallaController::class,'index'])->name('talla.index');
+Route::get('talla',[TallaController::class,'index'])->name('talla.index');
 Route::get('talla/create',[TallaController::class,'create'])->name('talla.create');
 Route::post('talla',[TallaController::class,'store'])->name('talla.store');
 Route::get('talla/{id}',[TallaController::class,'show'])->name('talla.show');
@@ -113,7 +113,7 @@ Route::delete('talla/{id}',[TallaController::class,'destroy'])->name('talla.dest
 
 //producto
 
-Route::get('producto/inicio',[ProductoController::class,'index'])->name('producto.index');
+Route::get('producto',[ProductoController::class,'index'])->name('producto.index');
 Route::get('producto/create',[ProductoController::class,'create'])->name('producto.create');
 Route::post('producto',[ProductoController::class,'store'])->name('producto.store');
 Route::get('producto/{id}',[ProductoController::class,'show'])->name('producto.show');

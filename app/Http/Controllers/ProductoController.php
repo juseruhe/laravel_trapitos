@@ -1,12 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Genero;
 use App\Models\Producto;
 use Illuminate\Http\Request;
 
 class ProductoController extends Controller
 {
+    public function index()
+    {
+        $productos=genero::all();
+        return view('producto.index',compact('productos'));
+    }
     public function store(Request $request){
         $producto=Producto::create($request->all());
         return redirect()->route('producto.index');
