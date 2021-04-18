@@ -33,7 +33,7 @@
 
                 @yield('content')
             </div>
-@include('layouts.admin.components.footer')
+
         <!-- footer-->
         </div>
     </div>
@@ -47,6 +47,7 @@
    @include('layouts.admin.components.aside')
 </div>
 <div class="app-drawer-overlay d-none animated fadeIn"></div>
+@include('layouts.admin.components.footer')
 <script src="{{ url('js/app.js') }}"></script>
 </body>
 
