@@ -23,8 +23,8 @@
                           <form action="{{ route('producto.destroy',$productos->id)}}"method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('producto.show',$roles->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{ route('producto.edit',$roles->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
+                          <a href="{{ route('producto.show',$productos->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
+                         <a href="{{ route('producto.edit',$productos->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
                           <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
                           </form>
                       </td>
