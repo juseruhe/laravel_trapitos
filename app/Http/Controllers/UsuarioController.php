@@ -23,19 +23,42 @@ class UsuarioController extends Controller
         return view('usuario.index',compact('usuarios','tipo_documentos'))->with(compact('generos','roles'));
     }
     public function create(){
-        return view('usuario.create');
+
+        $tipo_documentos = Tipo_Documento::all();
+
+        $generos = Genero::all();
+
+        $roles = rol::where('id', '=', '1')->get();
+
+        return view('usuario.create',compact('tipo_documentos','generos'))->with(compact('roles'));
     }
     public function store(Request $request){
+
         $usuario=Usuario::create($request->all());
         return redirect()->route('usuario.index');
     }
+
+
+
     public function show($id){
-        $usuario=Usuario::find($id);
-        return view('rol.show',compact('usuario'));
+        $usuarios=Usuario::find($id)
+        ->where('id', '=', $id)
+        ->get();
+        return view('usuario.show',compact('usuarios'));
     }
+
+
     public function edit($id){
-        $usuario=Usuario::find($id);
-        return view('rol.edit',compact('usuario'));
+
+        $usuarios=Usuario::find($id)
+        ->where('id', '=', $id)
+        ->get();
+
+        $tipo_documentos= Tipo_Documento::all();
+
+        $generos= Genero::all();
+       
+        return view('usuario.edit',compact('usuarios','tipo_documentos'))->with(compact('generos'));
     }
 
     public function update(Request  $request, $id){
@@ -46,6 +69,19 @@ class UsuarioController extends Controller
     public function destroy($id){
         $usuario=Usuario::find($id)->delete();
         return redirect()->route('usuario.index');
+    }
+
+    public function editrol($id){
+
+        $usuarios=Usuario::find($id)
+        ->where('id', '=', $id)
+        ->get();
+
+        $roles= rol::all();
+
+       
+        return view('usuario.editrol',compact('usuarios','roles'));
+        
     }
 
 }

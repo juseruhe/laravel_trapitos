@@ -96,6 +96,8 @@ Route::get('usuario/{id}',[UsuarioController::class,'show'])->name('usuario.show
 Route::get('usuario/edit/{id}',[UsuarioController::class,'edit'])->name('usuario.edit');
 Route::put('usuario/{id}',[UsuarioController::class,'update'])->name('usuario.update');
 Route::delete('usuario/{id}',[UsuarioController::class,'destroy'])->name('usuario.destroy');
+Route::get('usuario/rol/{id}',[UsuarioController::class,'editrol'])->name('usuario.editrol');
+
 
 //Login
 
