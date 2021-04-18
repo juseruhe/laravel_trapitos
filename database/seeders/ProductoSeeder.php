@@ -17,22 +17,22 @@ class ProductoSeeder extends Seeder
         DB::table('productos')->insert([
             'nombre_producto' => 'Chaqueta Militar blanco',
             'imagen' => 'ok',
-            'talla_id' => 's',
+            'talla_id' => '1',
             'color' => 'Blanco con manchado negro a gotas',
-            'material' => '1',
-            'categoria_id' => 'Chaquetas',
-            'clasificacion_id' => 'Unisex',
+            'material' => 'antifluido',
+            'categoria_id' => '1',
+            'clasificacion_id' => '3',
             'valor' => '$ 150.000',
             'cantidad' => '101'
         ]);
         DB::table('productos')->insert([
             'nombre_producto' => 'Chaqueta Antifluido negra',
             'imagen' => 'ok',
-            'talla_id' => '1',
+            'talla_id' => '2',
             'color' => 'Negro',
             'material' => 'Licra con antifluido',
-            'categoria_id' => 'Chaquetas',
-            'clasificacion_id' => 'Unisex',
+            'categoria_id' => '2',
+            'clasificacion_id' => '3',
             'valor' => '$ 150.000',
             'cantidad' => '101'
         ]);

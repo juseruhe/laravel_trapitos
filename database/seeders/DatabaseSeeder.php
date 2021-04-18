@@ -44,5 +44,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UsuarioSeeder::class);
 
+        $this->call(TallaSeeder::class);
+
+        $this->call(ProductoSeeder::class);
+
+
     }
 }
