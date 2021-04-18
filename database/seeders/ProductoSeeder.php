@@ -33,7 +33,7 @@ class ProductoSeeder extends Seeder
             'material' => 'Licra con antifluido',
             'categoria_id' => '2',
             'clasificacion_id' => '3',
-            'valor' => '$ 150.000',
+            'valor' => '$ 120.000',
             'cantidad' => '101'
         ]);
     }

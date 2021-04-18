@@ -29,9 +29,5 @@ class TallaSeeder extends Seeder
         DB::table('tallas')->insert([
             'talla' => 'XXL',
         ]);
-        DB::table('tallas')->insert([
-            'talla' => 'XXL',
-        ]);
-
     }
 }
