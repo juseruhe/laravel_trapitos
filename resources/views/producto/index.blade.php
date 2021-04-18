@@ -17,7 +17,15 @@
                   @foreach($productos as $productos)
                   <tr>
                       <td>{{$productos->id}}</td>
-                      <td>{{$productos->Nombre_Rol}}</td>
+                      <td>{{$productos->nombre_producto}}</td>
+                      <td>{{$productos->imagen}}</td>
+                      <td>{{$productos->talla}}</td>
+                      <td>{{$productos->color}}</td>
+                      <td>{{$productos->material}}</td>
+                      <td>{{$productos->categoria}}</td>
+                      <td>{{$productos->claficacion}}</td>
+                      <td>{{$productos->precio}}</td>
+                      <td>{{$productos->cantidad}}</td>
                       <td>{{$productos->created_at}}</td>
                       <td>
                           <form action="{{ route('producto.destroy',$productos->id)}}"method="post">
