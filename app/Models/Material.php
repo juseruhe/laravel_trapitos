@@ -11,10 +11,10 @@ class Material extends Model
 
     protected $primaryKey = 'id';
 
-    protected $table = 'materiales';
+    protected $table = 'material';
 
     protected $fillable = [
 
-        'Nombre'
+        'material'
     ];
 }

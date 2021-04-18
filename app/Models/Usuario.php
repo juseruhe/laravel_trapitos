@@ -5,11 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Models\Tipo_Documento;
-
-use App\Models\Genero;
-
-use App\Models\rol;
 
 class Usuario extends Model
 {
@@ -20,7 +15,7 @@ class Usuario extends Model
     protected $table = 'usuarios';
 
     protected $fillable = [
-        
+
 'tipo_documento_id','numero_documento','nombres','apellidos','genero_id','fecha_nacimiento','correo',
 'contrasena','direccion','telefono','rol_id'];
 

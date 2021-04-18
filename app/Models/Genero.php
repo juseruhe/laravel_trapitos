@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Models\Usuario;
 
 class Genero extends Model
 {
@@ -17,7 +16,7 @@ class Genero extends Model
     ];
 
     public function generos(){
-        
+
         return $this->hasMany(Usuario::class,'id');
     }
 }

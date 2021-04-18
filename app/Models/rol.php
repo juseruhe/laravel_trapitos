@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Models\Usuario;
 
 class rol extends Model
 {
@@ -15,7 +14,7 @@ class rol extends Model
     protected $fillable=[
         'Nombre_Rol'
     ];
-    
+
 
     public function roles(){
 

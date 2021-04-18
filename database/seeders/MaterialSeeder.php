@@ -17,19 +17,19 @@ class MaterialSeeder extends Seeder
     public function run()
     {
         DB::table('materiales')->insert([
-            'Nombre' => 'Seda'
+            'material' => 'Seda'
         ]);
 
         DB::table('materiales')->insert([
-            'Nombre' => 'Lana'
+            'material' => 'Lana'
         ]);
 
         DB::table('materiales')->insert([
-            'Nombre' => 'Algodón'
+            'material' => 'Algodón'
         ]);
 
         DB::table('materiales')->insert([
-            'Nombre' => 'Cuero'
+            'material' => 'Cuero'
         ]);
     }
 }

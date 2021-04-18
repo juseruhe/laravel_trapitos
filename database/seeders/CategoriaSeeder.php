@@ -35,5 +35,8 @@ class CategoriaSeeder extends Seeder
         DB::table('categorias')->insert([
             'Nombre' => 'Unisex'
         ]);
+        DB::table('categorias')->insert([
+            'Nombre' => 'Chaquetas'
+        ]);
     }
 }

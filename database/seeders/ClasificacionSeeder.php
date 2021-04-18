@@ -23,5 +23,11 @@ class ClasificacionSeeder extends Seeder
         DB::table('clasificaciones')->insert([
             'Nombre' => 'Mujeres'
         ]);
+        DB::table('clasificaciones')->insert([
+            'Nombre' => 'Niños'
+        ]);
+        DB::table('clasificaciones')->insert([
+            'Nombre' => 'Unisex'
+        ]);
     }
 }
