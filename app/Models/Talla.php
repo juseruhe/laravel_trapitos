@@ -9,9 +9,6 @@ class Talla extends Model
 {
     use HasFactory;
     protected $primaryKey = 'id';
-    protected $table = 'talla';
-    protected $fillable = [
-
-        'talla'
-    ];
+    protected $table = 'tallas';
+    protected $fillable = ['talla'];
 }

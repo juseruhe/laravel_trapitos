@@ -8,8 +8,7 @@
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Nombre del Rol</th>
-                <th scope="col">Fecha de Creación</th>
+                <th scope="col">Nombre la talla</th>
                 <th scope="col">Opciones</th>
                 </tr>
                 </thead>
@@ -17,14 +16,13 @@
                   @foreach($tallas as $tallas)
                   <tr>
                       <td>{{$tallas->id}}</td>
-                      <td>{{$tallas->Nombre_Rol}}</td>
-                      <td>{{$tallas->created_at}}</td>
+                      <td>{{$tallas->talla}}</td>
                       <td>
-                          <form action="{{ route('talla.destroy',$roles->id)}}"method="post">
+                          <form action="{{ route('talla.destroy',$tallas->id)}}"method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('talla.show',$roles->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{ route('talla.edit',$roles->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
+                          <a href="{{ route('talla.show',$tallas->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
+                         <a href="{{ route('talla.edit',$tallas->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
                           <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
                           </form>
                       </td>

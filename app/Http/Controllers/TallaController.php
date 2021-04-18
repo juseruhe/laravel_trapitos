@@ -22,8 +22,8 @@ class TallaController extends Controller
         return redirect()->route('talla.index');
     }
     public function show($id){
-        $talla=Talla::find($id);
-        return view('rol.show',compact('talla'));
+        $tallas=Talla::find($id);
+        return view('rol.show',compact('tallas'));
     }
     public function edit($id){
         $talla=Talla::find($id);
