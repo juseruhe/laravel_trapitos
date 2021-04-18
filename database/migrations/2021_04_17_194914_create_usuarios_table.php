@@ -15,6 +15,20 @@ class CreateUsuariosTable extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('tipo_documento_id')->unsigned();
+            $table->string('numero_documento');
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->bigInteger('genero_id')->unsigned();
+            $table->date('fecha_nacimiento');
+            $table->string('correo');
+            $table->string('contrasena');
+            $table->string('direccion');
+            $table->bigInteger('telefono');
+            $table->bigInteger('rol_id')->unsigned();
+            $table->foreign('tipo_documento_id')->references('id')->on('tipo_documentos');
+            $table->foreign('genero_id')->references('id')->on('generos');
+            $table->foreign('rol_id')->references('id')->on('rol');
             $table->timestamps();
         });
     }

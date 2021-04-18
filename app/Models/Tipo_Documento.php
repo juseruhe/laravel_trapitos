@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+use App\Models\Usuario;
+
 class Tipo_Documento extends Model
 {
     use HasFactory;
@@ -18,4 +20,9 @@ class Tipo_Documento extends Model
 
         'Nombre_Tipo_Documento','Siglas'
     ];
+
+    public function usuarios(){
+
+        return $this->hasMany(Usuario::class,'id');
+    }
 }

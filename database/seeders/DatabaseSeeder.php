@@ -17,6 +17,8 @@ use Database\Seeders\CategoriaSeeder;
 
 use Database\Seeders\ClasificacionSeeder;
 
+use Database\Seeders\UsuarioSeeder;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -39,6 +41,8 @@ class DatabaseSeeder extends Seeder
         $this->call(CategoriaSeeder::class);
 
         $this->call(ClasificacionSeeder::class);
+
+        $this->call(UsuarioSeeder::class);
 
     }
 }

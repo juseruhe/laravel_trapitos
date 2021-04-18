@@ -89,7 +89,7 @@ Route::delete('material/{id}',[MaterialController::class,'destroy'])->name('mate
 
 //usuario
 
-Route::get('usuario/inicio',[UsuarioController::class,'index'])->name('usuario.index');
+Route::get('usuario',[UsuarioController::class,'index'])->name('usuario.index');
 Route::get('usuario/create',[UsuarioController::class,'create'])->name('usuario.create');
 Route::post('usuario',[UsuarioController::class,'store'])->name('usuario.store');
 Route::get('usuario/{id}',[UsuarioController::class,'show'])->name('usuario.show');

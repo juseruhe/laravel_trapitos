@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Usuario;
+use App\Models\Tipo_Documento;
+use App\Models\Genero;
+use App\Models\rol;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
@@ -10,7 +13,14 @@ class UsuarioController extends Controller
         public function index()
     {
         $usuarios=Usuario::all();
-        return view('usuario.index',compact('usuarios'));
+
+        $tipo_documentos = Tipo_Documento::all();
+
+        $generos = Genero::all();
+
+        $roles = Rol::all();
+
+        return view('usuario.index',compact('usuarios','tipo_documentos'))->with(compact('generos','roles'));
     }
     public function create(){
         return view('usuario.create');
