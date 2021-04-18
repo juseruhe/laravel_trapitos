@@ -11,8 +11,8 @@ class TallaController extends Controller
 {
     public function index()
     {
-        $talla=Talla::all();
-        return view('talla.index',compact('talla'));
+        $tallas=Talla::all();
+        return view('talla.index',compact('tallas'));
     }
     public function create(){
         return view('talla.create');

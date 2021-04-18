@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('rol.create') }}">Crear Nuevo Rol <i class="fas fa-plus-square"></i></a>
+            <a class="btn btn-primary mt-3 mb-4" href="{{ route('talla.create') }}">Crear Nuevo Rol <i class="fas fa-plus-square"></i></a>
               <table class="table table-striped mt -30 mb 4 ">
                 <thead>
                 <tr>
@@ -14,17 +14,17 @@
                 </tr>
                 </thead>
                   <tbody>
-                  @foreach($roles as $roles)
+                  @foreach($tallas as $tallas)
                   <tr>
-                      <td>{{$roles->id}}</td>
-                      <td>{{$roles->Nombre_Rol}}</td>
-                      <td>{{$roles->created_at}}</td>
+                      <td>{{$tallas->id}}</td>
+                      <td>{{$tallas->Nombre_Rol}}</td>
+                      <td>{{$tallas->created_at}}</td>
                       <td>
-                          <form action="{{ route('rol.destroy',$roles->id)}}"method="post">
+                          <form action="{{ route('talla.destroy',$roles->id)}}"method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('rol.show',$roles->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{ route('rol.edit',$roles->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
+                          <a href="{{ route('talla.show',$roles->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
+                         <a href="{{ route('talla.edit',$roles->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
                           <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
                           </form>
                       </td>

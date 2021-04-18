@@ -4,7 +4,12 @@
     <div class="row">
         <div class="col-md-12">
             <a class="btn btn-primary mt-3 mb-4" href="">Crear Nuevo Usuario <i class="fas fa-plus-square"></i></a>
+
               <table class="table table-striped mt-30 mb-4 ">
+
+            <div class="table-responsive">
+              <table class="table table-striped mt -30 mb 4 ">
+
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
@@ -20,7 +25,7 @@
                 <th scope="col">Teléfono</th>
                 <th scope="col">Rol</th>
                 <th scope="col">Acciones</th>
-                
+
                 </tr>
                 </thead>
                   <tbody>
@@ -38,8 +43,8 @@
                       <td>{{$usuario->direccion}}</td>
                       <td>{{$usuario->telefono}}</td>
                       <td>{{$usuario->rol->Nombre_Rol}}</td>
-                      
-                    
+
+
                       <td>
                           <form action="{{route('usuario.destroy',$usuario->id)}}"method="post">
                               @csrf
@@ -55,6 +60,7 @@
                   @endforeach
                   </tbody>
                </table>
+            </div>
         </div>
     </div>
 </div>

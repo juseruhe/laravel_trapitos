@@ -34,34 +34,28 @@
         <div class="app-sidebar__inner">
             <ul class="vertical-nav-menu">
                 <li class="app-sidebar__heading">Menu</li>
-                <li      >
+
+                <!-- Material -->
+                <li>
                     <a href="#">
                         <i class="metismenu-icon fas fa-tshirt"></i>Material
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
                     </a>
-                    <ul      >
+                    <ul>
                         <li>
                             <a href="{{route('material.index')}}" >
                                 <i class="metismenu-icon"></i>Mostrar Materiales
                             </a>
                         </li>
                         <li>
-                            <a href="{{route('material.create')}} >
+                            <a href="{{route('material.create')}}">
                                 <i class="metismenu-icon"></i>Crear Material
                             </a>
                         </li>
-
-
-
-                        </li>
-
                     </ul>
                 </li>
-                <li
-                >
-
-
-                              <!-- Tipo de Documento  -->
+                <li>
+                    <!-- Tipo de Documento  -->
                 <a href="#">
 
                         <i class="metismenu-icon fas fa-address-card"></i>Tipo de Documento
@@ -81,12 +75,10 @@
 
                     </ul>
                 </li>
+
+                <!-- Rol  -->
                 <li>
-
-
-                    <!-- Rol  -->
                     <a href="#">
-
                         <i class="metismenu-icon fas fa-user-tag"></i>Rol
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
@@ -103,10 +95,9 @@
                         </li>
                     </ul>
                 </li>
+
+                <!-- genero -->
                 <li>
-
-
-                    <!-- genero -->
                     <a href="#">
 
                         <i class="metismenu-icon fas fa-venus-mars"></i>Genero
@@ -125,18 +116,13 @@
                         </li>
                     </ul>
                 </li>
+                <!--  Categoria -->
                 <li>
-
-
-
-
                     <a href="#">
                         <i class="metismenu-icon fas fa-user-tie"></i>Categoria
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
-                    <ul
-
-                    >
+                    <ul>
                         <li>
                             <a href="{{route('categoria.index')}}" >
                                 <i class="metismenu-icon"></i> Mostrar Categorias
@@ -150,13 +136,14 @@
 
                     </ul>
                 </li>
+
+                <!-- Clasificación -->
                 <li>
                     <a href="#">
                         <i class="metismenu-icon fas fa-book-open"></i>Clasificación
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
-                    <ul
-                    >
+                    <ul>
                         <li>
                             <a href="{{route('clasificacion.index')}}" >
                                 <i class="metismenu-icon"></i>Mostrar Clasificaciones
@@ -167,28 +154,35 @@
                                 <i class="metismenu-icon"></i>Crear Clasificación
                             </a>
                         </li>
-
-                        </ul>
-                            <ul   >
-                                <li>
-                                    <a href="apps-forum-list.html" >
-                                        <i class="metismenu-icon"></i>Forum Listing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="apps-forum-threads.html" >
-                                        <i class="metismenu-icon"></i>Forum Threads
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="apps-forum-discussion.html" >
-                                        <i class="metismenu-icon"></i>Forum Discussion
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </li>
+
+
+
+                <!--  Usuarios -->
+                <li>
+                    <a href="#">
+                        <i class="metismenu-icon fas fa-user-tie"></i>Usuarios
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('usuario.index')}}" >
+                                <i class="metismenu-icon"></i>Mostrar Usuarios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('usuario.create')}}" >
+                                <i class="metismenu-icon"></i>Crear Usuario
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+               
+
+            </ul>
+            </li>
         </div>
     </div>
 </div>

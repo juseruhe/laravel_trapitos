@@ -17,14 +17,22 @@
                   @foreach($productos as $productos)
                   <tr>
                       <td>{{$productos->id}}</td>
-                      <td>{{$productos->Nombre_Rol}}</td>
+                      <td>{{$productos->nombre_producto}}</td>
+                      <td>{{$productos->imagen}}</td>
+                      <td>{{$productos->talla}}</td>
+                      <td>{{$productos->color}}</td>
+                      <td>{{$productos->material}}</td>
+                      <td>{{$productos->categoria}}</td>
+                      <td>{{$productos->claficacion}}</td>
+                      <td>{{$productos->precio}}</td>
+                      <td>{{$productos->cantidad}}</td>
                       <td>{{$productos->created_at}}</td>
                       <td>
                           <form action="{{ route('producto.destroy',$productos->id)}}"method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('producto.show',$roles->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{ route('producto.edit',$roles->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
+                          <a href="{{ route('producto.show',$productos->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
+                         <a href="{{ route('producto.edit',$productos->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
                           <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
                           </form>
                       </td>
