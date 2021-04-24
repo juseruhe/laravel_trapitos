@@ -1,38 +1,29 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('rol.create') }}">Crear Nuevo Rol <i class="fas fa-plus-square"></i></a>
-              <table class="table table-striped mt -30 mb 4 ">
-                <thead>
-                <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Nombre del Rol</th>
-                <th scope="col">Fecha de Creación</th>
-                <th scope="col">Opciones</th>
-                </tr>
-                </thead>
-                  <tbody>
-                  @foreach($roles as $roles)
-                  <tr>
-                      <td>{{$roles->id}}</td>
-                      <td>{{$roles->Nombre_Rol}}</td>
-                      <td>{{$roles->created_at}}</td>
-                      <td>
-                          <form action="{{ route('rol.destroy',$roles->id)}}"method="post">
-                              @csrf
-                              @method('DELETE')
-                          <a href="{{ route('rol.show',$roles->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{ route('rol.edit',$roles->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
-                          <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
-                          </form>
-                      </td>
-                  </tr>
-                  @endforeach
-                  </tbody>
-               </table>
-        </div>
-    </div>
-</div>
+    <h1> Roles </h1>
+    <a href="{{route('rol.create')}}" class="btn btn-primary my-4">Crear Rol <i class="fas fa-plus-square"></i> </a>
+    <table   class="table table-dark ">
+        <tr>
+            <td>ID</td>
+            <td>Nombre del Rol</td>
+            <td>Fecha de Creación</td>
+            <td>Acciones</td>
+        </tr>
+        <tr>
+            @foreach($roles as $roles)
+                <td>{{$roles->id}} </td>
+                <td>{{$roles->Nombre_Rol}}</td>
+                <td>{{$roles->created_at}}</td>
+                <td>
+                    <form action="{{route('rol.destroy', $roles->id)}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <a class="btn btn-warning" href="{{route('rol.edit',$roles->id)}}"><i class="fas fa-edit"></i>  Editar</a>
+                        <a class="btn btn-info" href="{{route('rol.show',$roles->id)}}"><i class="fas fa-eye"></i> Detalles</a>
+                        <button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el Genero ?')"><i class="fas fa-eraser"></i>  Eliminar</button>
+                    </form>
+                </td>
+        </tr>
+        @endforeach
+    </table>
 @endsection

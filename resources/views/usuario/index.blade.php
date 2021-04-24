@@ -1,30 +1,27 @@
 @extends('layouts.admin.app');
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="">Crear Nuevo Usuario <i class="fas fa-plus-square"></i></a>
-
-              <table class="table table-striped mt-30 mb-4 ">
 
             <div class="table-responsive">
-              <table class="table table-striped mt -30 mb 4 ">
+                <h1> Usuarios </h1>
+                <a href="{{route('usuario.create')}}" class="btn btn-primary my-4">Crear usuario <i class="fas fa-plus-square"></i> </a>
+                <table   class="table table-dark ">
 
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Tipo Documento</th>
+                <th scope="col">T. Documento</th>
                 <th scope="col">Número</th>
                 <th scope="col">Nombres</th>
                 <th scope="col">Apellidos</th>
                 <th scope="col">Género</th>
-                <th scope="col">Fecha de Nacimiento</th>
+                <th scope="col">F. Nacimiento</th>
                 <th scope="col">Correo</th>
                 <th scope="col">Contraseña</th>
                 <th scope="col">Dirección</th>
                 <th scope="col">Teléfono</th>
                 <th scope="col">Rol</th>
-                <th scope="col">Acciones</th>
+                <th scope="col">Opciones</th>
+                    <th scope="col">Acciones</th>
 
                 </tr>
                 </thead>
@@ -46,22 +43,23 @@
 
 
                       <td>
+                          <a href="{{route('usuario.show',$usuario->id)}}" class="btn btn-sm btn-info"> Detalles</a>
+                         <a href="{{route('usuario.edit',$usuario->id)}}" class="btn btn-sm btn-warning"> Editar </a>
+                          </form>
+
+                      </td>
+                      <td>
                           <form action="{{route('usuario.destroy',$usuario->id)}}"method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{route('usuario.show',$usuario->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{route('usuario.edit',$usuario->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
-                          <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
-                          <a href="{{route('usuario.editrol',$usuario->id)}}" class="btn btn-sm btn-success"><i class="fas fa-id-badge"></i> Cambiar Rol </a>
+                              <button type="submit" class="btn btn-sm btn-danger"> Eliminar</button>
+                              <a href="{{route('usuario.editrol',$usuario->id)}}" class="btn btn-sm btn-success">Rol </a>
                           </form>
-                        
+
                       </td>
                   </tr>
                   @endforeach
-                  </tbody>
-               </table>
+                </table>
             </div>
-        </div>
-    </div>
-</div>
 @endsection
+

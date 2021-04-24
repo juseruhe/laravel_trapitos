@@ -1,38 +1,30 @@
-@extends('layouts.admin.app');
+
+@extends('layouts.admin.app')
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <a class="btn btn-primary mt-3 mb-4" href="{{ route('genero.create') }}">Crear Nuevo Genero <i class="fas fa-edit"></i> </a>
-                <table class="table table-striped mt -30 mb 4 ">
-                    <thead>
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Nombre del Genero</th>
-                        <th scope="col">Fecha de Creación</th>
-                        <th scope="col">Opciones</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($generos as $generos)
-                        <tr>
-                            <td>{{$generos->id}}</td>
-                            <td>{{$generos->Nombre_Genero}}</td>
-                            <td>{{$generos->created_at}}</td>
-                            <td>
-                                <form action="{{ route('genero.destroy',$generos->id)}}"method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <a href="{{ route('genero.show',$generos->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                                    <a href="{{ route('genero.edit',$generos->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar</a>
-                                    <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
-                                </form>
-                            </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+    <h1> Generos </h1>
+    <a href="{{route('genero.create')}}" class="btn btn-primary my-4">Crear Genero <i class="fas fa-plus-square"></i> </a>
+    <table   class="table table-dark ">
+        <tr>
+            <td>ID</td>
+            <td>Nombre del Genero</td>
+            <td>Fecha de Creación</td>
+            <td>Acciones</td>
+        </tr>
+        <tr>
+            @foreach($generos as $generos)
+                <td>{{$generos->id}}</td>
+                <td>{{$generos->Nombre_Genero}}</td>
+                <td>{{$generos->created_at}}</td>
+                <td>
+                    <form action="{{route('genero.destroy', $generos->id)}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <a class="btn btn-warning" href="{{route('genero.edit',$generos->id)}}"><i class="fas fa-edit"></i>  Editar</a>
+                        <a class="btn btn-info" href="{{route('genero.show',$generos->id)}}"><i class="fas fa-eye"></i> Detalles</a>
+                        <button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el genero ?')"><i class="fas fa-eraser"></i>  Eliminar</button>
+                    </form>
+                </td>
+        </tr>
+        @endforeach
+    </table>
 @endsection
