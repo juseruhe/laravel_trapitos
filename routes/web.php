@@ -58,6 +58,9 @@ Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.d
 //index
     Route::get('/',[IndexController::class,'index'])->name('index.index');
     Route::get('administrador',[IndexController::class,'index'])->name('index.index');
+
+//index
+Route::get('indexadmin',[IndexController::class,'index'])->name('indexadmin.index');
 // Categoria
 
 Route::get('categoria',[CategoriaController::class,'index'])->name('categoria.index');

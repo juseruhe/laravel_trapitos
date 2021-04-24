@@ -9,12 +9,12 @@
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
-                <th scope="col">T. Documento</th>
+                <th scope="col">T.Documento</th>
                 <th scope="col">Número</th>
                 <th scope="col">Nombres</th>
                 <th scope="col">Apellidos</th>
                 <th scope="col">Género</th>
-                <th scope="col">F. Nacimiento</th>
+                <th scope="col">F.Nacimiento</th>
                 <th scope="col">Correo</th>
                 <th scope="col">Contraseña</th>
                 <th scope="col">Dirección</th>
