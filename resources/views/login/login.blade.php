@@ -10,14 +10,15 @@
                 <label for="tab-1" class="tab">Ingresar</label>
                 <br>
                 <div class="login-form">
-                    <form class="sign-in-htm" action="{{route('login.login')}}" method="GET">
+                    <form class="sign-in-htm" action="{{route('login.authenticate')}}" method="POST">
+                    @csrf
                         <div class="group">
                             <label for="usua" class="label">Usuario: </label>
-                            <input id="username" name="Correo" type="text" class="input">
+                            <input id="username" name="email" type="text" class="input">
                         </div>
                         <div class="group">
                             <label for="contr" class="label">Contraseñas: </label>
-                            <input id="password" name="Contrasena" type="password" class="input" data-type="password">
+                            <input id="password" name="password" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
                             <input type="submit" class="button" value="Ingresar">

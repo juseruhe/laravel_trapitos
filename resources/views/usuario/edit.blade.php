@@ -53,13 +53,13 @@
 
                 <div class="form-group mt-4">
                     <label for="name">Correo:</label>
-                    <input  name="correo" id="name" type="email" class="form-control" value="{{$usuario->correo}}">
+                    <input  name="email" id="name" type="email" class="form-control" value="{{$usuario->correo}}">
                 </div>
 
 
                 <div class="form-group mt-4">
                     <label for="name">Contraseña:</label>
-                    <input  name="contrasena" id="name" type="password" class="form-control" value="{{$usuario->contrasena}}">
+                    <input  name="password" id="name" type="password" class="form-control" value="{{$usuario->contrasena}}">
                 </div>
 
                 <div class="form-group mt-4">

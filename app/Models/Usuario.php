@@ -10,17 +10,17 @@ use Illuminate\Notifications\Notifiable;
 
 
 
-class Usuario extends Model
+class Usuario extends Authenticatable
 {
 
-    use HasFactory;
+    use HasFactory,Notifiable;
 
     protected $primaryKey = 'id';
     protected $table = 'usuarios';
     protected $fillable = [
 
-'tipo_documento_id','numero_documento','nombres','apellidos','genero_id','fecha_nacimiento','correo',
-'contrasena','direccion','telefono','rol_id'];
+'tipo_documento_id','numero_documento','nombres','apellidos','genero_id','fecha_nacimiento','email',
+'password','direccion','telefono','rol_id'];
 
 public function tipo_documento(){
     return $this->belongsTo(Tipo_Documento::class,'tipo_documento_id');

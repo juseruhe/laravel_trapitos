@@ -21,8 +21,8 @@ class CreateUsuariosTable extends Migration
             $table->string('apellidos');
             $table->bigInteger('genero_id')->unsigned();
             $table->date('fecha_nacimiento');
-            $table->string('correo');
-            $table->string('contrasena');
+            $table->string('email');
+            $table->string('password');
             $table->string('direccion');
             $table->bigInteger('telefono');
             $table->bigInteger('rol_id')->unsigned();

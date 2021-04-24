@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 
+use App\Models\Usuario;
+
+
 class LoginController extends Controller
 {
     public function login(){
@@ -13,17 +16,28 @@ class LoginController extends Controller
     }
     public function authenticate(Request $request)
     {
-        $credentials = $request->only('correo', 'contrasena');
-        if (Auth::attempt($credentials)) {
+        $credentials = $request->only('email', 'password');
+
+
+        
+       if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('login.login');
+            return redirect()->route('usuario.index');
         }
 
-        return back()->withErrors([
+      
+
+            
+
+            return redirect()->route('login.login');
+        
+
+       /* return back()->withErrors([
             'email' => 'El correo no esta Inscrito',
-        ]);
+        ]);*/
+
     }
-    public function logout(Request $request)
+  /*  public function logout(Request $request)
     {
         Auth::logout();
 
@@ -32,5 +46,9 @@ class LoginController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/');
-    }
+    }*/
+
+  /*  public function __construct(){
+        $this ->middleware('auth');
+    }*/
 }

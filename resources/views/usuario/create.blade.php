@@ -57,11 +57,11 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Correo</label>
-                                    <input type="text" name="correo" class="input">
+                                    <input type="text" name="email" class="input">
                                 </div>
                                 <div class="col">
                                     <label for="name">Contraseña</label>
-                                    <input type="password" name="contrasena" class="input">
+                                    <input type="password" name="password" class="input">
                                 </div>
                             </div>
 

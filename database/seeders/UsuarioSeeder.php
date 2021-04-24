@@ -25,8 +25,8 @@ class UsuarioSeeder extends Seeder
         'apellidos' => 'Ruiz Herrera',
         'genero_id' => '1',
         'fecha_nacimiento' => '1998-05-15',
-        'correo' => 'jsruiz7411@misena.edu.co',
-        'contrasena' => '123',
+        'email' => 'jsruiz7411@misena.edu.co',
+        'password' => '123',
         'direccion' => 'Calle Usme',
         'telefono' => '3115133173',
         'rol_id' => '1'
@@ -39,8 +39,8 @@ class UsuarioSeeder extends Seeder
             'apellidos' => 'Ospina Castro',
             'genero_id' => '1',
             'fecha_nacimiento' => '2000-07-14',
-            'correo' => 'afospina93@misena.edu.co',
-            'contrasena' => '123',
+            'email' => 'afospina93@misena.edu.co',
+            'password' => '123',
             'direccion' => 'Carrera 80',
             'telefono' => '3124845032',
             'rol_id' => '1'
@@ -53,8 +53,8 @@ class UsuarioSeeder extends Seeder
                 'apellidos' => 'Espinosa Castro',
                 'genero_id' => '1',
                 'fecha_nacimiento' => '1998-05-15',
-                'correo' => 'maespinosa@misena.edu.co',
-                'contrasena' => '123',
+                'email' => 'maespinosa@misena.edu.co',
+                'password' => '123',
                 'direccion' => 'Avenida Calabera',
                 'telefono' => '3174483117',
                 'rol_id' => '1'
