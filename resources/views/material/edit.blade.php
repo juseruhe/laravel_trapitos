@@ -15,7 +15,7 @@
 <div class="form-group">
 <label for="Nombre_Tipo_Documento"> Nombre de Material</label>
 
-<input class="input-group mb-3" type="text" name="Nombre" value="{{$material->Nombre}}" >
+<input class="input-group mb-3" type="text" name="Material" value="{{$material->material}}" >
 </div>
 
 

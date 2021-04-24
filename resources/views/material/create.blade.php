@@ -7,7 +7,7 @@
 @csrf
 <div class="form-group">
 <label for="Nombre de Tipo Documento">Nombre de Material:</label>
- <input class="input-group mb-3" type="text" name="Nombre" placeholder="Escriba Nombre de Material:">
+ <input class="input-group mb-3" type="text" name="material" placeholder="Escriba Nombre de Material:">
  </div>
 
 

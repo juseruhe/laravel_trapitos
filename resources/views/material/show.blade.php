@@ -12,7 +12,7 @@
 <tr>
     
 <td>{{$material->id}}</td>
-<td>{{$material->Nombre}}</td>
+<td>{{$material->material}}</td>
 
 
 </tr>

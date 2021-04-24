@@ -17,7 +17,7 @@
 <tr>
 @foreach($materiales as $material)
 <td>{{$material->id}} </td>
-<td>{{$material->Nombre}}</td>
+<td>{{$material->material}}</td>
 <td>
     <form action="{{route('material.destroy',$material->id)}}" method="post">
 

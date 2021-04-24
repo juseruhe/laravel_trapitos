@@ -23,11 +23,11 @@ class TallaController extends Controller
     }
     public function show($id){
         $tallas=Talla::find($id);
-        return view('rol.show',compact('tallas'));
+        return view('talla.show',compact('tallas'));
     }
     public function edit($id){
-        $talla=Talla::find($id);
-        return view('rol.edit',compact('talla'));
+        $tallas=Talla::find($id);
+        return view('talla.edit',compact('tallas'));
     }
 
     public function update(Request  $request, $id){
@@ -37,6 +37,6 @@ class TallaController extends Controller
     }
     public function destroy($id){
         $talla=Talla::find($id)->delete();
-        return redirect()->route('rol.index');
+        return redirect()->route('talla.index');
     }
 }

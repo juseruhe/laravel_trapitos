@@ -3,13 +3,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-           <form action="{{route('rol.store')}}" method="POST">
+           <form action="{{route('talla.store')}}" method="POST">
                @csrf
                <div class="form-group mt-4">
-                   <label for="name">Nombre del Nuevo Rol</label>
-                   <input name="Nombre_Rol" id="name" type="text" class="form-control">
+                   <label for="name">Crear Nueva Talla</label>
+                   <input name="talla" id="name" type="text" class="form-control">
                    <button type="submit" class="btn btn-primary">Guardar Nuevo Rol</button>
-                   <a class="btn btn-sm btn-danger" href="{{route('rol.index')}}">Cancelar</a>
+                   <a class="btn btn-sm btn-danger" href="{{route('talla.index')}}">Cancelar</a>
                </div>
            </form>
         </div>
