@@ -10,7 +10,7 @@
                 <label for="tab-1" class="tab">Ingresar</label>
                 <br>
                 <div class="login-form">
-                    <form class="sign-in-htm" action="https://hidden-lake-05478.herokuapp.com/crudservicios/api.php?apicall=loginusuario" method="POST">
+                    <form class="sign-in-htm" action="{{route('login.login')}}" method="GET">
                         <div class="group">
                             <label for="usua" class="label">Usuario: </label>
                             <input id="username" name="Correo" type="text" class="input">

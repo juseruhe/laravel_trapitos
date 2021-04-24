@@ -57,7 +57,7 @@ Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.d
 
 //index
     Route::get('/',[IndexController::class,'index'])->name('index.index');
-
+    Route::get('administrador',[IndexController::class,'index'])->name('index.index');
 // Categoria
 
 Route::get('categoria',[CategoriaController::class,'index'])->name('categoria.index');
@@ -122,5 +122,3 @@ Route::get('producto/{id}',[ProductoController::class,'show'])->name('producto.s
 Route::get('producto/edit/{id}',[ProductoController::class,'edit'])->name('producto.edit');
 Route::put('producto/{id}',[ProductoController::class,'update'])->name('producto.update');
 Route::delete('producto/{id}',[ProductoController::class,'destroy'])->name('producto.destroy');
-
-
