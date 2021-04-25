@@ -5,8 +5,24 @@ use App\Models\Genero;
 use App\Models\Producto;
 use Illuminate\Http\Request;
 
+use Spatie\Permission\Models\Role;
+
+use Illuminate\Support\Arr;
+
+use DB;
+
+use Hash;
+
 class ProductoController extends Controller
 {
+    function __construct()
+    {
+        $this->middleware('permission:product-list|product-create|product-edit|product-delete', ['only' => ['index','show']]);
+        $this->middleware('permission:product-create', ['only' => ['create','store']]);
+        $this->middleware('permission:product-edit', ['only' => ['edit','update']]);
+        $this->middleware('permission:product-delete', ['only' => ['destroy']]);
+    }
+
     public function index()
     {
         $productos=genero::all();
