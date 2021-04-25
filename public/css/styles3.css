@@ -58,11 +58,11 @@ header.masthead .masthead-heading {
 /* diseño login*/
 .fondo{
 
-    color:#656566;
+    color:#6eacfd;
     background:#c8c8c8;
 
-    background: linear-gradient(to bottom,
-    rgba(3, 3, 3, 0.952),
+    background: linear-gradient(to right,
+    rgb(0, 0, 0),
     rgba(0, 0, 0, 0.795),
     rgba(0, 0, 0, 0.795),
     rgba(0, 0, 0, 0.74)

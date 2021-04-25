@@ -35,11 +35,12 @@
             <ul class="vertical-nav-menu">
                 <li class="app-sidebar__heading">Menu</li>
 
-                <!--  producto -->
+                <!--  inicio -->
                 <li>
                     <a href="{{route('index.index')}}">
-                        <i class="metismenu-icon fas fa-home "></i> Inicio
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
+                        <i class="metismenu-icon fas fa-home " style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Inicio</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                 </li>
 
@@ -47,18 +48,19 @@
                 <!-- Material -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-tshirt"></i>Material
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
+                        <i class="metismenu-icon fas fa-tshirt" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Material</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('material.index')}}" >
-                                <i class="metismenu-icon"></i>Mostrar Materiales
+                                <p style="color:#6eacfd";>Mostrar Material</p>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('material.create')}}">
-                                <i class="metismenu-icon"></i>Crear Material
+                                <p style="color:#6eacfd";>Crear Material</p>
                             </a>
                         </li>
                     </ul>
@@ -67,18 +69,21 @@
                     <!-- Tipo de Documento  -->
                 <a href="#">
 
-                        <i class="metismenu-icon fas fa-address-card"></i>Tipo de Documento
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                        <i class="metismenu-icon fas fa-address-card" style="color:#ffffff";></i>
+                    <p style="color:#6eacfd";>Tipo de Documento</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('tipo_documento.index')}}" >
-                                <i class="metismenu-icon"></i>Mostrar Tipo de Documento
+                                <p style="color:#6eacfd";>Mostrar Tipo de Documento</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('tipo_documento.create')}}" >
-                                <i class="metismenu-icon"></i>Crear Tipo de Documento
+                                <p style="color:#6eacfd";>Crear Tipo de Documento</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
 
@@ -88,18 +93,21 @@
                 <!-- Rol  -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-user-tag"></i>Rol
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                        <i class="metismenu-icon fas fa-user-tag" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Rol</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('rol.index')}}" >
-                                <i class="metismenu-icon "></i>Mostrar Rol
+                                <p style="color:#6eacfd";>Mostrar Rol</p>
+                                <i class="metismenu-icon "></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('rol.create')}}" >
-                                <i class="metismenu-icon"></i>Crear Rol
+                                <p style="color:#6eacfd";>Crear Rol</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -109,18 +117,21 @@
                 <li>
                     <a href="#">
 
-                        <i class="metismenu-icon fas fa-venus-mars"></i>Genero
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                        <i class="metismenu-icon fas fa-venus-mars" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Genero</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('genero.index')}}" >
-                                <i class="metismenu-icon "></i>Mostrar Genero
+                                <p style="color:#6eacfd";>Mostrar Genero</p>
+                                <i class="metismenu-icon "></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('genero.create')}}" >
-                                <i class="metismenu-icon"></i>Crear Genero
+                                <p style="color:#6eacfd";>Crear Genero</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -128,18 +139,21 @@
                 <!--  Categoria -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-user-tie"></i>Categoria
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                        <i class="metismenu-icon fas fa-user-tie" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Categoria</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('categoria.index')}}" >
-                                <i class="metismenu-icon"></i> Mostrar Categorias
+                                <p style="color:#6eacfd";>Mostrar Categorias</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('categoria.create')}}" >
-                                <i class="metismenu-icon"></i>Crear Categoria
+                                <p style="color:#6eacfd";>Crear Categoria</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
 
@@ -149,18 +163,21 @@
                 <!-- Clasificación -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-book-open"></i>Clasificación
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                        <i class="metismenu-icon fas fa-book-open" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Clasificación</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('clasificacion.index')}}" >
-                                <i class="metismenu-icon"></i>Mostrar Clasificaciones
+                                <p style="color:#6eacfd";>Mostrar Clasificaciones</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('clasificacion.create')}}" >
-                                <i class="metismenu-icon"></i>Crear Clasificación
+                                <p style="color:#6eacfd";>Crear Clasificaciones</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -171,18 +188,21 @@
                 <!--  Usuarios -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-users"></i>Usuarios
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
+                        <i class="metismenu-icon fas fa-users" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Usuarios</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('usuario.index')}}" >
-                                <i class="metismenu-icon"></i>Mostrar Usuarios
+                                <p style="color:#6eacfd";>Mostrar Usuarios</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('usuario.create')}}" >
-                                <i class="metismenu-icon"></i>Crear Usuario
+                                <p style="color:#6eacfd";>Crear Usuarios</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
 
@@ -192,18 +212,21 @@
                 <!--  producto -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-tshirt"></i>Producto
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
+                        <i class="metismenu-icon fas fa-tshirt" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Producto</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down " style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
                             <a href="{{route('producto.index')}}" >
-                                <i class="metismenu-icon"></i>Mostrar producto
+                                <p style="color:#6eacfd";>Mostrar producto</p>
+                                <i class="metismenu-icon" style="color:#6eacfd";></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('producto.create')}}" >
-                                <i class="metismenu-icon"></i>Crear producto
+                                <p style="color:#6eacfd";>Crear producto</p>
+                                <i class="metismenu-icon" style="color:#6eacfd";></i>
                             </a>
                         </li>
 

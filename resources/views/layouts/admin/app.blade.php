@@ -21,6 +21,7 @@
 
 <body >
 
+
 <div class="app-container fondo body-tabs-shadow fixed-header fixed-sidebar">
     @include('layouts.admin.components.navbar')
     <div class="ui-theme-settings">

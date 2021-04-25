@@ -10493,3 +10493,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+
+.sidebar-shadow{box-shadow:7px 0 60px rgba(0,0,0,0.05)}
+
+.app-sidebar__heading{text-transform:uppercase;font-size:.8rem;margin:.75rem 0;font-weight:bold;color:#23a312;white-space:nowrap;position:relative}
+.sidebar-mobile-overlay{display:none;position:fixed;width:100%;height:100%;background:#333;opacity:.6;left:0;top:0;z-index:12}
+.vertical-nav-menu{margin:0;padding:0;position:relative;list-style:none}
+.vertical-nav-menu::after{content:" ";pointer-events:none;position:absolute;bottom:0;left:0;right:0;top:0}
