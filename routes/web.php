@@ -13,6 +13,7 @@ use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\TallaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\IndexadminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,10 +58,9 @@ Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.d
 
 //index
     Route::get('/',[IndexController::class,'index'])->name('index.index');
-    Route::get('administrador',[IndexController::class,'index'])->name('index.index');
+    Route::get('/administrador',[IndexadminController::class,'index'])->name('index.index');
 
-//index
-Route::get('indexadmin',[IndexController::class,'index'])->name('indexadmin.index');
+
 // Categoria
 
 Route::get('categoria',[CategoriaController::class,'index'])->name('categoria.index');

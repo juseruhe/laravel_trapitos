@@ -35,6 +35,15 @@
             <ul class="vertical-nav-menu">
                 <li class="app-sidebar__heading">Menu</li>
 
+                <!--  producto -->
+                <li>
+                    <a href="{{route('index.index')}}">
+                        <i class="metismenu-icon fas fa-home "></i> Inicio
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
+                    </a>
+                </li>
+
+
                 <!-- Material -->
                 <li>
                     <a href="#">
@@ -162,7 +171,7 @@
                 <!--  Usuarios -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-user-tie"></i>Usuarios
+                        <i class="metismenu-icon fas fa-users"></i>Usuarios
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"></i>
                     </a>
                     <ul>
@@ -179,7 +188,28 @@
 
                     </ul>
                 </li>
-               
+
+                <!--  producto -->
+                <li>
+                    <a href="#">
+                        <i class="metismenu-icon fas fa-tshirt"></i>Producto
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('producto.index')}}" >
+                                <i class="metismenu-icon"></i>Mostrar producto
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('producto.create')}}" >
+                                <i class="metismenu-icon"></i>Crear producto
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
 
             </ul>
             </li>
