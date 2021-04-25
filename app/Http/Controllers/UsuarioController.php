@@ -10,6 +10,11 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
+
+
+    public function __construct(){
+        $this ->middleware('auth');
+    }
         public function index()
     {
         $usuarios=Usuario::all();
@@ -57,7 +62,7 @@ class UsuarioController extends Controller
         $tipo_documentos= Tipo_Documento::all();
 
         $generos= Genero::all();
-       
+
         return view('usuario.edit',compact('usuarios','tipo_documentos'))->with(compact('generos'));
     }
 
@@ -79,9 +84,9 @@ class UsuarioController extends Controller
 
         $roles= rol::all();
 
-       
+
         return view('usuario.editrol',compact('usuarios','roles'));
-        
+
     }
 
 }
