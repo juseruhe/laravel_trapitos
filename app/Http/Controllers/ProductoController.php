@@ -5,13 +5,6 @@ use App\Models\Genero;
 use App\Models\Producto;
 use Illuminate\Http\Request;
 
-use Spatie\Permission\Models\Role;
-
-use Illuminate\Support\Arr;
-
-use DB;
-
-use Hash;
 
 class ProductoController extends Controller
 {
