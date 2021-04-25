@@ -3,7 +3,7 @@
 @section('content')
     <!-- login -->
     <link href="css/styles3.css" rel="stylesheet" />
-    <section>
+    <section class="fondo">
         <!-- Formulario inicio sesion-->
         <div class="login-wrap" class="login1">
             <div class="login-html">
