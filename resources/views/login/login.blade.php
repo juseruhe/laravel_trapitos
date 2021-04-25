@@ -17,7 +17,7 @@
                             <input id="username" name="email" type="text" class="input">
                         </div>
                         <div class="group">
-                            <label for="contr" class="label">Contraseñas: </label>
+                            <label for="contr" class="label">Contraseña: </label>
                             <input id="password" name="password" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
