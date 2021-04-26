@@ -5,8 +5,8 @@
 
     <header class="masthead" id="inicio">
         <div class="container">
-            <div class="masthead-subheading">Tienda de Ropa Online</div>
             <div class="masthead-heading text-uppercase">Mis Trapitos</div>
+            <div class="masthead-subheading">Tienda de Ropa Online</div>
         </div>
     </header>
 
