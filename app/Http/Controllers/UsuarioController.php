@@ -11,18 +11,16 @@ use Illuminate\Http\Request;
 class UsuarioController extends Controller
 {
 
-
+/*
     public function __construct(){
         $this ->middleware('auth');
-    }
+    }*/
+
         public function index()
     {
         $usuarios=Usuario::all();
-
         $tipo_documentos = Tipo_Documento::all();
-
         $generos = Genero::all();
-
         $roles = Rol::all();
 
         return view('usuario.index',compact('usuarios','tipo_documentos'))->with(compact('generos','roles'));

@@ -14,6 +14,7 @@ use App\Http\Controllers\TallaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\IndexadminController;
+use App\Http\Controllers\ColorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -125,3 +126,12 @@ Route::get('producto/{id}',[ProductoController::class,'show'])->name('producto.s
 Route::get('producto/edit/{id}',[ProductoController::class,'edit'])->name('producto.edit');
 Route::put('producto/{id}',[ProductoController::class,'update'])->name('producto.update');
 Route::delete('producto/{id}',[ProductoController::class,'destroy'])->name('producto.destroy');
+
+//color
+Route::get('color',[ColorController::class,'index'])->name('color.index');
+Route::get('color/create',[ColorController::class,'create'])->name('color.create');
+Route::post('color',[ColorController::class,'store'])->name('color.store');
+Route::get('color/{id}',[ColorController::class,'show'])->name('color.show');
+Route::get('color/edit/{id}',[ColorController::class,'edit'])->name('color.edit');
+Route::put('color/{id}',[ColorController::class,'update'])->name('color.update');
+Route::delete('color/{id}',[ColorController::class,'destroy'])->name('color.destroy');

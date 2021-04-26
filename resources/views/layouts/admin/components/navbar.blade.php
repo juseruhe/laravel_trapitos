@@ -45,7 +45,7 @@
             <ul class="header-megamenu nav">
                 <li class="nav-item">
                     <a href="javascript:void(0);" data-placement="bottom" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
-                        <i class="nav-link-icon pe-7s-gift"> </i> Mega Menu
+                        <p style="color:#6eacfd";>Mega menu</p>
                         <i class="fa fa-angle-down ml-2 opacity-5"></i>
                     </a>
                     <div class="rm-max-width">
@@ -58,26 +58,26 @@
                                                 <li class="nav-item-header nav-item"> Overview</li>
                                                 <li class="nav-item">
                                                     <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-inbox"></i>
+
                                                         <span> Contacts</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-book"></i>
+
                                                         <span> Incidents</span>
                                                         <div class="ml-auto badge badge-pill badge-danger">5</div>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-picture"></i>
+
                                                         <span> Companies</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a disabled="" href="javascript:void(0);" class="nav-link disabled">
-                                                        <i class="nav-link-icon lnr-file-empty"></i>
+
                                                         <span> Dashboards</span>
                                                     </a>
                                                 </li>
@@ -129,7 +129,7 @@
                 </li>
                 <li class="btn-group nav-item">
                     <a class="nav-link" data-toggle="dropdown" aria-expanded="false">
-                        <span class="badge badge-pill badge-danger ml-0 mr-2">1</span> Settings
+                        <p style="color:#6eacfd";>Ajustes</p>
                         <i class="fa fa-angle-down ml-2 opacity-5"></i>
                     </a>
                     <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu">

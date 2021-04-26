@@ -1,4 +1,4 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
 <div class="container">
     <div class="row">
@@ -13,7 +13,7 @@
                <button type="submit" class="btn btn-primary">Guardar Nuevo Rol</button>
                 <a class="btn btn-sm btn-danger" href="{{ route('talla.index')}}">Cancelar</a>
             </form>
-         
+
         </div>
     </div>
 </div>

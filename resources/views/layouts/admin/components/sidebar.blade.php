@@ -32,8 +32,12 @@
     <!--content sidebar -->
     <div class="scrollbar-sidebar">
         <div class="app-sidebar__inner">
+
+            <div class="navbar-collapse">
             <ul class="vertical-nav-menu">
                 <li class="app-sidebar__heading">Menu</li>
+
+
 
                 <!--  inicio -->
                 <li>
@@ -44,33 +48,40 @@
                     </a>
                 </li>
 
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">USUARIOS</h6>
+                </li>
 
-                <!-- Material -->
+                <!--  Usuarios -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-tshirt" style="color:#ffffff";></i>
-                        <p style="color:#6eacfd";>Material</p>
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
+                        <i class="metismenu-icon fas fa-users" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Usuarios</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
-                            <a href="{{route('material.index')}}" >
-                                <p style="color:#6eacfd";>Mostrar Material</p>
+                            <a href="{{route('usuario.index')}}" >
+                                <p style="color:#6eacfd";>Mostrar Usuarios</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{route('material.create')}}">
-                                <p style="color:#6eacfd";>Crear Material</p>
+                            <a href="{{route('usuario.create')}}" >
+                                <p style="color:#6eacfd";>Crear Usuarios</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
+
                     </ul>
                 </li>
+
+                <!-- Tipo de Documento  -->
                 <li>
-                    <!-- Tipo de Documento  -->
-                <a href="#">
+                    <a href="#">
 
                         <i class="metismenu-icon fas fa-address-card" style="color:#ffffff";></i>
-                    <p style="color:#6eacfd";>Tipo de Documento</p>
+                        <p style="color:#6eacfd";>Tipo de Documento</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -93,7 +104,7 @@
                 <!-- Rol  -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-user-tag" style="color:#ffffff";></i>
+                        <i class="metismenu-icon fas fa-user-shield" style="color:#ffffff";></i>
                         <p style="color:#6eacfd";>Rol</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
@@ -136,6 +147,57 @@
                         </li>
                     </ul>
                 </li>
+
+
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">PRODUCTOS</h6>
+                </li>
+
+                <!-- Material -->
+                <li>
+                    <a href="#">
+                        <i class="metismenu-icon fas fa-tshirt" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Material</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('material.index')}}" >
+                                <p style="color:#6eacfd";>Mostrar Material</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('material.create')}}">
+                                <p style="color:#6eacfd";>Crear Material</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--  producto -->
+                <li>
+                    <a href="#">
+                        <i class="metismenu-icon fas fa-tshirt" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Producto</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down " style="color:#6eacfd";></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('producto.index')}}" >
+                                <p style="color:#6eacfd";>Mostrar producto</p>
+                                <i class="metismenu-icon" style="color:#6eacfd";></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('producto.create')}}" >
+                                <p style="color:#6eacfd";>Crear producto</p>
+                                <i class="metismenu-icon" style="color:#6eacfd";></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
                 <!--  Categoria -->
                 <li>
                     <a href="#">
@@ -183,58 +245,53 @@
                     </ul>
                 </li>
 
-
-
-                <!--  Usuarios -->
+                <!-- talla -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-users" style="color:#ffffff";></i>
-                        <p style="color:#6eacfd";>Usuarios</p>
+                        <i class="metismenu-icon fas fa-ruler-combined" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Tallas</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
-                            <a href="{{route('usuario.index')}}" >
-                                <p style="color:#6eacfd";>Mostrar Usuarios</p>
+                            <a href="{{route('talla.index')}}" >
+                                <p style="color:#6eacfd";>Mostrar Tallas</p>
                                 <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{route('usuario.create')}}" >
-                                <p style="color:#6eacfd";>Crear Usuarios</p>
+                            <a href="{{route('talla.create')}}" >
+                                <p style="color:#6eacfd";>Crear Talla</p>
                                 <i class="metismenu-icon"></i>
                             </a>
                         </li>
-
                     </ul>
                 </li>
 
-                <!--  producto -->
+                <!-- color -->
                 <li>
                     <a href="#">
-                        <i class="metismenu-icon fas fa-tshirt" style="color:#ffffff";></i>
-                        <p style="color:#6eacfd";>Producto</p>
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down " style="color:#6eacfd";></i>
+                        <i class="metismenu-icon fas fa-palette" style="color:#ffffff";></i>
+                        <p style="color:#6eacfd";>Color</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
                     <ul>
                         <li>
-                            <a href="{{route('producto.index')}}" >
-                                <p style="color:#6eacfd";>Mostrar producto</p>
-                                <i class="metismenu-icon" style="color:#6eacfd";></i>
+                            <a href="{{route('color.index')}}" >
+                                <p style="color:#6eacfd";>Mostrar Tallas</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{route('producto.create')}}" >
-                                <p style="color:#6eacfd";>Crear producto</p>
-                                <i class="metismenu-icon" style="color:#6eacfd";></i>
+                            <a href="{{route('color.create')}}" >
+                                <p style="color:#6eacfd";>Crear Talla</p>
+                                <i class="metismenu-icon"></i>
                             </a>
                         </li>
-
                     </ul>
                 </li>
-
-
             </ul>
+            </div>
             </li>
         </div>
     </div>

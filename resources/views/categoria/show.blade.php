@@ -1,22 +1,29 @@
-@extends('layouts.admin.app')
 
+@extends('layouts.admin.app')
 @section('content')
 
-<table class="btn btn-dark">
-<tr>
-<td>ID</td>
-<td>Nombre de Categoria</td>
-</tr>
+    <h1>Detalles de la Categoria:</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="table-responsive">
 
-@foreach($categorias as $categoria)
-<tr>
-    
-<td>{{$categoria->id}}</td>
-<td>{{$categoria->Nombre}}</td>
+                    <table class="table table-striped">
+                        @foreach($categorias as $categoria)
+                        <tr>
+                            <th scope="col">Id</th>
+                            <td>{{$categoria->id}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Nombre de Categoria</th>
+                            <td>{{$categoria->Nombre}}</td>
+                        </tr>
+                            @endforeach
+                    </table>
 
-
-</tr>
-@endforeach
-
-</table>
+                    <a class="btn btn-primary btn-sm" href="{{ route('categoria.index') }}">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

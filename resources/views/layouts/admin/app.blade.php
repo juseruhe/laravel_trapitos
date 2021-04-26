@@ -13,13 +13,15 @@
     <meta name="description" content="Wide selection of buttons that feature different styles for backgrounds, borders and hover options!">
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="stylesheet" href="{{url('css/app.css')}}">
+    <link rel="stylesheet" href="{{url('css/styles3.css')}}">
     <link rel="icon" href="assets/img/logomt.PNG"/>
-    <link href="css/styles3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url('css/styles3.css')}}">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
 </head>
 
-<body >
+<body>
 
 
 <div class="app-container fondo body-tabs-shadow fixed-header fixed-sidebar">
@@ -35,7 +37,7 @@
     <div class="app-main">
         @include('layouts.admin.components.sidebar')
         <div class="app-main__outer">
-            <div class="app-main__inner">
+            <div class="app-main__inner ">
 
 
                 @yield('content')
@@ -56,6 +58,7 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     @include('layouts.admin.components.footer')
     <script src="{{ url('js/app.js') }}"></script>
+</div>
 </body>
 
 </html>
