@@ -8,9 +8,9 @@
 
                         <a data-placement="top" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
                             Proyecto mis trapitos
-
+                            <!-- logo
                                 <img src="assets/img/logomt.PNG" width="15%" alt="" />
-
+                            -->
                         </a>
                     </li>
                 </ul>
