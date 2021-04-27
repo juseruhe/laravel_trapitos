@@ -1,4 +1,4 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
 
     <section>
@@ -6,7 +6,7 @@
             <div class="login-html">
 
                 <label for="tab-2" class="tab">Registrar Usuario</label>
-                <br><br>
+
                 <div class="login-form">
                     <!-- FORMULARIO-->
                     <form action="{{route('usuario.store')}}" method="POST" >
@@ -76,23 +76,26 @@
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <label for="name">Rol</label>
-                                <select  name="rol_id" class="input">
-                                    @foreach($roles as $rol)
-                                        <option  value="{{$rol->id}}">{{$rol->Nombre_Rol}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
 
-                            <br><br>
+
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Rol</label>
+                                    <select  name="rol_id" class="input">
+                                        @foreach($roles as $rol)
+                                            <option  value="{{$rol->id}}">{{$rol->Nombre_Rol}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                            <br>
                             <div class="group">
                                 <input type="submit" class="button" value="Crear Nuevo Usuario">
                             </div>
-                            <div class="foot-lnk">
-                                <a href="{{route('usuario.index')}}">Regresar a la Página Principal</a>
-                            </div>
-
                             <br>
                     </form>
 

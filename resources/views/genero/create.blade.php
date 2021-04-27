@@ -1,18 +1,39 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <form action="{{route('genero.store')}}" method="POST">
-                    @csrf
-                    <div class="form-group mt-4">
-                        <label for="name">Nombre del Nuevo Genero</label>
-                        <input name="Nombre_Genero" id="name" type="text" class="form-control">
-                        <button type="submit" class="btn btn-primary">Guardar Nuevo Genero</button>
-                        <a class="btn btn-sm btn-danger" href="{{route('genero.index')}}">Cancelar</a>
-                    </div>
-                </form>
+
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
+
+                <label for="tab-2" class="tab">Registrar Genero</label>
+
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    <form action="{{route('genero.store')}}" method="POST" >
+                        @csrf
+                        <div class="group">
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre del Nuevo Genero</label>
+                                    <input type="text" name="Nombre_Genero" class="input">
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Crear Genero">
+                            </div>
+                            <br>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+
+        </div>
+    </section>
 @endsection
+

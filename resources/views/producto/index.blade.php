@@ -8,8 +8,16 @@
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Nombre del Rol</th>
-                <th scope="col">Fecha de Creación</th>
+                <th scope="col">Nombre del Producto</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Talla</th>
+                <th scope="col">Color</th>
+                <th scope="col">Material</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Clasificacion</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Actualizacion</th>
                 <th scope="col">Opciones</th>
                 </tr>
                 </thead>

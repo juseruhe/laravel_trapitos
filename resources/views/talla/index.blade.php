@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <a class="btn btn-primary mt-3 mb-4" href="{{ route('talla.create') }}">Crear Nuevo Rol <i class="fas fa-plus-square"></i></a>
-              <table class="table table-striped mt -30 mb 4 ">
+            <table   class="table table-dark ">
                 <thead>
                 <tr>
                 <th scope="col">Id</th>

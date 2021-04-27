@@ -1,21 +1,42 @@
-@extends('layouts.admin.app')
 
+@extends('layouts.admin.app')
 @section('content')
 
-<form class="table table-dark" action="{{route('tipo_documento.store')}}" method="post">
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
 
-@csrf
-<div class="form-group">
-<label for="Nombre de Tipo Documento">Nombre de Tipo de Documento:</label>
- <input class="input-group mb-3" type="text" name="Nombre_Tipo_Documento" placeholder="Escriba el Tipo Documento">
- </div>
+                <label for="tab-2" class="tab">Registrar Tipo de Documento</label>
 
- <div class="form-group">
- <label for="Siglas">Siglas:</label>
- <input class="input-group mb-3" type="text" name="Siglas" placeholder="Escriba las Siglas">
- </div>
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    <form action="{{route('tipo_documento.store')}}" method="POST" >
+                        @csrf
+                        <div class="group">
 
- <input class="btn btn-success" type="submit" value="Crear Tipo de Documento">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre del tipo de documneto</label>
+                                    <input type="text" name="Nombre_Tipo_Documento" class="input">
+                                </div>
+                                <div class="col">
+                                    <label for="name">Siglas</label>
+                                    <input type="text" name="Siglas"  class="input">
+                                </div>
+                            </div>
 
-</form>
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Crear Tipo de Documento">
+                            </div>
+                            <br>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
 @endsection

@@ -1,17 +1,41 @@
 @extends('layouts.admin.app')
-
 @section('content')
 
-<form class="table table-dark" action="{{route('material.store')}}" method="post">
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
 
-@csrf
-<div class="form-group">
-<label for="Nombre de Tipo Documento">Nombre de Material:</label>
- <input class="input-group mb-3" type="text" name="material" placeholder="Escriba Nombre de Material:">
- </div>
+                <label for="tab-2" class="tab">Registrar material</label>
 
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    <form action="{{route('material.store')}}" method="POST" >
+                        @csrf
+                        <div class="group">
 
- <input class="btn btn-success" type="submit" value="Crear Material">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre material</label>
+                                    <input type="text" name="material" class="input">
+                                </div>
+                                <div class="col">
 
-</form>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Crear material">
+                            </div>
+                            <br>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
 @endsection
+
+

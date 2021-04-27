@@ -6,19 +6,15 @@
             <div class="table-responsive">
                 <table class="table table-striped">
                     <tr>
-                        <th scope="col">NOMBRE DEL ROL</th>
-                        <td>{{ $rol->Nombre_Rol }}</td>
+                        <th scope="col">ID</th>
+                        <td>{{ $tallas->id }}</td>
                     </tr>
                     <tr>
-                        <th scope="col">CREACIÓN</th>
-                        <td>{{ $rol->created_at }}</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">ACTUALIZACION</th>
-                        <td>{{ $rol->updated_at }}</td>
+                        <th scope="col">Talla</th>
+                        <td>{{ $tallas->talla}}</td>
                     </tr>
                 </table>
-                <a class="btn btn-primary btn-sm" href="{{ route('rol.index') }}">Volver</a>
+                <a class="btn btn-primary btn-sm" href="{{ route('talla.index') }}">Volver</a>
             </div>
         </div>
     </div>
