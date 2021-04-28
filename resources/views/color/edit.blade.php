@@ -1,19 +1,43 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <form action="{{route('color.update',$color->id)}}" method="POST">
-                    @csrf
-                    @method('PUT')
-                    <div class="form-group mt-4">
-                        <label for="name">Nombre del color</label>
-                        <input name="color" id="name" type="text" class="form-control" value="{{$color->color}}">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Guardar Nuevo color</button>
-                    <a class="btn btn-sm btn-danger" href="{{ route('color.index')}}">Cancelar</a>
-                </form>
+
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
+
+                <label for="tab-2" class="tab">Registrar color</label>
+
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    <form action="{{route('color.update',$color->id)}}" method="POST">
+                        @csrf
+                        @method('PUT')
+                        <div class="group">
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre del color</label>
+                                    <input type="text" name="color" class="input" value="{{$color->color}}">
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Actualizar color">
+                            </div>
+                            <br>
+                    </form>
+
+                </div>
             </div>
         </div>
-    </div>
+
+        </div>
+    </section>
 @endsection
+
+
+

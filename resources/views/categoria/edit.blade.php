@@ -1,27 +1,42 @@
 @extends('layouts.admin.app')
-
 @section('content')
 
-@foreach($categorias as $categoria)
-<form class="table table-dark" action="{{route('categoria.update',$categoria->id)}}" method="post">
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
 
-@csrf
+                <label for="tab-2" class="tab">Actualizar categoria</label>
 
-@method('PUT')
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    @foreach($categorias as $categoria)
+                        <form action="{{route('categoria.update',$categoria->id)}}" method="post">
+                            @csrf
+                            @method('PUT')
+                        <div class="group">
 
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre de la categoria</label>
+                                    <input type="text" name="Nombre" class="input" value="{{$categoria->Nombre}}">
+                                </div>
+                                <div class="col">
 
-<input type="hidden" name="id" value="{{$categoria->id}}">
+                                </div>
+                            </div>
 
-<div class="form-group">
-<label for="Nombre_Tipo_Documento"> Nombre de Categoria</label>
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Crear categoria">
+                            </div>
+                            <br>
+                    </form>
+                    @endforeach
+                </div>
+            </div>
+        </div>
 
-<input class="input-group mb-3" type="text" name="Nombre" value="{{$categoria->Nombre}}" >
-</div>
-
-
-<input class="btn btn-success" type="submit" value="Actualizar Categoria">
-
-
-</form>
-@endforeach
+        </div>
+    </section>
 @endsection
+

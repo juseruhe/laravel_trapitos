@@ -25,7 +25,7 @@
 
                             <br>
                             <div class="group">
-                                <input type="submit" class="button" value="Crear talla">
+                                <input type="submit" class="button" value="Crear color">
                             </div>
                             <br>
                     </form>

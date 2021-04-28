@@ -1,27 +1,43 @@
 @extends('layouts.admin.app')
-
 @section('content')
 
-@foreach($clasificaciones as $clasificacion)
-<form class="table table-dark" action="{{route('clasificacion.update',$clasificacion->id)}}" method="post">
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
 
-@csrf
+                <label for="tab-2" class="tab">Actualizar clasificacion</label>
 
-@method('PUT')
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    @foreach($clasificaciones as $clasificacion)
+                        <form action="{{route('clasificacion.update',$clasificacion->id)}}" method="post">
+                            @csrf
+                            @method('PUT')
+                            <input type="hidden" name="id" value="{{$clasificacion->id}}">
+                        <div class="group">
 
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre de la clasificacion</label>
+                                    <input type="text" name="Nombre" class="input" value="{{$clasificacion->Nombre}}" >
+                                </div>
+                                <div class="col">
 
-<input type="hidden" name="id" value="{{$clasificacion->id}}">
+                                </div>
+                            </div>
 
-<div class="form-group">
-<label for="Nombre_Tipo_Documento"> Nombre de Clasificación</label>
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Crear clasificacion">
+                            </div>
+                            <br>
+                    </form>
+                    @endforeach
+                </div>
+            </div>
+        </div>
 
-<input class="input-group mb-3" type="text" name="Nombre" value="{{$clasificacion->Nombre}}" >
-</div>
-
-
-<input class="btn btn-success" type="submit" value="Actualizar Clasificación">
-
-
-</form>
-@endforeach
+        </div>
+    </section>
 @endsection
+

@@ -1,27 +1,43 @@
 @extends('layouts.admin.app')
-
 @section('content')
 
-@foreach($materiales as $material)
-<form class="table table-dark" action="{{route('material.update', $material->id)}}" method="post">
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
 
-@csrf
+                <label for="tab-2" class="tab">Actualizar material</label>
 
-@method('PUT')
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    @foreach($materiales as $material)
+                    <form action="{{route('material.update', $material->id)}}" method="post">
+                        @csrf
+                        @method('PUT')
+                        <div class="group">
 
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre material</label>
+                                    <input type="text" name="material" class="input" value="{{$material->material}}">
+                                </div>
+                                <div class="col">
 
-<input type="hidden" name="id" value="{{$material->id}}">
+                                </div>
+                            </div>
 
-<div class="form-group">
-<label for="Nombre_Tipo_Documento"> Nombre de Material</label>
+                            <br>
+                            <div class="group">
+                                <input type="submit" class="button" value="Actualizar material">
+                            </div>
+                            <br>
+                    </form>
+                        @endforeach
+                </div>
+            </div>
+        </div>
 
-<input class="input-group mb-3" type="text" name="Material" value="{{$material->material}}" >
-</div>
-
-
-<input class="btn btn-success" type="submit" value="Actualizar Material">
-
-
-</form>
-@endforeach
+        </div>
+    </section>
 @endsection
+
+
