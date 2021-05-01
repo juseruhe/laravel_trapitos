@@ -11,4 +11,9 @@ class Talla extends Model
     protected $primaryKey = 'id';
     protected $table = 'tallas';
     protected $fillable = ['talla'];
+
+    public function productos(){
+
+        return $this->hasMany(Producto::class,'id');
+    }
 }

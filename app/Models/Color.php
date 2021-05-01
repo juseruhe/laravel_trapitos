@@ -13,4 +13,10 @@ class Color extends Model
     protected $fillable=[
         'color'
     ];
+
+
+    public function productos(){
+
+        return $this->hasMany(Producto::class,'id');
+    }
 }

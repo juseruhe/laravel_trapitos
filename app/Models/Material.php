@@ -17,4 +17,9 @@ class Material extends Model
 
         'material'
     ];
+
+    public function productos(){
+
+        return $this->hasMany(Producto::class,'id');
+    }
 }

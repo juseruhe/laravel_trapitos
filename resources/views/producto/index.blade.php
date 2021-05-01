@@ -27,12 +27,12 @@
                       <td>{{$productos->id}}</td>
                       <td>{{$productos->nombre_producto}}</td>
                       <td>{{$productos->imagen}}</td>
-                      <td>{{$productos->talla}}</td>
-                      <td>{{$productos->color}}</td>
-                      <td>{{$productos->material}}</td>
-                      <td>{{$productos->categoria}}</td>
-                      <td>{{$productos->claficacion}}</td>
-                      <td>{{$productos->precio}}</td>
+                      <td>{{$productos->Talla->talla}}</td>
+                      <td>{{$productos->Color->color}}</td>
+                      <td>{{$productos->Material->material}}</td>
+                      <td>{{$productos->Categoria->Nombre}}</td>
+                      <td>{{$productos->Clasificacion->Nombre}}</td>
+                      <td>{{$productos->valor}}</td>
                       <td>{{$productos->cantidad}}</td>
                       <td>{{$productos->created_at}}</td>
                       <td>

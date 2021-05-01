@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Genero;
+
+use App\Models\Material;
 use App\Models\Producto;
 use Illuminate\Http\Request;
+
+use App\Models\Talla;
 
 
 class ProductoController extends Controller
@@ -18,8 +21,13 @@ class ProductoController extends Controller
 
     public function index()
     {
-        $productos=genero::all();
+        $productos=Producto::all();
+
+      
+
+
         return view('producto.index',compact('productos'));
+       
     }
     public function store(Request $request){
         $producto=Producto::create($request->all());

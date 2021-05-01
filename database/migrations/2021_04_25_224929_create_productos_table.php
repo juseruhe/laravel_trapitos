@@ -16,10 +16,10 @@ class CreateProductosTable extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_producto');
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->bigInteger('talla_id')->unsigned();
             $table->bigInteger('color_id')->unsigned();
-            $table->string('material');
+            $table->bigInteger('material_id')->unsigned();
             $table->bigInteger('categoria_id')->unsigned();
             $table->bigInteger('clasificacion_id')->unsigned();
             $table->string('valor');
@@ -29,6 +29,7 @@ class CreateProductosTable extends Migration
             $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->foreign('clasificacion_id')->references('id')->on('clasificaciones');
             $table->foreign('talla_id')->references('id')->on('tallas');
+            $table->foreign('material_id')->references('id')->on('materiales');
         });
     }
 

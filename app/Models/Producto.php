@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+use App\Models\Talla;
+
 class Producto extends Model
 {
     use HasFactory;
@@ -15,7 +17,7 @@ class Producto extends Model
 
     protected $fillable = [
 
-        'nombre_producto', 'imagen', 'talla', 'color', 'material', 'categoria_id', 'clasificacion_id',
+        'nombre_producto', 'imagen', 'talla_id', 'color_id', 'material_id', 'categoria_id', 'clasificacion_id',
         'precio', 'cantidad'];
 
     public function Clasificacion()
@@ -27,5 +29,20 @@ class Producto extends Model
     {
 
         return $this->belongsTo(Categoria::class, 'categoria_id');
+    }
+
+    public function Talla(){
+
+        return $this->belongsTo(Talla::class,'talla_id');
+    }
+
+    public function Color(){
+
+        return $this->belongsTo(Color::class,'color_id');
+    }
+
+    public function Material(){
+
+        return $this->belongsTo(Material::class,'material_id');
     }
 }

@@ -17,7 +17,7 @@ class MaterialSeeder extends Seeder
     public function run()
     {
         DB::table('materiales')->insert([
-            'material' => 'Seda'
+            'material' => 'Antifluido'
         ]);
 
         DB::table('materiales')->insert([
