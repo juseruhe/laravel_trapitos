@@ -26,7 +26,7 @@
                   <tr>
                       <td>{{$productos->id}}</td>
                       <td>{{$productos->nombre_producto}}</td>
-                      <td>{{$productos->imagen}}</td>
+                      <td><img src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="200px" height="100px"></td>
                       <td>{{$productos->Talla->talla}}</td>
                       <td>{{$productos->Color->color}}</td>
                       <td>{{$productos->Material->material}}</td>
@@ -36,7 +36,7 @@
                       <td>{{$productos->cantidad}}</td>
                       <td>{{$productos->created_at}}</td>
                       <td>
-                          <form action="{{ route('producto.destroy',$productos->id)}}"method="post">
+                          <form action="{{route('producto.destroy',$productos->id)}}"method="post">
                               @csrf
                               @method('DELETE')
                           <a href="{{ route('producto.show',$productos->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>

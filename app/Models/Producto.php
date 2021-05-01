@@ -18,7 +18,7 @@ class Producto extends Model
     protected $fillable = [
 
         'nombre_producto', 'imagen', 'talla_id', 'color_id', 'material_id', 'categoria_id', 'clasificacion_id',
-        'precio', 'cantidad'];
+        'precio', 'cantidad','created_at','updated_at'];
 
     public function Clasificacion()
     {

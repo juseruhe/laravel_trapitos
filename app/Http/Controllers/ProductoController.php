@@ -2,9 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
+use App\Models\Clasificacion;
 use App\Models\Material;
 use App\Models\Producto;
 use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Storage;
+
+use App\Models\Color;
 
 use App\Models\Talla;
 
@@ -23,28 +29,102 @@ class ProductoController extends Controller
     {
         $productos=Producto::all();
 
-      
-
-
-        return view('producto.index',compact('productos'));
+     return view('producto.index',compact('productos'));
        
     }
+
+
+   public function create(){
+
+   $tallas = Talla::all();
+
+   $colores = Color::all();
+
+   $materiales = Material::all();
+
+   $categorias = Categoria::all();
+
+  $clasificaciones = Clasificacion::all();
+
+    return view('producto.create',compact('tallas','colores'))
+    ->with(compact('materiales','categorias'))
+    ->with(compact('clasificaciones'));
+
+  }
+
+
+
     public function store(Request $request){
-        $producto=Producto::create($request->all());
-        return redirect()->route('producto.index');
+      
+        $datos =  $request->except('_token');
+
+        if($request->hasFile('imagen')){
+  
+        $datos['imagen'] = $request->file('imagen')->store('imagenes','public');
+  
+        }  
+  
+          
+         
+          Producto::insert($datos);
+  
+          return redirect()->route('producto.index');
+  
+
+
+
     }
+
+
     public function show($id){
         $producto=Producto::find($id);
+
         return view('producto.show',compact('producto'));
     }
     public function edit($id){
         $producto=Producto::find($id);
-        return view('producto.edit',compact('producto'));
+
+        $tallas = Talla::all();
+
+        $colores = Color::all();
+     
+        $materiales = Material::all();
+     
+        $categorias = Categoria::all();
+     
+       $clasificaciones = Clasificacion::all();
+
+        return view('producto.edit',compact('producto','tallas'))
+        ->with(compact('materiales','categorias'))
+        ->with(compact('clasificaciones','colores'));
     }
 
     public function update(Request  $request, $id){
-        $producto=Producto::find($id)->update($request->all());
-        return redirect()->route('producto.index');
+     
+
+        $datos = $request->except(['_token','_method']);
+
+        if($request->hasFile('imagen')){
+
+            $producto = Producto::findOrFail($id);
+
+            Storage::delete('public/'.$producto->imagen);
+
+            $datos['imagen'] = $request->file('imagen')->store('imagenes','public');
+      
+            }  
+
+
+        Producto::find($id)->where('id','=', $id)->update($datos);
+
+        $producto = Producto::findOrFail($id);
+       
+
+        return redirect()->route('producto.show',$id);
+
+
+
+
 
     }
     public function destroy($id){

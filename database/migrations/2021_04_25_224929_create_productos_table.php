@@ -30,6 +30,9 @@ class CreateProductosTable extends Migration
             $table->foreign('clasificacion_id')->references('id')->on('clasificaciones');
             $table->foreign('talla_id')->references('id')->on('tallas');
             $table->foreign('material_id')->references('id')->on('materiales');
+           
+            $table->timestamps();
+
         });
     }
 
