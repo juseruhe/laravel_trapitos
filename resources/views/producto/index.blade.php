@@ -34,7 +34,7 @@
                       <td>{{$productos->Clasificacion->Nombre}}</td>
                       <td>{{$productos->valor}}</td>
                       <td>{{$productos->cantidad}}</td>
-                      <td>{{$productos->created_at}}</td>
+                      <td>{{$productos->updated_at}}</td>
                       <td>
                           <form action="{{route('producto.destroy',$productos->id)}}"method="post">
                               @csrf
