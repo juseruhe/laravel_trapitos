@@ -1,9 +1,9 @@
-<div class="app-sidebar sidebar-shadow">
+<div class="app-sidebar sidebar-shadow" >
     <div class="app-header__logo" >
         <div class="logo-src"></div>
-        <div class="header__pane ml-auto">
+        <div class="header__pane ml-auto" >
             <div>
-                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                <button type="button"  class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
                                     <span class="hamburger-box">
                                         <span class="hamburger-inner"></span>
                                     </span>
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="app-header__mobile-menu">
+    <div class="app-header__mobile-menu" >
         <div>
             <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
                                 <span class="hamburger-box">
@@ -20,7 +20,7 @@
             </button>
         </div>
     </div>
-    <div class="app-header__menu">
+    <div class="app-header__menu" >
                         <span>
                             <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
                                 <span class="btn-icon-wrapper">
@@ -30,12 +30,12 @@
                         </span>
     </div>
     <!--content sidebar -->
-    <div class="scrollbar-sidebar">
-        <div class="app-sidebar__inner">
+    <div class="scrollbar-sidebar" >
+        <div class="app-sidebar__inner" >
 
-            <div class="navbar-collapse">
-            <ul class="vertical-nav-menu">
-                <li class="app-sidebar__heading">Menu</li>
+            <div class="navbar-collapse" >
+            <ul class="vertical-nav-menu"  >
+                <li class="app-sidebar__heading" >Menu</li>
 
 
 
@@ -48,7 +48,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item mt-3">
+                <li class="nav-item mt-3" >
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">USUARIOS</h6>
                 </li>
 
@@ -59,6 +59,7 @@
                         <p style="color:#6eacfd";>Usuarios</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down"  style="color:#6eacfd";></i>
                     </a>
+                    
                     <ul>
                         <li>
                             <a href="{{route('usuario.index')}}" >

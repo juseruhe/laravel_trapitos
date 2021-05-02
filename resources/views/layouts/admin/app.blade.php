@@ -24,7 +24,7 @@
 <body>
 
 
-<div class="app-container fondo body-tabs-shadow fixed-header fixed-sidebar">
+<div class="app-container fondo body-tabs-shadow fixed-header fixed-sidebar" >
     @include('layouts.admin.components.navbar')
     <div class="ui-theme-settings">
         <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">

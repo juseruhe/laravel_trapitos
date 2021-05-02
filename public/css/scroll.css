@@ -4,3 +4,15 @@
     width:500px;
 }
 
+#div2{
+float:left;
+width:700px;
+overflow-y: auto;
+height: 200px;
+}
+
+#div3{
+   
+    overflow-y: scroll;
+   
+    }
