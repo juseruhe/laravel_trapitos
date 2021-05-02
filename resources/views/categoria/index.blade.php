@@ -5,7 +5,7 @@
 
 <h1> Categorias</h1>
 
-<div id="div2">
+<div id="div1">
 <a href="{{route('categoria.create')}}" class="btn btn-primary my-4"> Crear Categoria <i class="fas fa-plus-square"></i> </a>
 
 <table   class="table table-dark " >

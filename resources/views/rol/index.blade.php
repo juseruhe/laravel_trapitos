@@ -2,6 +2,9 @@
 @section('content')
     <h1> Roles </h1>
     <a href="{{route('rol.create')}}" class="btn btn-primary my-4">Crear Rol <i class="fas fa-plus-square"></i> </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="div1">
     <table   class="table table-dark ">
         <tr>
             <td>ID</td>
@@ -26,4 +29,9 @@
         </tr>
         @endforeach
     </table>
+    </div>
+    </div>
+    </div>
 @endsection
+
+

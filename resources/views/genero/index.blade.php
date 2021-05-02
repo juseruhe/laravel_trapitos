@@ -2,6 +2,7 @@
 @extends('layouts.admin.app')
 @section('content')
     <h1> Generos </h1>
+    <div id="div1">
     <a href="{{route('genero.create')}}" class="btn btn-primary my-4">Crear Genero <i class="fas fa-plus-square"></i> </a>
     <table   class="table table-dark ">
         <tr>
@@ -27,4 +28,5 @@
         </tr>
         @endforeach
     </table>
+    </div>
 @endsection

@@ -10,7 +10,8 @@
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Wide selection of buttons that feature different styles for backgrounds, borders and hover options!">
     <meta name="msapplication-tap-highlight" content="no">
-    <link rel="stylesheet" href="{{ url('css/app.css') }}">
+    <link rel="stylesheet" href="{{ url('css/app.css')}}">
+  <link rel="stylesheet" href="{{url('css/scroll.css')}}">
 </head>
 
 <body>
@@ -81,10 +82,7 @@
                             </div>
                         </div>    </div>
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur corporis
-                cupiditate debitis deserunt, doloremque exercitationem iste labore minima, neque
-                odio quis recusandae rem reprehenderit saepe sequi temporibus voluptatem.
-                Cupiditate?
+               @yield('content')
             </div>
         @include('layouts.admin.components.footer')
         <!-- footer-->
@@ -100,7 +98,7 @@
     @include('layouts.admin.components.aside')
 </div>
 <div class="app-drawer-overlay d-none animated fadeIn"></div>
-<script src="{{ url('js/app.js') }}"></script>
+<script src="{{url('js/app.js') }}"></script>
 </body>
 
 </html>
