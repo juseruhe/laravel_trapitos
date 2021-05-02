@@ -1,5 +1,5 @@
 <div class="app-sidebar sidebar-shadow">
-    <div class="app-header__logo">
+    <div class="app-header__logo" >
         <div class="logo-src"></div>
         <div class="header__pane ml-auto">
             <div>
