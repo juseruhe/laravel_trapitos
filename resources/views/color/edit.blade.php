@@ -5,7 +5,7 @@
         <div class="login-wrap">
             <div class="login-html">
 
-                <label for="tab-2" class="tab">Registrar color</label>
+                <label for="tab-2" class="tab">Editar color</label>
 
                 <div class="login-form">
                     <!-- FORMULARIO-->

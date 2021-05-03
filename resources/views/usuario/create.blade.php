@@ -23,7 +23,7 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <label for="name">Tipo de Documento</label>
+                                    <label for="name">Número de Documento</label>
                                     <input type="text" name="numero_documento" class="input">
                                 </div>
                             </div>

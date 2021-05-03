@@ -30,7 +30,7 @@ class RolController extends Controller
 
     public function update(Request  $request, $id){
         $rol=rol::find($id)->update($request->all());
-        return redirect()->route('rol.index');
+        return redirect()->route('rol.show',$id);
 
     }
     public function destroy($id){

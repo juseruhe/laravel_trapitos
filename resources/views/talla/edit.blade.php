@@ -11,6 +11,8 @@
                     <!-- FORMULARIO-->
                     <form action="{{route('talla.update',$tallas->id)}}" method="POST">
                         @csrf
+                        @method('PUT')
+                        
                         <div class="group">
 
                             <div class="row">

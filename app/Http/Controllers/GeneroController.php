@@ -30,7 +30,7 @@ class GeneroController extends Controller
 
     public function update(Request  $request, $id){
         $genero=genero::find($id)->update($request->all());
-        return redirect()->route('genero.index');
+        return redirect()->route('genero.show',$id);
 
     }
     public function destroy($id){

@@ -60,11 +60,11 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Correo</label>
-                                    <input type="text" name="email" class="input" value="{{$usuario->correo}}">
+                                    <input type="email" name="email" class="input" value="{{$usuario->email}}">
                                 </div>
                                 <div class="col">
                                     <label for="name">Contraseña</label>
-                                    <input type="password" name="password" class="input" value="{{$usuario->contrasena}}">
+                                    <input type="password" name="password" class="input" value="{{$usuario->password}}">
                                 </div>
                             </div>
 

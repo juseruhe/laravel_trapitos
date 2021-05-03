@@ -14,11 +14,11 @@
                     </tr>
                     <tr>
                         <th scope="col">CREACIÓN</th>
-                        <td>{{ $rol->created_at }}</td>
+                        <td>{{$rol->created_at }}</td>
                     </tr>
                     <tr>
                         <th scope="col">ACTUALIZACION</th>
-                        <td>{{ $rol->updated_at }}</td>
+                        <td>{{$rol->updated_at }}</td>
                     </tr>
                 </table>
 

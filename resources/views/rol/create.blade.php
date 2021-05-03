@@ -26,7 +26,7 @@
 
                             <br>
                             <div class="group">
-                                <input type="submit" class="button" value="Crear Tipo de Documento">
+                                <input type="submit" class="button" value="Crear Rol">
                             </div>
                             <br>
                     </form>

@@ -66,7 +66,7 @@ class UsuarioController extends Controller
 
     public function update(Request  $request, $id){
         $usuario=Usuario::find($id)->update($request->all());
-        return redirect()->route('usuario.index');
+        return redirect()->route('usuario.show',$id);
 
     }
     public function destroy($id){

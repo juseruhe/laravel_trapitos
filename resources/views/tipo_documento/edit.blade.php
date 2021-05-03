@@ -20,7 +20,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Nombre del tipo de documneto</label>
-                                    <input type="text" name="Nombre_Tipo_Documento" class="input" {{$tipo_documento->id}}>
+                                    <input type="text" name="Nombre_Tipo_Documento" class="input" value="{{$tipo_documento->Nombre_Tipo_Documento}}">
                                 </div>
                                 <div class="col">
                                     <label for="name">Siglas</label>

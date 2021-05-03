@@ -30,7 +30,7 @@ class ColorController extends Controller
 
     public function update(Request  $request, $id){
         $color=Color::find($id)->update($request->all());
-        return redirect()->route('color.index');
+        return redirect()->route('color.show',$id);
 
     }
     public function destroy($id){

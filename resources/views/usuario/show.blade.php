@@ -28,8 +28,8 @@
 <td>{{$usuario->apellidos}}</td>
 <td>{{$usuario->genero->Nombre_Genero}}</td>
 <td>{{$usuario->fecha_nacimiento}}</td>
-<td>{{$usuario->correo}}</td>
-<td>{{$usuario->contrasena}}</td>
+<td>{{$usuario->email}}</td>
+<td>{{$usuario->password}}</td>
 <td>{{$usuario->direccion}}</td>
 <td>{{$usuario->telefono}}</td>
 <td>{{$usuario->rol->Nombre_Rol}}</td>

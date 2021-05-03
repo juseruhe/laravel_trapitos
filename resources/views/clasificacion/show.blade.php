@@ -20,7 +20,7 @@
                         @endforeach
                     </table>
 
-                    <a class="btn btn-primary btn-sm" href="{{ route('rol.index') }}">Volver</a>
+                    <a class="btn btn-primary btn-sm" href="{{ route('clasificacion.index') }}">Volver</a>
                 </div>
             </div>
         </div>

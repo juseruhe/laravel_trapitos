@@ -32,7 +32,7 @@ class TallaController extends Controller
 
     public function update(Request  $request, $id){
         $talla=Talla::find($id)->update($request->all());
-        return redirect()->route('talla.index');
+        return redirect()->route('talla.show',$id);
 
     }
     public function destroy($id){

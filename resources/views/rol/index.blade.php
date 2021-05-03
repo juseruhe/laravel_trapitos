@@ -23,7 +23,7 @@
                         @method('DELETE')
                         <a class="btn btn-warning" href="{{route('rol.edit',$roles->id)}}"><i class="fas fa-edit"></i>  Editar</a>
                         <a class="btn btn-info" href="{{route('rol.show',$roles->id)}}"><i class="fas fa-eye"></i> Detalles</a>
-                        <button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el Genero ?')"><i class="fas fa-eraser"></i>  Eliminar</button>
+                        <button class="btn btn-danger"onclick="confirm('¿Desea Eliminar el Rol ?')"><i class="fas fa-eraser"></i>  Eliminar</button>
                     </form>
                 </td>
         </tr>
