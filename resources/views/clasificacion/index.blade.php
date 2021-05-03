@@ -1,7 +1,9 @@
 @extends('layouts.admin.app')
 @section('content')
 <h1> Clasificaciones </h1>
-<div id="div1">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" id="div1">
 <a href="{{route('clasificacion.create')}}" class="btn btn-primary my-4">Crear Clasificación <i class="fas fa-plus-square"></i> </a>
 <table   class="table table-dark ">
 <tr>
@@ -25,5 +27,7 @@
 </tr>
 @endforeach
 </table>
+</div>
+    </div>
 </div>
 @endsection

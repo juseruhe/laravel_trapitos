@@ -15,7 +15,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\IndexadminController;
 use App\Http\Controllers\ColorController;
-
+use App\Http\Controllers\Productodoscontrolador;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -118,6 +118,8 @@ Route::put('talla/{id}',[TallaController::class,'update'])->name('talla.update')
 Route::delete('talla/{id}',[TallaController::class,'destroy'])->name('talla.destroy');
 
 //producto
+Route::get('productodos',[ProductodosControlador::class,'index'])->name('productodos.index');
+Route::get('cart',[ProductodosControlador::class,'index'])->name('cart.index');
 
 Route::get('producto',[ProductoController::class,'index'])->name('producto.index');
 Route::get('producto/create',[ProductoController::class,'create'])->name('producto.create');
@@ -135,3 +137,4 @@ Route::get('color/{id}',[ColorController::class,'show'])->name('color.show');
 Route::get('color/edit/{id}',[ColorController::class,'edit'])->name('color.edit');
 Route::put('color/{id}',[ColorController::class,'update'])->name('color.update');
 Route::delete('color/{id}',[ColorController::class,'destroy'])->name('color.destroy');
+

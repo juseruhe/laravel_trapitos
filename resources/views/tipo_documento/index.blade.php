@@ -3,9 +3,11 @@
 @section('content')
 
 <h1> Tipos de Documentos</h1>
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" id="div1">
 <a href="{{route('tipo_documento.create')}}" class="btn btn-primary my-4">Crear Tipo de Documento  <i class="fas fa-plus-square"></i></a>
-<div id="div1">
+
 <table   class="table table-dark ">
 <tr>
 <td>ID</td>
@@ -44,7 +46,8 @@
 
 </div>
 
-
+    </div>
+</div>
 
 
 @endsection

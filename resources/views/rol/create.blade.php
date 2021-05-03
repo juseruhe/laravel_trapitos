@@ -16,7 +16,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <label for="name">Nombre del tipo de documneto</label>
+                                    <label for="name">Nombre del rol</label>
                                     <input type="text" name="Nombre_Rol" class="input">
                                 </div>
                                 <div class="col">

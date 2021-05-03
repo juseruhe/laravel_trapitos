@@ -30,7 +30,7 @@ class ProductoController extends Controller
         $productos=Producto::all();
 
      return view('producto.index',compact('productos'));
-       
+
     }
 
 
@@ -55,21 +55,21 @@ class ProductoController extends Controller
 
 
     public function store(Request $request){
-      
+
         $datos =  $request->except('_token');
 
         if($request->hasFile('imagen')){
-  
+
         $datos['imagen'] = $request->file('imagen')->store('imagenes','public');
-  
-        }  
-  
-          
-         
+
+        }
+
+
+
           Producto::insert($datos);
-  
+
           return redirect()->route('producto.index');
-  
+
 
 
 
@@ -87,11 +87,11 @@ class ProductoController extends Controller
         $tallas = Talla::all();
 
         $colores = Color::all();
-     
+
         $materiales = Material::all();
-     
+
         $categorias = Categoria::all();
-     
+
        $clasificaciones = Clasificacion::all();
 
         return view('producto.edit',compact('producto','tallas'))
@@ -100,7 +100,7 @@ class ProductoController extends Controller
     }
 
     public function update(Request  $request, $id){
-     
+
 
         $datos = $request->except(['_token','_method']);
 
@@ -111,14 +111,14 @@ class ProductoController extends Controller
             Storage::delete('public/'.$producto->imagen);
 
             $datos['imagen'] = $request->file('imagen')->store('imagenes','public');
-      
-            }  
+
+            }
 
 
         Producto::find($id)->where('id','=', $id)->update($datos);
 
         $producto = Producto::findOrFail($id);
-       
+
 
         return redirect()->route('producto.show',$id);
 

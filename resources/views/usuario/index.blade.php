@@ -1,8 +1,10 @@
 @extends('layouts.admin.app')
 @section('content')
+    <h1> Usuarios </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 " id="div1" >
 
-            <div class="table-responsive" id="div1">
-                <h1> Usuarios </h1>
                 <a href="{{route('usuario.create')}}" class="btn btn-primary my-4">Crear usuario <i class="fas fa-plus-square"></i> </a>
                 <table   class="table table-dark ">
 

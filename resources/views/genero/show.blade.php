@@ -1,7 +1,5 @@
-
 @extends('layouts.admin.app')
 @section('content')
-
     <h1>Detalles del Genero:</h1>
     <div class="container">
         <div class="row">
