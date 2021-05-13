@@ -1,5 +1,6 @@
-@extends('layouts.admin.app')
+@extends('layouts.landing.app2')
 @section('content')
+
 <div class="container">
     <div class="row">
         <div class="col-md-12" id="div1">

@@ -1,4 +1,4 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
 <div class="container">
     <div class="row">
@@ -45,7 +45,7 @@
                         <th scope="col">Cantidad</th>
                         <td>{{$producto->cantidad }}</td>
                     </tr>
-                    
+
                 </table>
                 <a class="btn btn-primary btn-sm" href="{{route('producto.index') }}">Volver</a>
             </div>

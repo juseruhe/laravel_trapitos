@@ -63,15 +63,8 @@ class ProductoController extends Controller
         $datos['imagen'] = $request->file('imagen')->store('imagenes','public');
 
         }
-
-
-
           Producto::insert($datos);
-
           return redirect()->route('producto.index');
-
-
-
 
     }
 
@@ -81,6 +74,7 @@ class ProductoController extends Controller
 
         return view('producto.show',compact('producto'));
     }
+
     public function edit($id){
         $producto=Producto::find($id);
 

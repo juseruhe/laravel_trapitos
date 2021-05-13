@@ -10,11 +10,12 @@ class Productodoscontrolador extends Controller
     public function index()
     {
         $productos = Producto::all();
-        return view('productodos', compact('productos'));
+        return view('productodos.index', compact('productos'));
     }
 
-    public function card(){
-        return view('cart.index');
+    public function show($id){
+        $producto=Producto::find($id);
 
+        return view('productodos.show',compact('producto'));
     }
 }

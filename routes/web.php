@@ -119,7 +119,7 @@ Route::delete('talla/{id}',[TallaController::class,'destroy'])->name('talla.dest
 
 //producto
 Route::get('productodos',[ProductodosControlador::class,'index'])->name('productodos.index');
-Route::get('cart',[ProductodosControlador::class,'index'])->name('cart.index');
+Route::get('productodos/{id}',[ProductodosControlador::class,'show'])->name('productodos.show');
 
 Route::get('producto',[ProductoController::class,'index'])->name('producto.index');
 Route::get('producto/create',[ProductoController::class,'create'])->name('producto.create');
