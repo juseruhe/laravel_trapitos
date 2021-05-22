@@ -34,7 +34,7 @@ const mix = require('laravel-mix');
     'resources/js2/uno.js'
 ],'public/js2/app2.js');*/
 
-/* Administrador
+ /*Administrador
 mix.styles([
     'resources/architectui/css/style.css'
 ],'public/css/app.css')

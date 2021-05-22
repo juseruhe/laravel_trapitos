@@ -1,8 +1,8 @@
 @extends('layouts.landing.app2')
 @section('content')
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/styles2.css" rel="stylesheet" />
-    <table>
+
+    <table class="mt-5">
+
         <tr>
             <th scope="col">ID</th>
             <td>{{$producto->id}}</td>

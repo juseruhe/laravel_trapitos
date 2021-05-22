@@ -1,9 +1,11 @@
 @extends('layouts.admin.app')
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 mt-4">
-            <div class="table-responsive">
+    <h1>Detalles del Producto:</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="table-responsive">
                 <table class="table table-striped">
                     <tr>
                         <th scope="col">ID</th>
@@ -48,9 +50,9 @@
 
                 </table>
                 <a class="btn btn-primary btn-sm" href="{{route('producto.index') }}">Volver</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
 

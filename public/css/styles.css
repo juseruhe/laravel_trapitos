@@ -3949,7 +3949,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 1.3rem 1rem;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -3961,6 +3961,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
 }
 .navbar-brand {
   display: inline-block;
@@ -10063,13 +10064,13 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
-
+/*NABVAR TRANSPARE*/
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
     border: none;
-    background-color: transparent;
+      color: rgba(0, 0, 0, 0.9);
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
