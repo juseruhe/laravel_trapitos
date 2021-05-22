@@ -187,7 +187,7 @@
                     <div class="widget-content-wrapper">
                         <div class="widget-content-left  ml-3 header-user-info">
                             <div class="widget-heading"> Mis trapitos</div>
-                            <div class="widget-subheading"> Tienda virtual </div>
+                            <div class="widget-subheading"> proyecto sena </div>
                         </div>
                         <div class="widget-content-left  ml-3 header-user-info">
                             <div class="widget-subheading"> <img src="assets/img/logomt.PNG" width="50%"/></div>
