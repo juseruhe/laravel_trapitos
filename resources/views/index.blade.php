@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria4/producto14.jpeg" alt="" />
+                        <img class="mx-auto rounded-circle" src="{{url('assets/img/IMG/categoria4/producto14.jpeg')}}" alt="" />
                         <h4>Kay Garland</h4>
                         <p class="text-muted">Lead Designer</p>
                     </div>

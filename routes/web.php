@@ -59,7 +59,7 @@ Route::delete('genero/{id}',[GeneroController::class,'destroy'])->name('genero.d
 
 //index
     Route::get('/',[IndexController::class,'index'])->name('index.index');
-    Route::get('/administrador',[IndexadminController::class,'index'])->name('index.index');
+    Route::get('/administrador',[IndexadminController::class,'index'])->name('index.admin');
 
 // Categoria
 

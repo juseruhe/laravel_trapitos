@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- login -->
-    <link href="css/styles3.css" rel="stylesheet" />
+    <link href="{{url('css/styles3.css')}}" rel="stylesheet" />
     <section class="fondo">
         <!-- Formulario inicio sesion-->
         <div class="login-wrap" class="login1">
