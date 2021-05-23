@@ -25,9 +25,13 @@ class ProductoController extends Controller
         $this->middleware('permission:product-delete', ['only' => ['destroy']]);
     }*/
 
-    public function index()
+    public function index(Request $request)
     {
-        $productos=Producto::all();
+        $productos=Producto::when($request->name_product,function($q) use ($request){
+              $q->where('nombre_producto',$request->name_product);
+        })->get();
+
+
 
      return view('producto.index',compact('productos'));
 
