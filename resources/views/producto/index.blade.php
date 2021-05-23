@@ -5,6 +5,13 @@
     <div class="row">
         <div class="col-md-12" id="div1">
             <a class="btn btn-primary mt-3 mb-4" href="{{ route('producto.create') }}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
+              
+              <form action="{{route('producto.index')}}" method="get">
+              <label for="name_product">Filtro</label>
+               <input type="text" name="name_product" placeholder="Escriba lo que va buscar:" >
+               <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>  Buscar</button>
+              </form>
+              
               <table class="table table-dark ">
                 <thead>
                 <tr>

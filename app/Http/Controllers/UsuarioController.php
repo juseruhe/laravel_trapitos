@@ -16,14 +16,15 @@ class UsuarioController extends Controller
         $this ->middleware('auth');
     }*/
 
-        public function index()
+        public function index(Request $request)
     {
-        $usuarios=Usuario::all();
-        $tipo_documentos = Tipo_Documento::all();
-        $generos = Genero::all();
-        $roles = Rol::all();
+        $usuarios=Usuario::when($request->name_user,function($q) use ($request){
+            $q->where('numero_documento','LIKE','%'.$request->name_user.'%');
+      })->get();
 
-        return view('usuario.index',compact('usuarios','tipo_documentos'))->with(compact('generos','roles'));
+        
+
+        return view('usuario.index',compact('usuarios'));
     }
     public function create(){
 

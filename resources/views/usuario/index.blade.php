@@ -6,6 +6,15 @@
             <div class="col-md-12 " id="div1" >
 
                 <a href="{{route('usuario.create')}}" class="btn btn-primary my-4">Crear usuario <i class="fas fa-plus-square"></i> </a>
+                
+                
+                <form action="{{route('usuario.index')}}" method="get">
+              <label for="name_user">Filtro</label>
+               <input type="text" name="name_user" placeholder="Escriba el Número de Documento:" >
+               <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>  Buscar</button>
+              </form>
+               
+               
                 <table   class="table table-dark ">
 
                 <thead>

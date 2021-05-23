@@ -28,7 +28,7 @@ class ProductoController extends Controller
     public function index(Request $request)
     {
         $productos=Producto::when($request->name_product,function($q) use ($request){
-              $q->where('nombre_producto',$request->name_product);
+              $q->where('nombre_producto','LIKE','%'.$request->name_product.'%');
         })->get();
 
 
