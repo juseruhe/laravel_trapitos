@@ -1,66 +1,110 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-           <form action="{{route('producto.store')}}" method="POST" enctype="multipart/form-data">
-               @csrf
-               <div class="form-group mt-4">
-                   <label for="name">Nombre del Nuevo Producto</label>
-                   <input name="nombre_producto" id="name" type="text" class="form-control">
 
-                   <label for="name">Imagén del Producto</label>
-                   <input name="imagen"  type="file" class="form-control">
+    <section>
+        <div class="login-wrap">
+            <div class="login-html">
 
-                   <label for="name">Talla</label>
-                  <select name="talla_id" id="" class="form-control">
-                  @foreach($tallas as $talla)
-                  <option value="{{$talla->id}}">{{$talla->talla}}</option>
-                  @endforeach
-                  </select>
+                <label for="tab-2" class="tab">Registrar Tipo de Documento</label>
 
-                  <label for="name">Color</label>
-                  <select name="color_id" id="" class="form-control">
-                  @foreach($colores as $color)
-                  <option value="{{$color->id}}">{{$color->color}}</option>
-                  @endforeach
-                  </select>
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    <form action= "{{route('producto.store')}}" method="POST" >
+                        @csrf
+                        <div class="group">
 
-                  <label for="name">Materiales</label>
-                  <select name="material_id" id="" class="form-control">
-                  @foreach($materiales as $material)
-                  <option value="{{$material->id}}">{{$material->material}}</option>
-                  @endforeach
-                  </select>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre del Nuevo Producto</label>
+                                    <input type="text" name="nombre_producto" class="input">
+                                </div>
+                                <div class="col">
+                                    <label for="name">Imagén del Producto</label>
+                                    <input type="file" name="imagen"  class="input">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Talla</label>
+                                    <select name="talla_id" id="" class="input">
+                                        @foreach($tallas as $talla)
+                                            <option value="{{$talla->id}}">{{$talla->talla}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Color</label>
+                                    <select name="color_id" id="" class="input">
+                                        @foreach($colores as $color)
+                                            <option value="{{$color->id}}">{{$color->color}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Materiales</label>
+                                    <select name="material_id" id="" class="input">
+                                        @foreach($materiales as $material)
+                                            <option value="{{$material->id}}">{{$material->material}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Categoria</label>
+                                    <select name="categoria_id" id="" class="input">
+                                        @foreach($categorias as $categoria)
+                                            <option value="{{$categoria->id}}">{{$categoria->Nombre}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Clasificación</label>
+                                    <select name="clasificacion_id" id="" class="input">
+                                        @foreach($clasificaciones as $clasificacion)
+                                            <option value="{{$clasificacion->id}}">{{$clasificacion->Nombre}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Precio</label>
+                                    <input type="number" name="valor" id="name" class="input">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Cantidad</label>
+                                    <input id="name" type="text" name="cantidad" class="input">
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="submit" class="button" value="Guardar Nuevo Producto">
+                                </div>
+                                <div class="col">
+                                    <a class="button" type="submit"  href="{{route('producto.index')}}">Cancelar</a>
+                                </div>
+                            </div>
 
 
-                  <label for="name">Categoria</label>
-                  <select name="categoria_id" id="" class="form-control">
-                  @foreach($categorias as $categoria)
-                  <option value="{{$categoria->id}}">{{$categoria->Nombre}}</option>
-                  @endforeach
-                  </select>
+                    </form>
 
-                  <label for="name">Clasificación</label>
-                  <select name="clasificacion_id" id="" class="form-control">
-                  @foreach($clasificaciones as $clasificacion)
-                  <option value="{{$clasificacion->id}}">{{$clasificacion->Nombre}}</option>
-                  @endforeach
-                  </select>
-
-                  <label for="name">Precio</label>
-                   <input name="valor" id="name" type="number" class="form-control">
-
-                   <label for="name">Cantidad</label>
-                   <input name="cantidad" id="name" type="text" class="form-control">
-
-
-                   <button type="submit" class="btn btn-primary">Guardar Nuevo Producto</button>
-                   <a class="btn btn-sm btn-danger" href="{{route('producto.index')}}">Cancelar</a>
-               </div>
-
-           </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        </div>
+    </section>
+
+
 @endsection

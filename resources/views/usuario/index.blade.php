@@ -1,22 +1,20 @@
 @extends('layouts.admin.app')
 @section('content')
     <h1> Usuarios </h1>
-    <div class="container">
-        <div class="row">
+    <div class="container login-wrap">
+
+            <a href="{{route('usuario.create')}}" class="btn btn-primary my-4">Crear usuario <i class="fas fa-plus-square"></i> </a>
+            <div class="row">
+
+            <form action="{{route('usuario.index')}}" method="get">
+                <input type="text" name="name_user" placeholder="Filtrar por" >
+
+                <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>Buscar</button>
+            </form>
             <div class="col-md-12 " id="div1" >
 
-                <a href="{{route('usuario.create')}}" class="btn btn-primary my-4">Crear usuario <i class="fas fa-plus-square"></i> </a>
-                
-                
-                <form action="{{route('usuario.index')}}" method="get">
-              <label for="name_user">Filtro</label>
-               <input type="text" name="name_user" placeholder="Escriba el Número de Documento:" >
-               <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>  Buscar</button>
-              </form>
-               
-               
+                <br>
                 <table   class="table table-dark ">
-
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
@@ -56,11 +54,9 @@
                       <td>
                           <a href="{{route('usuario.show',$usuario->id)}}" class="btn btn-sm btn-info"> Detalles</a>
                          <a href="{{route('usuario.edit',$usuario->id)}}" class="btn btn-sm btn-warning"> Editar </a>
-                          </form>
-
                       </td>
                       <td>
-                          <form action="{{route('usuario.destroy',$usuario->id)}}"method="post">
+                          <form action="{{route('usuario.destroy',$usuario->id)}}" method="post">
                               @csrf
                               @method('DELETE')
                               <button type="submit" class="btn btn-sm btn-danger"> Eliminar</button>

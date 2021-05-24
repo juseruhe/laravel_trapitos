@@ -6,8 +6,10 @@
 <h1> Categorias</h1>
 <div class="container">
     <div class="row">
+
+        <a href="{{route('categoria.create')}}" class="btn btn-primary my-4"> Crear Categoria <i class="fas fa-plus-square"></i> </a>
+
         <div class="col-md-12" id="div1">
-<a href="{{route('categoria.create')}}" class="btn btn-primary my-4"> Crear Categoria <i class="fas fa-plus-square"></i> </a>
 
 <table   class="table table-dark " >
 <tr>

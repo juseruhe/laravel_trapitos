@@ -1,9 +1,13 @@
 @extends('layouts.admin.app')
 @section('content')
+
+    <h1> Talla</h1>
 <div class="container">
     <div class="row">
+
+        <a class="btn btn-primary mt-3 mb-4" href="{{ route('talla.create') }}">Crear Nuevo talla <i class="fas fa-plus-square"></i></a>
+
         <div class="col-md-12" id="div1">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('talla.create') }}">Crear Nuevo talla <i class="fas fa-plus-square"></i></a>
             <table   class="table table-dark ">
                 <thead>
                 <tr>

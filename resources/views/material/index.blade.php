@@ -6,9 +6,9 @@
 <h1> Materiales</h1>
 <div class="container">
     <div class="row">
-        <div class="col-md-12" id="div1">
-<a href="{{route('material.create')}}" class="btn btn-primary my-4">Crear Material  <i class="fas fa-plus-square"></i></a>
+        <a href="{{route('material.create')}}" class="btn btn-primary my-4">Crear Material  <i class="fas fa-plus-square"></i></a>
 
+        <div class="col-md-12" id="div1">
 <table   class="table table-dark ">
 <tr>
 <td>ID</td>

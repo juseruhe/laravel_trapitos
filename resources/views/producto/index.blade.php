@@ -2,21 +2,24 @@
 @section('content')
 
 <div class="container">
+    <a class="btn btn-primary mt-3 mb-4" href="{{ route('producto.create') }}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
+
     <div class="row">
-        <div class="col-md-12" id="div1">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('producto.create') }}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
-              
-              <form action="{{route('producto.index')}}" method="get">
-              <label for="name_product">Filtro</label>
-               <input type="text" name="name_product" placeholder="Escriba lo que va buscar:" >
-               <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>  Buscar</button>
-              </form>
-              
+        <form action="{{route('producto.index')}}" method="get">
+            <input type="text" name="name_product" placeholder="Filtrar por" >
+            <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>  Buscar</button>
+        </form>
+        <br>
+
+    <div class="col-md-12 " id="div1">
+
+            <br>
+
               <table class="table table-dark ">
                 <thead>
                 <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Nombre del Producto</th>
+                <th scope="col">Nombre</th>
                 <th scope="col">Imagen</th>
                 <th scope="col">Talla</th>
                 <th scope="col">Color</th>
@@ -47,9 +50,9 @@
                           <form action="{{route('producto.destroy',$productos->id)}}"method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('producto.show',$productos->id)}}" class="btn btn-sm btn-info"><i class="fas fa-eye"></i> Detalles</a>
-                         <a href="{{ route('producto.edit',$productos->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Editar </a>
-                          <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-eraser"></i> Eliminar</button>
+                          <a href="{{ route('producto.show',$productos->id)}}" class="btn btn-sm btn-info">Detalles</a>
+                         <a href="{{ route('producto.edit',$productos->id)}}" class="btn btn-sm btn-warning">Editar</a>
+                          <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
                           </form>
                       </td>
                   </tr>

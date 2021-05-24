@@ -1,9 +1,11 @@
-#div1{
+#contenedor::-webkit-scrollbar{
     overflow:scroll;
     height:400px;
     width:1000px;
+
 }
-
-
-
+#contenedor::-webkit-scrollbar-thumb {
+    background: #ff9d00;
+    border-radius: 5px;
+}
 

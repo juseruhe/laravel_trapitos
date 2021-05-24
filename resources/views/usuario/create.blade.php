@@ -9,7 +9,7 @@
 
                 <div class="login-form">
                     <!-- FORMULARIO-->
-                    <form action="{{route('usuario.store')}}" method="POST" >
+                    <form action="{{route('usuario.store')}}" method="POST">
                         @csrf
                         <div class="group">
 
@@ -99,10 +99,11 @@
                             <br>
                     </form>
 
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
