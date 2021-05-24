@@ -31,6 +31,7 @@
     </div>
     <!--navbar content-->
     <div class="app-header__content">
+        <!--navbar content
         <div class="app-header-left">
             <div class="search-wrapper">
                 <div class="input-holder">
@@ -40,13 +41,14 @@
                 <button class="close"></button>
             </div>
         </div>
+        -->
         <div class="app-header-right">
             <div class="header-dots">
                 <div class="dropdown">
                     <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
                                     <span class="icon-wrapper-bg bg-primary"></span>
-                                    <i class="icon text-primary ion-android-apps"></i>
+                                     <i class="metismenu-icon fas fa-users" style="color:#04a6f1";></i>
                                 </span>
                     </button>
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
@@ -54,8 +56,8 @@
                             <div class="dropdown-menu-header-inner bg-plum-plate">
                                 <div class="menu-header-image" style="background-image: url('assets/images/dropdown-header/abstract4.jpg');"></div>
                                 <div class="menu-header-content text-white">
-                                    <h5 class="menu-header-title">Grid Dashboard</h5>
-                                    <h6 class="menu-header-subtitle">Easy grid navigation inside dropdowns</h6>
+                                    <h5 class="menu-header-title">Administradores</h5>
+                                    <h6 class="menu-header-subtitle">Analisis y desarrollo de sistemas de informacion</h6>
                                 </div>
                             </div>
                         </div>
@@ -63,42 +65,21 @@
                             <div class="no-gutters row">
                                 <div class="col-sm-6 col-xl-4">
                                     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                        <i class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i> Automation
+                                        <i class="metismenu-icon fas fa-user-tie" style="color:#0a202b";></i> <br><br>Juan Sebastian
                                     </button>
                                 </div>
                                 <div class="col-sm-6 col-xl-4">
                                     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                        <i class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Reports
+                                        <i class="metismenu-icon fas fa-user-tie" style="color:#0a202b";></i> <br><br> Marco Espinoza
                                     </button>
                                 </div>
                                 <div class="col-sm-6 col-xl-4">
                                     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                        <i class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Settings
-                                    </button>
-                                </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                        <i class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Content
-                                    </button>
-                                </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                        <i class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i> Activity
-                                    </button>
-                                </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                        <i class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Contacts
+                                        <i class="metismenu-icon fas fa-user-tie" style="color:#0a202b";></i> <br><br> Andres Ospina
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <ul class="nav flex-column">
-                            <li class="nav-item-divider nav-item"></li>
-                            <li class="nav-item-btn text-center nav-item">
-                                <button class="btn-shadow btn btn-primary btn-sm">Follow-ups</button>
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -106,7 +87,7 @@
                             class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
                                     <span class="icon-wrapper-bg bg-danger"></span>
-                                    <i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
+                                    <i class="fas fa-bell" style="color:#b30505";></i>
                                     <span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
                                 </span>
                     </button>
@@ -136,7 +117,7 @@
                     <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" class="p-0 btn btn-link dd-chart-btn">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
                                     <span class="icon-wrapper-bg bg-success"></span>
-                                    <i class="icon text-success ion-ios-analytics"></i>
+                                    <i class="fas fa-cog" style="color:#0a9b05";></i>
                                 </span>
                     </button>
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
@@ -153,7 +134,7 @@
                             <div class="widget-chart-content">
                                 <div class="icon-wrapper rounded-circle">
                                     <div class="icon-wrapper-bg opacity-9 bg-focus"></div>
-                                    <i class="lnr-users text-white"></i>
+                                    <i class="fas fa-cog " style="color:#031435";></i>
                                 </div>
                                 <div class="widget-numbers">
                                     <span>344k</span>

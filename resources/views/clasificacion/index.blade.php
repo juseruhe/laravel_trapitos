@@ -7,7 +7,7 @@
         <a href="{{route('clasificacion.create')}}" class="btn btn-primary my-4">Crear Clasificación <i class="fas fa-plus-square"></i> </a>
 
         <div class="col-md-12" id="div1">
-<table   class="table table-dark ">
+<table   class="table table-striped table-dark ">
 <tr>
 <td>ID</td>
 <td>Nombre de Clasificación</td>

@@ -8,7 +8,7 @@
         <a class="btn btn-primary mt-3 mb-4" href="{{ route('talla.create') }}">Crear Nuevo talla <i class="fas fa-plus-square"></i></a>
 
         <div class="col-md-12" id="div1">
-            <table   class="table table-dark ">
+            <table   class="table table-striped table-dark ">
                 <thead>
                 <tr>
                 <th scope="col">Id</th>

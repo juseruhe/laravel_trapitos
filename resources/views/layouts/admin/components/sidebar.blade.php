@@ -12,11 +12,11 @@
     <div class="scrollbar-sidebar">
         <div class="app-sidebar__inner fondo2">
             <ul class="vertical-nav-menu">
-                <li class="app-sidebar__heading">Menu</li>
+                <li style="color:#ffffff"; class="app-sidebar__heading">Menu</li>
                 <li>
-                    <a class="nav-link  active"  href="{{route('usuario.index')}}">
-                        <i class="metismenu-icon fas fa-home " style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Inicio</p>
+                    <a class="nav-link  active"  href="{{route('index.admin')}}">
+                        <i class="metismenu-icon fas fa-home " style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Inicio</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                 </li>
@@ -24,11 +24,11 @@
 
 
 
-                <li class="app-sidebar__heading">Usuarios</li>
+                <li style="color:#ffffff"; class="app-sidebar__heading">Usuarios</li>
                 <li>
                     <a class="nav-link  active"  href="#">
-                        <i class="metismenu-icon fas fa-users" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Usuario</p>
+                        <i class="metismenu-icon fas fa-users" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Usuario</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -47,8 +47,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-address-card" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Tipo de Documento</p>
+                        <i class="metismenu-icon fas fa-address-card" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Tipo de Documento</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -67,8 +67,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-user-shield" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Rol</p>
+                        <i class="metismenu-icon fas fa-user-shield" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Rol</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -87,8 +87,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-venus-mars" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Genero</p>
+                        <i class="metismenu-icon fas fa-venus-mars" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Genero</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -108,11 +108,11 @@
 
 
 
-                <li class="app-sidebar__heading">Productos</li>
+                <li style="color:#ffffff"; class="app-sidebar__heading">Productos</li>
                 <li>
                     <a class="nav-link  active"  href="#">
-                        <i class="metismenu-icon fas fa-tshirt" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Producto</p>
+                        <i class="metismenu-icon fas fa-tshirt" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Producto</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -131,8 +131,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-user-tie" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Categoria</p>
+                        <i class="metismenu-icon fas fa-user-tie" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Categoria</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -151,8 +151,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-book-open" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>clasificacion</p>
+                        <i class="metismenu-icon fas fa-book-open" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>clasificacion</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -171,8 +171,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-tshirt" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Material</p>
+                        <i class="metismenu-icon fas fa-tshirt" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Material</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -191,8 +191,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-ruler-combined" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Talla</p>
+                        <i class="metismenu-icon fas fa-ruler-combined" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Talla</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>
@@ -211,8 +211,8 @@
 
                 <li>
                     <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-palette" style="color:#f12121fb";></i>
-                        <p style="color:#ffffffe3";>Color</p>
+                        <i class="metismenu-icon fas fa-palette" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>Color</p>
                         <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
                     </a>
                     <ul>

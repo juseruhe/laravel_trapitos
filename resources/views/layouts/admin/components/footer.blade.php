@@ -1,7 +1,6 @@
-<br><br>
+
 <div class="app-wrapper-footer">
     <div class="app-footer">
-        <div class="app-footer__inner">
             <div class="app-footer-right">
                 <ul class="header-megamenu nav">
                     <li class="nav-item">
@@ -14,6 +13,7 @@
                                 <div class="dropdown-mega-menu dropdown-mega-menu-sm">
                                     <div class="grid-menu grid-menu-2col">
                                         <div class="no-gutters row">
+
                                             <div class="col-sm-6 col-xl-6">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item-header nav-item">Overview</li>
@@ -21,19 +21,6 @@
                                                         <a class="nav-link">
                                                             <i class="nav-link-icon lnr-inbox"></i>
                                                             <span>Contacts</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link">
-                                                            <i class="nav-link-icon lnr-book"></i>
-                                                            <span>Incidents</span>
-                                                            <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link">
-                                                            <i class="nav-link-icon lnr-picture"></i>
-                                                            <span>Companies</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -48,12 +35,6 @@
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item-header nav-item">Sales &amp; Marketing</li>
                                                     <li class="nav-item"><a class="nav-link">Queues</a></li>
-                                                    <li class="nav-item"><a class="nav-link">Resource Groups</a></li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link">Goal Metrics
-                                                            <div class="ml-auto badge badge-warning">3</div>
-                                                        </a>
-                                                    </li>
                                                     <li class="nav-item"><a class="nav-link">Campaigns</a></li>
                                                 </ul>
                                             </div>
@@ -65,7 +46,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
     </div>
 </div>
 

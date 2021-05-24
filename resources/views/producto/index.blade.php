@@ -1,21 +1,29 @@
 @extends('layouts.admin.app')
 @section('content')
+    <div class="d-flex">
+        <div class="p-2">
+            <a class="btn btn-primary href="{{ route('producto.create') }}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
+        </div>
+        <div class="ml-auto p-2">
+
+            <div class="app-header-left">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <form action="{{route('producto.index')}}" method="get">
+                            <input type="text" name="name_product" placeholder="Filtrar por" class="search-input">
+                        </form>
+                        <button class="search-icon bg-white"><span></span></button>
+                    </div>
+                    <button class="close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="container">
-    <a class="btn btn-primary mt-3 mb-4" href="{{ route('producto.create') }}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
-
     <div class="row">
-        <form action="{{route('producto.index')}}" method="get">
-            <input type="text" name="name_product" placeholder="Filtrar por" >
-            <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>  Buscar</button>
-        </form>
-        <br>
-
-    <div class="col-md-12 " id="div1">
-
-            <br>
-
-              <table class="table table-dark ">
+    <div class="col-md-12 contenedor">
+              <table class="table table-striped table-dark ">
                 <thead>
                 <tr>
                 <th scope="col">Id</th>

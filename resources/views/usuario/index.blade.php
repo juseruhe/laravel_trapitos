@@ -1,23 +1,32 @@
 @extends('layouts.admin.app')
 @section('content')
-    <h1> Usuarios </h1>
-    <div class="container login-wrap">
+    <div class="d-flex">
+        <div class="p-2">
+            <a href="{{route('usuario.create')}}" class="btn btn-primary my-2">Crear usuario <i class="fas fa-plus-square"></i> </a>
+        </div>
+        <div class="ml-auto p-2">
+            <div class="app-header-left">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <form action="{{route('usuario.index')}}" method="get">
+                            <input type= "text" name="name_user" placeholder="Filtrar por" class="search-input">
+                        </form>
+                        <button class= "search-icon bg-white"><span></span></button>
+                    </div>
+                    <button class="close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <a href="{{route('usuario.create')}}" class="btn btn-primary my-4">Crear usuario <i class="fas fa-plus-square"></i> </a>
+    <div class= "container login-wrap">
             <div class="row">
+            <div class="col-md-12 contenedor">
 
-            <form action="{{route('usuario.index')}}" method="get">
-                <input type="text" name="name_user" placeholder="Filtrar por" >
-
-                <button type="submit" class="btn btn-success"><i class="fas fa-filter"></i>Buscar</button>
-            </form>
-            <div class="col-md-12 " id="div1" >
-
-                <br>
-                <table   class="table table-dark ">
+                <table   class="table table-striped table-dark ">
                 <thead>
                 <tr>
-                <th scope="col">Id</th>
+                <th scope= "col">Id</th>
                 <th scope="col">T.Documento</th>
                 <th scope="col">Número</th>
                 <th scope="col">Nombres</th>
