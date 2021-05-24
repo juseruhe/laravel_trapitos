@@ -39,8 +39,8 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                    <h4 class="my-3">Web Security</h4>
-                    <p class="text-muted">Manejo de datos..</p>
+                    <h4 class="my-3">Prendas a la Medida</h4>
+                    <p class="text-muted">Chaquetas, Pantalones, Lenceria y mucho mas!..</p>
                 </div>
             </div>
         </div>
@@ -52,33 +52,33 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Nuestros productos</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Una pequeña muestra de nuestros productos disponibles.</h3>
             </div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="{{url('assets/img/IMG/categoria4/producto14.jpeg')}}" alt="" />
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <h4>Chaquetas Doble faz</h4>
+                        <p class="text-muted">Diseños Exclusivos</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria2/producto7.jpeg" alt="" />
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <h4>Chaquetas Unisex</h4>
+                        <p class="text-muted">Materiales Colombianos</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria3/producto8.3.jpeg" alt="" />
-                        <h4>Diana Petersen</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <h4>Chaquetas Antifluido</h4>
+                        <p class="text-muted">Y MAS!!</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Nuestros productos son totalmente hechos en COLOMBIA, Con materiales 100% originales, Hechos a medida uno de Nuestros Servicios Caracteristicos</p></div>
             </div>
         </div>
     </section>
@@ -88,8 +88,8 @@
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-heading text-uppercase">Contactanos</h2>
+                <h3 class="section-subheading text-muted">Escribenos para tener el gusto de contactarte</h3>
             </div>
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
                 <div class="row align-items-stretch mb-5">
