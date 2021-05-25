@@ -2,7 +2,7 @@
 @section('content')
     <div class="d-flex">
         <div class="p-2">
-            <a class="btn btn-primary href="{{ route('producto.create') }}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
+            <a class="btn btn-primary" href="{{route('producto.create')}}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>
         </div>
         <div class="ml-auto p-2">
 
