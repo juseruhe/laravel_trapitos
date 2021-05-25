@@ -28,7 +28,6 @@
             <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
         </button>
     </div>
-
     <div class="app-main">
         @include('layouts.admin.components.sidebar')
         <div class="app-main__outer">
@@ -44,15 +43,6 @@
         </div>
     </div>
 </div>
-<div class="app-drawer-wrapper">
-    <div class="drawer-nav-btn">
-        <button type="button" class="hamburger hamburger--elastic is-active">
-            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-        </button>
-    </div>
-    @include('layouts.admin.components.aside')
-</div>
-<div class="app-drawer-overlay d-none animated fadeIn"></div>
 <script src="{{url('js/app.js') }}"></script>
 </div>
 </body>
