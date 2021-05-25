@@ -3,9 +3,8 @@
 
     <section>
         <div class="login-wrap">
-            <div class="login-html">
 
-                <label for="tab-2" class="tab">Registrar Usuario</label>
+                <h2>Registrar Tipo de Documento</h2><br>
 
                 <div class="login-form">
                     <!-- FORMULARIO-->

@@ -3,9 +3,9 @@
 
     <section>
         <div class="login-wrap">
-            <div class="login-html">
+            <div class="">
 
-                <label for="tab-2" class="tab">Registrar Tipo de Documento</label>
+                <h2>Registrar Tipo de Documento</h2><br>
 
                 <div class="login-form">
                     <!-- FORMULARIO-->
@@ -93,7 +93,7 @@
                                     <input type="submit" class="button" value="Guardar Nuevo Producto">
                                 </div>
                                 <div class="col">
-                                    <a class="button" type="submit"  href="{{route('producto.index')}}">Cancelar</a>
+                                    <a class="button text-center" type="submit"  href="{{route('producto.index')}}">Cancelar</a>
                                 </div>
                             </div>
 

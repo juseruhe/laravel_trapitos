@@ -1,75 +1,114 @@
-@extends('layouts.admin.app');
+@extends('layouts.admin.app')
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <form action="{{route('producto.update',$producto->id)}}" method="POST" enctype="multipart/form-data">
-                @csrf
-                @method('PUT')
-                <div class="form-group mt-4">
-                    <label for="name">Nombre del Producto</label>
-                    <input name="nombre_producto" id="name" type="text" class="form-control" value="{{$producto->nombre_producto}}">
-                
-                    <label for="name">Imagen</label>
-                    <img src="{{asset('storage').'/'. $producto->imagen}}"  alt="{{$producto->nombre_producto}}" width="200px" height="100px">
-                   <input type="file" name="imagen" id="" class="form-control">
+    <section>
+        <div class="login-wrap">
+            <div class="">
 
-                   <label for="name">Talla</label>
-                   <select name="talla_id" id="" class="form-control">
-                   <option value="{{$producto->talla_id}}">{{$producto->Talla->talla}}</option>
-                   @foreach($tallas as $talla)
-                   <option value="{{$talla->id}}">{{$talla->talla}}</option>
-                   @endforeach
-                   </select>
-                    
-                   <label for="name">Color</label>
-                   <select name="color_id" id="" class="form-control">
-                   <option value="{{$producto->color_id}}">{{$producto->Color->color}}</option>
-                   @foreach($colores as $color)
-                   <option value="{{$color->id}}">{{$color->color}}</option>
-                   @endforeach
-                   </select> 
+                <h2>Actualizar producto</h2><br>
 
-                   <label for="name">Material</label>
-                   <select name="material_id" id="" class="form-control">
-                   <option value="{{$producto->material_id}}">{{$producto->Material->material}}</option>
-                   @foreach($materiales as $material)
-                   <option value="{{$material->id}}">{{$material->material}}</option>
-                   @endforeach
-                   </select> 
-                
-                
-                   <label for="name">Clasificación</label>
-                   <select name="clasificacion_id" id="" class="form-control">
-                   <option value="{{$producto->clasificacion_id}}">{{$producto->Clasificacion->Nombre}}</option>
-                   @foreach($clasificaciones as $clasificacion)
-                   <option value="{{$clasificacion->id}}">{{$clasificacion->Nombre}}</option>
-                   @endforeach
-                   </select> 
+                <div class="login-form">
+                    <!-- FORMULARIO-->
+                    <form action="{{route('producto.update',$producto->id)}}" method="POST" >
+                        @csrf
+                        @method('PUT')
 
-                   
-                   <label for="name">Categoría</label>
-                   <select name="categoria_id" id="" class="form-control">
-                   <option value="{{$producto->categoria_id}}">{{$producto->Categoria->Nombre}}</option>
-                   @foreach($categorias as $categoria)
-                   <option value="{{$categoria->id}}">{{$categoria->Nombre}}</option>
-                   @endforeach
-                   </select> 
+                        <div class="group">
 
-                   <label for="name">Precio</label>
-                    <input name="valor" id="name" type="text" class="form-control" value="{{$producto->valor}}">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Nombre del Nuevo Producto</label>
+                                    <input type="text" name="nombre_producto" class="input" value="{{$producto->nombre_producto}}">
+                                </div>
+                                <div class="col">
+                                    <label for="name">Cantidad</label>
+                                    <input id="name" type="text" name="cantidad" class="input" value="{{$producto->cantidad}}">
+                                </div>
+                            </div>
 
-                    <label for="name">Cantidad</label>
-                    <input name="cantidad" id="name" type="text" class="form-control" value="{{$producto->cantidad}}">
-                
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Talla</label>
+                                    <select name="talla_id" id="" class="input">
+                                        <option value="{{$producto->talla_id}}">{{$producto->Talla->talla}}</option>
+                                        @foreach($tallas as $talla)
+                                            <option value="{{$talla->id}}">{{$talla->talla}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Color</label>
+                                    <select name="color_id" id="" class="input">
+                                        <option value="{{$producto->color_id}}">{{$producto->Color->color}}</option>
+                                        @foreach($colores as $color)
+                                            <option value="{{$color->id}}">{{$color->color}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Materiales</label>
+                                    <select name="material_id" id="" class="input">
+                                        <option value="{{$producto->material_id}}">{{$producto->Material->material}}</option>
+                                        @foreach($materiales as $material)
+                                            <option value="{{$material->id}}">{{$material->material}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Categoria</label>
+                                    <select name="categoria_id" id="" class="input">
+                                        <option value="{{$producto->categoria_id}}">{{$producto->Categoria->Nombre}}</option>
+                                        @foreach($categorias as $categoria)
+                                            <option value="{{$categoria->id}}">{{$categoria->Nombre}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Clasificación</label>
+                                    <select name="clasificacion_id" id="" class="input">
+                                        <option value="{{$producto->clasificacion_id}}">{{$producto->Clasificacion->Nombre}}</option>
+                                        @foreach($clasificaciones as $clasificacion)
+                                            <option value="{{$clasificacion->id}}">{{$clasificacion->Nombre}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Precio</label>
+                                    <input type="number" name="valor" id="name" class="input" value="{{$producto->valor}}">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Imagén del Producto</label>
+                                    <img src="{{asset('storage').'/'. $producto->imagen}}"  alt="{{$producto->nombre_producto}}" width="100px" height="70px">
+                                    <input type="file" name="imagen" id="" class="input"  class="form-control">
+                                </div>
+                                <div class="col">
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="submit" class="button" value="Guardar cambios">
+                                </div>
+                                <div class="col">
+                                    <a class="button text-center" type="submit"  href="{{route('producto.index')}}">Cancelar</a>
+                                </div>
+                            </div>
+                    </form>
+
                 </div>
-
-
-               <button type="submit" class="btn btn-primary">Actualizar Producto</button>
-                <a class="btn btn-sm btn-danger" href="{{ route('producto.index')}}">Cancelar</a>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
+        </div>
+    </section>
+
 @endsection
 

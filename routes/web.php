@@ -107,6 +107,7 @@ Route::get('usuario/rol/{id}',[UsuarioController::class,'editrol'])->name('usuar
 Route::get('login',[LoginController::class,'login'])->name('login.login');
 Route::post('login/authenticate',[LoginController::class,'authenticate'])->name('login.authenticate');
 
+
 //Producto - talla
 
 Route::get('talla',[TallaController::class,'index'])->name('talla.index');
