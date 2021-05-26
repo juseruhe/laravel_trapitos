@@ -29,6 +29,7 @@
                             <label for="contr" class="label">Contraseña: </label>
                             <input required id="password" name="password" type="password" class="input" data-type="password">
                         </div>
+                        
                         <div class="group">
                             <input type="submit" class="button" value="Ingresar">
                         </div>
