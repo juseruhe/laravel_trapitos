@@ -6,7 +6,16 @@
     <section class="fondo">
         <!-- Formulario inicio sesion-->
         <div class="login-wrap" class="login1">
+
+
+
+
+        
             <div class="login-html">
+           
+
+
+       
                 <label for="tab-1" class="tab">Ingresar</label>
                 <br>
                 <div class="login-form">

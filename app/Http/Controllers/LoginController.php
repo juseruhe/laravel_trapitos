@@ -56,7 +56,7 @@ class LoginController extends Controller
         }
     
         else {
-            return view('login.login');
+            return view('login.login')->with('mensaje','Correo y Contraseña Incorrecta Compruebe de Nuevo');
         }
 
 
