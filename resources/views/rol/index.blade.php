@@ -1,6 +1,26 @@
 @extends('layouts.admin.app')
 @section('content')
     <h1> Roles </h1>
+
+<!-- Alertas  -->
+@if(session('mensaje')=="Creado Correctamente")
+<div class="alert alert-success" role="alert">
+<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@elseif(session('mensaje')=="Eliminado Correctamente")
+<div class="alert alert-danger" role="alert">
+<i class="fas fa-times-circle"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@else
+@endif
+
+
     <a href="{{route('rol.create')}}" class="btn btn-primary my-4">Crear Rol <i class="fas fa-plus-square"></i> </a>
     <div class="container">
         <div class="row">

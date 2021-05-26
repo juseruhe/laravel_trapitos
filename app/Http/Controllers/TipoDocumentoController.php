@@ -27,7 +27,8 @@ class TipoDocumentoController extends Controller
 
       Tipo_Documento::create($request->all());
 
-      return redirect()->route('tipo_documento.index');
+      return redirect()->route('tipo_documento.index')
+      ->with('mensaje','Creado Correctamente');
 
 
   }
@@ -65,7 +66,8 @@ public function destroy($id){
 
 Tipo_Documento::find($id)->delete();
 
-return redirect()->route('tipo_documento.index');
+return redirect()->route('tipo_documento.index')
+->with('mensaje','Eliminado Correctamente');
 
 
 }

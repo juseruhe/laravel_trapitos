@@ -19,7 +19,8 @@ class TallaController extends Controller
     }
     public function store(Request $request){
         $talla=Talla::create($request->all());
-        return redirect()->route('talla.index');
+        return redirect()->route('talla.index')
+        ->with('mensaje','Creado Correctamente');
     }
     public function show($id){
         $tallas=Talla::find($id);
@@ -37,6 +38,7 @@ class TallaController extends Controller
     }
     public function destroy($id){
         $talla=Talla::find($id)->delete();
-        return redirect()->route('talla.index');
+        return redirect()->route('talla.index')
+        ->with('mensaje','Eliminado Correctamente');
     }
 }

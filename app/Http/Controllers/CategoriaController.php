@@ -31,7 +31,8 @@ class CategoriaController extends Controller
         Categoria::create($request->all());
 
 
-        return redirect()->route('categoria.index');
+        return redirect()->route('categoria.index')
+        ->with('mensaje','Creado Correctamente');
 
 
     }
@@ -71,7 +72,8 @@ class CategoriaController extends Controller
 
         Categoria::find($id)->delete();
 
-        return redirect()->route('categoria.index');
+        return redirect()->route('categoria.index')
+        ->with('mensaje','Eliminado Correctamente');
     }
 
 }

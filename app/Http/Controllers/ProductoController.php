@@ -68,7 +68,8 @@ class ProductoController extends Controller
 
         }
           Producto::insert($datos);
-          return redirect()->route('producto.index');
+          return redirect()->route('producto.index')
+          ->with('mensaje','Creado Correctamente');
 
     }
 
@@ -127,6 +128,7 @@ class ProductoController extends Controller
     }
     public function destroy($id){
         $producto=Producto::find($id)->delete();
-        return redirect()->route('producto.index');
+        return redirect()->route('producto.index')
+        ->with('mensaje','Eliminado Correctamente');
     }
 }

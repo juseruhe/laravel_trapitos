@@ -23,7 +23,7 @@
                                 </div>
                                 <div class="col">
                                     <label for="name">Número de Documento</label>
-                                    <input type="text" name="numero_documento" class="input" required>
+                                    <input type="number" name="numero_documento" class="input" required>
                                 </div>
                             </div>
 

@@ -17,7 +17,8 @@ class ColorController extends Controller
     }
     public function store(Request $request){
         $color=Color::create($request->all());
-        return redirect()->route('color.index');
+        return redirect()->route('color.index')
+        ->with('mensaje','Creado Correctamente');
     }
     public function show($id){
         $color=Color::find($id);
@@ -35,6 +36,7 @@ class ColorController extends Controller
     }
     public function destroy($id){
         $color=Color::find($id)->delete();
-        return redirect()->route('color.index');
+        return redirect()->route('color.index')
+        ->with('mensaje','Eliminado Correctamente');
     }
 }

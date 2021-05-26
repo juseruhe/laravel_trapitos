@@ -25,7 +25,8 @@ class ClasificacionController extends Controller
 
         Clasificacion::create($request->all());
 
-        return redirect()->route('clasificacion.index');
+        return redirect()->route('clasificacion.index')
+        ->with('mensaje','Creado Correctamente');
     }
 
     public function show($id){
@@ -58,6 +59,7 @@ class ClasificacionController extends Controller
 
         Clasificacion::find($id)->delete();
 
-        return redirect()->route('clasificacion.index');
+        return redirect()->route('clasificacion.index')
+        ->with('mensaje','Eliminado Correctamente');
     }
 }

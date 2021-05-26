@@ -17,7 +17,8 @@ class RolController extends Controller
     }
     public function store(Request $request){
         $rol=rol::create($request->all());
-        return redirect()->route('rol.index');
+        return redirect()->route('rol.index')
+        ->with('mensaje','Creado Correctamente');
     }
     public function show($id){
         $rol=rol::find($id);
@@ -35,6 +36,7 @@ class RolController extends Controller
     }
     public function destroy($id){
         $rol=rol::find($id)->delete();
-        return redirect()->route('rol.index');
+        return redirect()->route('rol.index')
+        ->with('mensaje','Eliminado Correctamente');;
     }
 }

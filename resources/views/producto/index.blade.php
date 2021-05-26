@@ -1,5 +1,26 @@
 @extends('layouts.admin.app')
 @section('content')
+
+<!-- Alertas  -->
+@if(session('mensaje')=="Creado Correctamente")
+<div class="alert alert-success" role="alert">
+<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@elseif(session('mensaje')=="Eliminado Correctamente")
+<div class="alert alert-danger" role="alert">
+<i class="fas fa-check-times-circle"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@else
+@endif
+
+
+
     <div class="d-flex">
         <div class="p-2">
             <a class="btn btn-primary" href="{{route('producto.create')}}">Crear Nuevo Producto <i class="fas fa-plus-square"></i></a>

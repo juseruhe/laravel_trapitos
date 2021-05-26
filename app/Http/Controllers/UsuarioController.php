@@ -39,7 +39,8 @@ class UsuarioController extends Controller
     public function store(Request $request){
 
         $usuario=Usuario::create($request->all());
-        return redirect()->route('usuario.index');
+        return redirect()->route('usuario.index')
+        ->with('mensaje','Creado Correctamente');
     }
 
 
@@ -72,7 +73,8 @@ class UsuarioController extends Controller
     }
     public function destroy($id){
         $usuario=Usuario::find($id)->delete();
-        return redirect()->route('usuario.index');
+        return redirect()->route('usuario.index')
+        ->with('mensaje','Eliminado Correctamente');
     }
 
     public function editrol($id){

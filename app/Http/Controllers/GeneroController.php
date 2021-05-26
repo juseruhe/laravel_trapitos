@@ -17,7 +17,8 @@ class GeneroController extends Controller
     }
     public function store(Request $request){
         $genero=genero::create($request->all());
-        return redirect()->route('genero.index');
+        return redirect()->route('genero.index')
+        ->with('mensaje','Creado Correctamente');
     }
     public function show($id){
         $genero=genero::find($id);
@@ -35,6 +36,7 @@ class GeneroController extends Controller
     }
     public function destroy($id){
         $genero=genero::find($id)->delete();
-        return redirect()->route('genero.index');
+        return redirect()->route('genero.index')
+        ->with('mensaje','Eliminado Correctamente');;
     }
 }

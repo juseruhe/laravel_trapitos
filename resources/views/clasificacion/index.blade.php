@@ -1,6 +1,25 @@
 @extends('layouts.admin.app')
 @section('content')
 <h1> Clasificaciones </h1>
+
+<!-- Alertas  -->
+@if(session('mensaje')=="Creado Correctamente")
+<div class="alert alert-success" role="alert">
+<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@elseif(session('mensaje')=="Eliminado Correctamente")
+<div class="alert alert-danger" role="alert">
+<i class="fas fa-times-circle"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@else
+@endif
+
 <div class="container">
     <div class="row">
 

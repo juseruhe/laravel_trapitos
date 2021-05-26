@@ -1,9 +1,30 @@
 @extends('layouts.admin.app')
 @section('content')
+
+<!-- Alertas  -->
+@if(session('mensaje')=="Creado Correctamente")
+<div class="alert alert-success" role="alert">
+<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@elseif(session('mensaje')=="Eliminado Correctamente")
+<div class="alert alert-danger" role="alert">
+<i class="fas fa-times-circle"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@else
+@endif
+
     <div class="d-flex">
         <div class="p-2">
             <a href="{{route('usuario.create')}}" class="btn btn-primary my-2">Crear usuario <i class="fas fa-plus-square"></i> </a>
         </div>
+
+
         <div class="ml-auto p-2">
             <div class="app-header-left">
                 <div class="search-wrapper">
@@ -40,7 +61,7 @@
                 <th scope="col">Teléfono</th>
                 <th scope="col">Rol</th>
                 <th scope="col">Opciones</th>
-                    <th scope="col">Acciones</th>
+                <th scope="col">Acciones</th>
 
                 </tr>
                 </thead>
@@ -62,7 +83,7 @@
 
 
                       <td>
-                          <a href="{{route('usuario.show',$usuario->id)}}" class="btn btn-sm btn-info"> Detalles</a>
+                          <a href="{{route('usuario.show',$usuario->id)}}" class="btn btn-sm btn-info">Detalles</a>
                          <a href="{{route('usuario.edit',$usuario->id)}}" class="btn btn-sm btn-warning"> Editar </a>
                       </td>
                       <td>
@@ -70,7 +91,7 @@
                               @csrf
                               @method('DELETE')
                               <button type="submit" class="btn btn-sm btn-danger"> Eliminar</button>
-                              <a href="{{route('usuario.editrol',$usuario->id)}}" class="btn btn-sm btn-success">Rol </a>
+                              <a href="{{route('usuario.editrol',$usuario->id)}}" class="btn btn-sm btn-success"> Rol </a>
                           </form>
 
                       </td>

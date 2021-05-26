@@ -27,7 +27,8 @@ class MaterialController extends Controller
 
         Material::create($request->all());
 
-        return redirect()->route('material.index');
+        return redirect()->route('material.index')
+        ->with('mensaje','Creado Correctamente');
 
 
     }
@@ -66,6 +67,7 @@ class MaterialController extends Controller
 
         Material::find($id)->delete();
 
-        return redirect()->route('material.index');
+        return redirect()->route('material.index')
+        ->with('mensaje','Eliminado Correctamente');
       }
 }
