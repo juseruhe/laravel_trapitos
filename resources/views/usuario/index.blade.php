@@ -7,11 +7,12 @@
         <div class="ml-auto p-2">
             <div class="app-header-left">
                 <div class="search-wrapper">
-                    <div class="input-holder">
+                    <div class="input-holder text-danger">
                         <form action="{{route('usuario.index')}}" method="get">
-                            <input type= "text" name="name_user" placeholder="Filtrar por" class="search-input">
+                            <input type= "text" name="name_user" placeholder="Escribe Número de Documento:" class="search-input text-white">
                         </form>
                         <button class= "search-icon bg-white"><span></span></button>
+                        
                     </div>
                     <button class="close"></button>
                 </div>

@@ -16,7 +16,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Nombre de la clasificacion</label>
-                                    <input type="text" name="Nombre" class="input">
+                                    <input required type="text" name="Nombre" class="input">
                                 </div>
                                 <div class="col">
 

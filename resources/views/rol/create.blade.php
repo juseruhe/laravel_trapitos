@@ -17,7 +17,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Nombre del rol</label>
-                                    <input type="text" name="Nombre_Rol" class="input">
+                                    <input required type="text" name="Nombre_Rol" class="input">
                                 </div>
                                 <div class="col">
 

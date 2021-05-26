@@ -16,7 +16,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Nombre de talla</label>
-                                    <input type="text" name="talla" class="input">
+                                    <input required type="text" name="talla" class="input">
                                 </div>
                                 <div class="col">
 

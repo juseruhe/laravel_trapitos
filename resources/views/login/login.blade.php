@@ -14,11 +14,11 @@
                     @csrf
                         <div class="group">
                             <label for="usua" class="label">Usuario: </label>
-                            <input id="username" name="email" type="text" class="input">
+                            <input required id="username" name="email" type="text" class="input">
                         </div>
                         <div class="group">
                             <label for="contr" class="label">Contraseña: </label>
-                            <input id="password" name="password" type="password" class="input" data-type="password">
+                            <input required id="password" name="password" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
                             <input type="submit" class="button" value="Ingresar">

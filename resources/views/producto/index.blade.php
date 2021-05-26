@@ -10,7 +10,7 @@
                 <div class="search-wrapper">
                     <div class="input-holder">
                         <form action="{{route('producto.index')}}" method="get">
-                            <input type="text" name="name_product" placeholder="Filtrar por" class="search-input">
+                            <input type="text" name="name_product" placeholder="Filtrar por Nombre de Producto:" class="search-input text-white">
                         </form>
                         <button class="search-icon bg-white"><span></span></button>
                     </div>

@@ -16,12 +16,12 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <label for="name">Nombre del tipo de documneto</label>
-                                    <input type="text" name="Nombre_Tipo_Documento" class="input">
+                                    <label for="name">Nombre del tipo de documento</label>
+                                    <input required type="text" name="Nombre_Tipo_Documento" class="input">
                                 </div>
                                 <div class="col">
                                     <label for="name">Siglas</label>
-                                    <input type="text" name="Siglas"  class="input">
+                                    <input required type="text" name="Siglas"  class="input">
                                 </div>
                             </div>
 

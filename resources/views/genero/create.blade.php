@@ -16,7 +16,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Nombre del Nuevo Genero</label>
-                                    <input type="text" name="Nombre_Genero" class="input">
+                                    <input required type="text" name="Nombre_Genero" class="input">
                                 </div>
                                 <div class="col">
 

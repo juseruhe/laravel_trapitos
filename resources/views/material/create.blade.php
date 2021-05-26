@@ -16,7 +16,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="name">Nombre material</label>
-                                    <input type="text" name="material" class="input">
+                                    <input required type="text" name="material" class="input">
                                 </div>
                                 <div class="col">
 
