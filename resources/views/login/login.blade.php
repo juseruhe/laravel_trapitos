@@ -23,7 +23,7 @@
                     @csrf
                         <div class="group">
                             <label for="usua" class="label">Usuario: </label>
-                            <input required id="username" name="email" type="text" class="input">
+                            <input required id="username" name="email" type="email" class="input">
                         </div>
                         <div class="group">
                             <label for="contr" class="label">Contraseña: </label>
