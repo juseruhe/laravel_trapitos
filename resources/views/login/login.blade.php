@@ -7,8 +7,16 @@
         <!-- Formulario inicio sesion-->
         <div class="login-wrap" class="login1">
 
-
-
+<!-- Alertas  -->
+@if(session('mensaje'))
+<div class="alert alert-danger" role="alert">
+<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@else
+@endif
 
         
             <div class="login-html">
@@ -21,6 +29,7 @@
                 <div class="login-form">
                     <form class="sign-in-htm" action="{{route('login.authenticate')}}" method="POST">
                     @csrf
+
                         <div class="group">
                             <label for="usua" class="label">Usuario: </label>
                             <input required id="username" name="email" type="email" class="input">
