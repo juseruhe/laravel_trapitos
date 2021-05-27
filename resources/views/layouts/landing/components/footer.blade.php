@@ -26,9 +26,7 @@
             <div class="col-lg-4">
                 <h4 class="text-uppercase mb-4">Buzón</h4>
                 <p class="lead mb-0">
-                    Queremos saber tus opuniones sobre nuestra pagina, productos y servicios.
-                    <a href="contacto.html">PQR`S</a>
-                    .
+                    Queremos saber tus opuniones sobre nuestra pagina, productos y servicios.                    .
                 </p>
             </div>
         </div>
