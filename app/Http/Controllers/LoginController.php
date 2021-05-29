@@ -48,7 +48,7 @@ class LoginController extends Controller
 
        
 
-          return view('indexadmin');
+          return view('indexadmin')->with('correo',$request->email);
        }
 
 
