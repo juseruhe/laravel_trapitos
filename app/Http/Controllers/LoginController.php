@@ -48,7 +48,7 @@ class LoginController extends Controller
 
        
 
-          return view('indexadmin')->with('correo',$request->email);
+          return redirect()->route('index.admin')->with('correo',$request->email);
        }
 
 
@@ -56,7 +56,7 @@ class LoginController extends Controller
         }
     
         else {
-            return view('login.login')->with('mensaje','Correo y Contraseña Incorrecta Compruebe de Nuevo');
+            return redirect()->route('login.login')->with('mensaje','Correo y Contraseña Incorrecta Compruebe de Nuevo');
         }
 
 
