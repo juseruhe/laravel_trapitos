@@ -7,6 +7,7 @@
         <!-- Formulario inicio sesion-->
         <div class="login-wrap" class="login1">
 
+
 <!-- Alertas  -->
 @if(session('mensaje'))
 <div class="alert alert-danger" role="alert">
