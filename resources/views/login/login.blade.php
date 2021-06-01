@@ -11,7 +11,7 @@
 <!-- Alertas  -->
 @if(session('mensaje'))
 <div class="alert alert-danger" role="alert">
-<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<i class="fas fa-times-circle"></i> {{session('mensaje')}}
 <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
 <span aria-hidden="true">&times;</span>
 </button>
