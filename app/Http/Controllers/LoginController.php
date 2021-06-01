@@ -56,7 +56,7 @@ class LoginController extends Controller
         }
     
         else {
-            return redirect()->route('login.login')->with('mensaje','Correo y Contraseña Incorrecta Compruebe de Nuevo');
+            return redirect()->route('login.login')->with('mensaje','Correo o Contraseña Incorrecta Compruebe de Nuevo');
         }
 
 
