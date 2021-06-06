@@ -9,7 +9,7 @@
 
                 <div class="login-form">
                     <!-- FORMULARIO-->
-                    <form action= "{{route('producto.store')}}" method="POST" >
+                    <form action= "{{route('producto.store')}}" method="POST" enctype="multipart/form-data" >
                         @csrf
                         <div class="group">
 
