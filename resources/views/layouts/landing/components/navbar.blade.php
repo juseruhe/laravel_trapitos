@@ -13,7 +13,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('productodos.index')}}">Productos</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('login.login')}}">Iniciar sesión</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#registrarse">Registrarse</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('registrar.create')}}">Registrarse</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
             </ul>
         </div>

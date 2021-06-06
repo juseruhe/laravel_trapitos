@@ -14,8 +14,8 @@ use App\Http\Controllers\TallaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\IndexadminController;
-use App\Http\Controllers\ColorController;
 use App\Http\Controllers\Productodoscontrolador;
+use App\Http\Controllers\RegistrarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -102,6 +102,10 @@ Route::delete('usuario/{id}',[UsuarioController::class,'destroy'])->name('usuari
 Route::get('usuario/rol/{id}',[UsuarioController::class,'editrol'])->name('usuario.editrol');
 
 
+//registro
+Route::get('registrar/create',[RegistrarController::class,'create'])->name('registrar.create');
+Route::post('registrar',[RegistrarController::class,'store'])->name('registrar.store');
+
 //Login
 
 Route::get('login',[LoginController::class,'login'])->name('login.login');
@@ -130,12 +134,4 @@ Route::get('producto/edit/{id}',[ProductoController::class,'edit'])->name('produ
 Route::put('producto/{id}',[ProductoController::class,'update'])->name('producto.update');
 Route::delete('producto/{id}',[ProductoController::class,'destroy'])->name('producto.destroy');
 
-//color
-Route::get('color',[ColorController::class,'index'])->name('color.index');
-Route::get('color/create',[ColorController::class,'create'])->name('color.create');
-Route::post('color',[ColorController::class,'store'])->name('color.store');
-Route::get('color/{id}',[ColorController::class,'show'])->name('color.show');
-Route::get('color/edit/{id}',[ColorController::class,'edit'])->name('color.edit');
-Route::put('color/{id}',[ColorController::class,'update'])->name('color.update');
-Route::delete('color/{id}',[ColorController::class,'destroy'])->name('color.destroy');
 

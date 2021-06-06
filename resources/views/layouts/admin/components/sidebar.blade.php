@@ -209,26 +209,6 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a class="nav-link  active" href="#">
-                        <i class="metismenu-icon fas fa-palette" style="color:#04a6f1";></i>
-                        <p style="color:#660101";>Color</p>
-                        <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="{{route('color.index')}}">
-                                <i class="metismenu-icon"></i>Mostrar color
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{route('color.create')}}" >
-                                <i class="metismenu-icon"></i>Crear color
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
             </ul>
         </div>
     </div>

@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th scope="col">Color</th>
-                        <td>{{$producto->Color->color }}</td>
+                        <td><input type="color" disabled value="{{$producto->color}}"></td>
                     </tr>
                     <tr>
                         <th scope="col">Material</th>

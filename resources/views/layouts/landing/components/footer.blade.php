@@ -15,11 +15,11 @@
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Buscanos en redes</h4>
-                <img src="assets/img/iconos/facebook (1).png" alt="facebook" width="40px">
+                <img src="{{url('assets/img/iconos/facebook (1).png')}}" alt="facebook" width="40px">
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="assets/img/iconos/instagram.png" alt="instagram" width="40px">
+                <img src="{{url('assets/img/iconos/instagram.png')}}" alt="instagram" width="40px">
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="assets/img/iconos/whatsapp.png" alt="whatsapp" width="40px">
+                <img src="{{url('assets/img/iconos/whatsapp.png')}}" alt="whatsapp" width="40px">
             </div>
 
             <!-- Footer CONTACTANOS-->
@@ -49,7 +49,7 @@
 <!-- Third party plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <!-- Contact form JS-->
-<script src="assets/mail/jqBootstrapValidation.js"></script>
-<script src="assets/mail/contact_me.js"></script>
+<script src=" {{url('assets/mail/jqBootstrapValidation.js')}}"></script>
+<script src="{{url('assets/mail/contact_me.js')}} "></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="{{url('js/scripts.js')}}"></script>

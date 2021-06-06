@@ -3,6 +3,7 @@
 
 @section('content')
 
+
     <header class="masthead" id="inicio">
         <div class="container">
             <div class="masthead-subheading">Tienda de Ropa Online</div>

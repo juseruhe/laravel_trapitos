@@ -19,13 +19,13 @@
 @else
 @endif
 
-        
+
             <div class="login-html">
-           
 
 
-       
-                <label for="tab-1" class="tab">Ingresar</label>
+
+
+                <h2>Registrar Usuario</h2><br>
                 <br>
                 <div class="login-form">
                     <form class="sign-in-htm" action="{{route('login.authenticate')}}" method="POST">
@@ -39,7 +39,7 @@
                             <label for="contr" class="label">Contraseña: </label>
                             <input required id="password" name="password" type="password" class="input" data-type="password">
                         </div>
-                        
+
                         <div class="group">
                             <input type="submit" class="button" value="Ingresar">
                         </div>
