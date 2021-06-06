@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Storage;
 
-use App\Models\Color;
 
 use App\Models\Talla;
 
@@ -42,15 +41,13 @@ class ProductoController extends Controller
 
    $tallas = Talla::all();
 
-   $colores = Color::all();
-
    $materiales = Material::all();
 
    $categorias = Categoria::all();
 
   $clasificaciones = Clasificacion::all();
 
-    return view('producto.create',compact('tallas','colores'))
+    return view('producto.create',compact('tallas'))
     ->with(compact('materiales','categorias'))
     ->with(compact('clasificaciones'));
 
@@ -85,8 +82,6 @@ class ProductoController extends Controller
 
         $tallas = Talla::all();
 
-        $colores = Color::all();
-
         $materiales = Material::all();
 
         $categorias = Categoria::all();
@@ -95,7 +90,7 @@ class ProductoController extends Controller
 
         return view('producto.edit',compact('producto','tallas'))
         ->with(compact('materiales','categorias'))
-        ->with(compact('clasificaciones','colores'));
+        ->with(compact('clasificaciones'));
     }
 
     public function update(Request  $request, $id){

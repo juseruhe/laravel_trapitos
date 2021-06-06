@@ -34,12 +34,8 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <label for="name">Color</label>
-                                    <select required name="color_id" id="" class="input">
-                                        @foreach($colores as $color)
-                                            <option value="{{$color->id}}">{{$color->color}}</option>
-                                        @endforeach
-                                    </select>
+                                    <label for="name">Color</label><br>
+                                        <input required type="color" name="color">
                                 </div>
                             </div>
 

@@ -19,7 +19,6 @@ use Database\Seeders\ClasificacionSeeder;
 
 use Database\Seeders\UsuarioSeeder;
 
-use Database\Seeders\ColorSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -47,8 +46,6 @@ class DatabaseSeeder extends Seeder
         $this->call(UsuarioSeeder::class);
 
         $this->call(TallaSeeder::class);
-
-        $this->call(ColorSeeder::class);
 
         $this->call(ProductoSeeder::class);
 

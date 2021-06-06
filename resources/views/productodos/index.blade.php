@@ -55,11 +55,11 @@
 
                     <div class="row">
                         @foreach($productos as $productos)
-                            <div class="col-4">
+                            <div class="col-4" >
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$productos->nombre_producto}}</h6>
-                                <p class="card-text btn btn-success mb-4"> $ {{$productos->valor}} </p><br>
-                                <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-info mb-4">Detalles</a>
+                                <p class="card-text btn btn-light mb-4"> $ {{$productos->valor}} </p><br>
+                                <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-success mb-4">Detalles</a>
                                 <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-primary mb-4">Agregar al carrito</a>
                             </div>
                         @endforeach

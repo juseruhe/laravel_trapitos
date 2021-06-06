@@ -68,7 +68,7 @@
                       <td>{{$productos->nombre_producto}}</td>
                       <td><img src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="200px" height="100px"></td>
                       <td>{{$productos->Talla->talla}}</td>
-                      <td>{{$productos->Color->color}}</td>
+                      <td><input type="color" disabled value="{{$productos->color}}"></td>
                       <td>{{$productos->Material->material}}</td>
                       <td>{{$productos->Categoria->Nombre}}</td>
                       <td>{{$productos->Clasificacion->Nombre}}</td>

@@ -17,7 +17,7 @@ class Producto extends Model
 
     protected $fillable = [
 
-        'nombre_producto', 'imagen', 'talla_id', 'color_id', 'material_id', 'categoria_id', 'clasificacion_id',
+        'nombre_producto', 'imagen', 'talla_id', 'color', 'material_id', 'categoria_id', 'clasificacion_id',
         'precio', 'cantidad','created_at','updated_at'];
 
     public function Clasificacion()
@@ -34,11 +34,6 @@ class Producto extends Model
     public function Talla(){
 
         return $this->belongsTo(Talla::class,'talla_id');
-    }
-
-    public function Color(){
-
-        return $this->belongsTo(Color::class,'color_id');
     }
 
     public function Material(){
