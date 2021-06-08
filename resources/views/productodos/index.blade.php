@@ -5,35 +5,36 @@
     <section class="page-section bg-light" id="productos">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Nuestros productos</h2><hr>
-                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Nuestros productos son totalmente hechos en COLOMBIA, Con materiales 100% originales, Hechos a medida uno de Nuestros Servicios Caracteristicos</p></div>
+                <h2 class="section-heading text-uppercase">Nuestros productos</h2>
+                <hr style="color:#ac8400" ;>
+                <div class="col-lg-8 mx-auto text-center"><p class="large ">Nuestros productos son totalmente hechos en COLOMBIA, Con materiales 100% originales, Hechos a medida uno de Nuestros Servicios Caracteristicos</p></div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="{{url('assets/img/IMG/categoria4/producto14.jpeg')}}" alt="" />
                         <h6>Chaquetas Doble faz</h6>
-                        <p class="text-muted">Diseños Exclusivos</p>
+                        <p class="text">Diseños Exclusivos</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria2/producto7.jpeg" alt="" />
                         <h6>Chaquetas Unisex</h6>
-                        <p class="text-muted">Materiales Colombianos</p>
+                        <p class="text">Materiales Colombianos</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria3/producto8.3.jpeg" alt="" />
                         <h6>Chaquetas Antifluido</h6>
-                        <p class="text-muted ">Y MAS!!</p>
+                        <p class="text ">Y MAS!!</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="text-center">
-                    <a class="btn btn-primary btn-xl text-uppercase" href="#catalogo">Catalogo de productos</a>
+                    <a class="btn btn-primary btn text-uppercase" href="#catalogo">Catalogo de productos  <i class="fas fa-arrow-circle-down"></i></a>
                 </div>
             </div>
         </div>
@@ -44,7 +45,8 @@
     <section class="page-section" id="catalogo">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Catalogo</h2><hr>
+                <h2 class="section-heading text-uppercase">Catalogo</h2>
+                <hr style="color:#cbb911" ;>
             </div>
         </div>
     <div class="container text-center">

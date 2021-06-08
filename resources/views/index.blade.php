@@ -6,9 +6,10 @@
 
     <header class="masthead" id="inicio">
         <div class="container">
+            <div class="masthead-heading" style="font-size: 550%" ;>Mis Trapitos</div>
             <div class="masthead-subheading">Tienda de Ropa Online</div>
-            <div class="masthead-heading text-uppercase">Mis Trapitos</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Conocer mis trapitos</a>
+
+            <a class="btn btn-primary btn text-uppercase" href="#services"> Conocer <i class="fas fa-arrow-circle-down"></i> </a>
         </div>
     </header>
 
@@ -54,33 +55,34 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contactanos</h2>
+                <h3 class="section-subheading "  style="color:#cbb911";> Nos interesa saber tu opinion.</h3>
             </div>
             <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('contacto.store')}}" method="POST" >
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Tu nombre *"name="nombre" required="required" data-validation-required-message="Please enter your name." />
+                            <input class="form-control" id="name" type="text" placeholder="Nombre *"name="nombre" required="required" data-validation-required-message="Please enter your name." />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Tu correo *" name="correo" required="required" data-validation-required-message="Please enter your email address." />
+                            <input class="form-control" id="email" type="email" placeholder="Correo *" name="correo" required="required" data-validation-required-message="Please enter your email address." />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" type="tel" placeholder="Tu tefelefo*" name="telefono" required="required" data-validation-required-message="Please enter your phone number." />
+                            <input class="form-control" id="phone" type="tel" placeholder="Tefelefo*" name="telefono" required="required" data-validation-required-message="Please enter your phone number." />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="Tu mensaje *" name="mensaje"  required="required" data-validation-required-message="Please enter a message."></textarea>
+                            <textarea class="form-control" id="message" placeholder="mensaje *" name="Mensaje"  required="required" data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                 </div>
                 <div class="text-center">
                     <div id="success"></div>
-                    <button class="btn btn-primary text-uppercase" id="sendMessageButton" type="submit">Enviar</button>
+                    <button class="btn btn-primary" id="sendMessageButton" type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
                 </div>
             </form>
         </div>

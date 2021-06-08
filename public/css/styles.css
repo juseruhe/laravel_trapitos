@@ -10037,7 +10037,8 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #020008ee;
+  background-color: rgba(110, 110, 110, 0.6);
+
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10109,6 +10110,7 @@ header.masthead {
   height: 650px;
 
   background: linear-gradient(to bottom,
+  rgba(110, 110, 110, 0.6),
   rgba(52, 49, 49, 0.6),
   rgba(29, 100, 171, 0.692),
   rgb(250, 162, 67)
@@ -10116,12 +10118,29 @@ header.masthead {
   ), url(../assets/img/fondo.jpg);
 
 }
+
+#productos{
+    color: #ffffff;
+    background: linear-gradient(to bottom,
+    rgba(110, 110, 110, 0.6),
+    rgba(10, 11, 12, 0.69),
+    rgba(10, 11, 12, 0.69),
+    rgb(250, 162, 67)
+
+    ), url(../assets/img/fondo.jpg);
+
+}
+
+
+
+
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
 "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.0rem;
   margin-bottom: 25px;
-    color: #020008ee;
+    color: #5f0f0f;
 }
 
 header.masthead .masthead-heading {
