@@ -11,7 +11,7 @@
                         <td>ID</td>
                         <td>Nombre</td>
                         <td>correo</td>
-                        <td>telefono</td>
+                        <td>Télefono</td>
                         <td>mensaje</td>
                         <td>Fecha de Creación</td>
                         <td>Acciones</td>

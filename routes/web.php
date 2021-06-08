@@ -17,6 +17,7 @@ use App\Http\Controllers\IndexadminController;
 use App\Http\Controllers\Productodoscontrolador;
 use App\Http\Controllers\RegistrarController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\UsuarioLogueadoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -113,6 +114,7 @@ Route::get('login',[LoginController::class,'login'])->name('login.login');
 Route::post('login/authenticate',[LoginController::class,'authenticate'])->name('login.authenticate');
 
 
+
 //Producto - talla
 
 Route::get('talla',[TallaController::class,'index'])->name('talla.index');
@@ -143,3 +145,6 @@ Route::get('contacto/{id}',[ContactoController::class,'show'])->name('contacto.s
 Route::get('contacto/edit/{id}',[ContactoController::class,'edit'])->name('contacto.edit');
 Route::put('contacto/{id}',[ContactoController::class,'update'])->name('contacto.update');
 Route::delete('contacto/{id}',[ContactoController::class,'destroy'])->name('contacto.destroy');
+
+// Usuario Logueado
+

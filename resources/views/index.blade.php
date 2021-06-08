@@ -7,7 +7,7 @@
     <header class="masthead" id="inicio">
         <div class="container">
             <div class="masthead-heading" style="font-size: 550%" ;>Mis Trapitos</div>
-            <div class="masthead-subheading">Tienda de Ropa Online</div>
+            <div class="masthead-subheading">Tienda de Ropa Online @if(session('correo')) {{session('correo')}}  @endif() </div>
 
             <a class="btn btn-primary btn text-uppercase" href="#services"> Conocer <i class="fas fa-arrow-circle-down"></i> </a>
         </div>

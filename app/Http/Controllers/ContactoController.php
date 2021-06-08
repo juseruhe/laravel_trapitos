@@ -9,7 +9,7 @@ class ContactoController extends Controller
 {
     public function index()
     {
-        $contacto=contacto::all();
+        $contactos=contacto::all();
         return view('contacto.index',compact('contactos'));
     }
     public function create(){

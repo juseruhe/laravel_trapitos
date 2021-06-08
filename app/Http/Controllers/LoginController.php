@@ -39,9 +39,7 @@ class LoginController extends Controller
         
        if(count($usuarios2) > 0){
 
-         $usuarios = Usuario::all();
-
-        return view('usuario.index',compact('usuarios'));
+         return redirect()->route('index.index')->with('correo',$request->email);
        }
 
        else {
@@ -87,4 +85,6 @@ class LoginController extends Controller
   /*  public function __construct(){
         $this ->middleware('auth');
     }*/
+
+   
 }

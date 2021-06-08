@@ -11,7 +11,7 @@ class Contacto extends Model
 
     protected $primaryKey = 'id';
 
-    protected $table = 'contacto';
+    protected $table = 'contactos';
 
     protected $fillable = [
 

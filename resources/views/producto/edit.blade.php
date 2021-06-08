@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="col">
                                     <label for="name">Precio</label>
-                                    <input required type="number" name="valor" id="name" class="input" value="{{$producto->valor}}">
+                                    <input required type="text" name="valor" id="name" class="input" value="{{$producto->valor}}">
                                 </div>
                             </div>
                             <br>
