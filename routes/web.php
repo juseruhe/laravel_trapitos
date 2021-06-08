@@ -16,6 +16,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\IndexadminController;
 use App\Http\Controllers\Productodoscontrolador;
 use App\Http\Controllers\RegistrarController;
+use App\Http\Controllers\ContactoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -134,4 +135,11 @@ Route::get('producto/edit/{id}',[ProductoController::class,'edit'])->name('produ
 Route::put('producto/{id}',[ProductoController::class,'update'])->name('producto.update');
 Route::delete('producto/{id}',[ProductoController::class,'destroy'])->name('producto.destroy');
 
-
+//contacto
+Route::get('contacto',[ContactoController::class,'index'])->name('contacto.index');
+Route::get('contacto/genero',[ContactoController::class,'create'])->name('contacto.create');
+Route::post('contacto',[ContactoController::class,'store'])->name('contacto.store');
+Route::get('contacto/{id}',[ContactoController::class,'show'])->name('contacto.show');
+Route::get('contacto/edit/{id}',[ContactoController::class,'edit'])->name('contacto.edit');
+Route::put('contacto/{id}',[ContactoController::class,'update'])->name('contacto.update');
+Route::delete('contacto/{id}',[ContactoController::class,'destroy'])->name('contacto.destroy');

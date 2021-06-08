@@ -55,7 +55,7 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contactanos</h2>
             </div>
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('contacto.store')}}" method="POST" >
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -73,7 +73,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="Tu mensaje *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                            <textarea class="form-control" id="message" placeholder="Tu mensaje *" name="mensaje"  required="required" data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>

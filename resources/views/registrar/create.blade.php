@@ -8,7 +8,7 @@
 
 
 <section class="fondo">
-    
+
     <!-- Alertas  -->
     @if(session('mensaje'))
         <div class="alert alert-success" role="alert">
