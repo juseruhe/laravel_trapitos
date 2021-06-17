@@ -19,7 +19,7 @@
                                     <input required type="text" name="Nombre" class="input">
                                 </div>
                                 <div class="col">
-
+<!-- Col-->
                                 </div>
                             </div>
 
