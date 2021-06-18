@@ -4,28 +4,20 @@
 @section('content')
 
 
-
-
     <header class="masthead" id="inicio">
         <div class="container">
-
-        <!-- Alertas  -->
-@if(session('mensaje')=="Actualizado Correctamente")
-<div class="alert alert-warning" role="alert">
-<i class="fas fa-check-square"></i> {{session('mensaje')}}
-<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-@else
-@endif
             <div class="masthead-heading" style="font-size: 550%" ;>Mis Trapitos</div>
             @if(session('correo'))
-            <div class="masthead-subheading">Tienda de Ropa Online  {{session('correo')}} @if(session('id')) {{session('id')}} @endif  </div>
+            <div class="masthead-subheading">Tienda de Ropa Online  {{session('correo')}} @if(session('id')) {{$session}} @endif </div>
 
-         @endif
+            <a class="btn btn-primary btn text-uppercase" href="#services"> Actualizar Datos del Usuario <i class="fas fa-arrow-circle-down"></i> </a>
 
-         <a class="btn btn-primary btn text-uppercase" href="#services"> Conocer <i class="fas fa-arrow-circle-down"></i> </a>
+            
+
+           
+  
+            @endif
+            <a class="btn btn-primary btn text-uppercase" href="#services"> Conocer <i class="fas fa-arrow-circle-down"></i> </a>
         </div>
     </header>
 

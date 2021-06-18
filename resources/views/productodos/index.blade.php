@@ -5,7 +5,7 @@
     <section class="page-section bg-light" id="productos">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Nuestros productos</h2>
+                <h2 class="section-heading text-uppercase">Nuestros productos @if(session('correo') && session('id')) {{session('correo')}} {{session('id')}}  @endif</h2>
                 <hr style="color:#ac8400" ;>
                 <div class="col-lg-8 mx-auto text-center"><p class="large ">Nuestros productos son totalmente hechos en COLOMBIA, Con materiales 100% originales, Hechos a medida uno de Nuestros Servicios Caracteristicos</p></div>
             </div>
@@ -61,7 +61,16 @@
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$productos->nombre_producto}}</h6>
                                 <p class="card-text btn btn-light mb-4"> $ {{$productos->valor}} </p><br>
+                                @if(session('correo') && session('id'))
+                                <form action="{{route('usuariologueado.producto',$productos->id)}}" method="post"> 
+                                    @csrf
+            <input type="hidden" name="email" value="{{session('correo')}}">
+            <input type="hidden" name="id" value="{{session('id')}}"> 
+            <button class="btn btn-success">Detalles</button>            
+            </form>
+                                @else 
                                 <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-success mb-4">Detalles</a>
+                                @endif
                                 <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-primary mb-4">Agregar al carrito</a>
                             </div>
                         @endforeach

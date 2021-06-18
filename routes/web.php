@@ -147,4 +147,9 @@ Route::put('contacto/{id}',[ContactoController::class,'update'])->name('contacto
 Route::delete('contacto/{id}',[ContactoController::class,'destroy'])->name('contacto.destroy');
 
 // Usuario Logueado
-
+Route::post('usuariologueado/index',[UsuarioLogueadoController::class,'index'])->name('usuariologueado.index');
+Route::post('usuariologueado',[UsuarioLogueadoController::class,'store'])->name('usuariologueado.store');
+Route::get('usuariologueado/edit/{id}',[UsuarioLogueadoController::class,'edit'])->name('usuariologueado.edit');
+Route::put('usuariologueado/{id}',[UsuarioLogueadoController::class,'update'])->name('usuariologueado.update');
+Route::post('usuariologueado/productos',[UsuarioLogueadoController::class,'productos'])->name('usuariologueado.productos');
+Route::post('usuariologueado/producto/{id}',[UsuarioLogueadoController::class,'producto'])->name('usuariologueado.producto');

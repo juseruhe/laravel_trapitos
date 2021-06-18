@@ -39,7 +39,10 @@ class LoginController extends Controller
         
        if(count($usuarios2) > 0){
 
-         return redirect()->route('index.index')->with('correo',$request->email);
+         $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
+
+         return redirect()->route('index.index')->with('correo',$request->email)
+         ->with('id',$usuario3->id);
        }
 
        else {
