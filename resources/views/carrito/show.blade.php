@@ -19,14 +19,14 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria2/producto7.jpeg" alt="" />
+                        <img class="mx-auto rounded-circle" src="{{url('assets/img/IMG/categoria2/producto7.jpeg')}}" alt="" />
                         <h6>Chaquetas Unisex</h6>
                         <p class="text">Materiales Colombianos</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/IMG/categoria3/producto8.3.jpeg" alt="" />
+                        <img class="mx-auto rounded-circle" src="{{url('assets/img/IMG/categoria3/producto8.3.jpeg')}}" alt="" />
                         <h6>Chaquetas Antifluido</h6>
                         <p class="text ">Y MAS!!</p>
                     </div>
@@ -69,24 +69,18 @@
 
 
                     <div class="row">
-                        @foreach($productos as $productos)
+                      
                             <div class="col-4" >
-                                <img class="rounded-lg" src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
-                                <h6 class="card-title">{{$productos->nombre_producto}}</h6>
-                                <p class="card-text btn btn-light mb-4"> $ {{$productos->valor}} </p><br>
-                                @if(session('correo') && session('id'))
-                                <form action="{{route('usuariologueado.producto',$productos->id)}}" method="post"> 
-                                    @csrf
-            <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-success">Detalles</button>            
-            </form>
-                                @else 
-                                <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-success mb-4">Detalles</a>
-                                @endif
-                                <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-primary mb-4">Agregar al carrito</a>
+                                <img class="rounded-lg" src="{{asset('storage').'/'. $carrito->producto->imagen}}" alt="{{$carrito->producto->nombre_producto}}" width="250px" height="250px">
+                                <h6 class="card-title">{{$carrito->producto->nombre_producto}}</h6>
+                                <p class="card-text btn btn-light mb-4"> $ {{$carrito->producto->valor}} </p><br>
+                                <input type="text" name="" id="" value="{{$carrito->cantidades}}">
+         
+                               
+                                
+                                <a href="#" class="btn btn-primary mb-4">Agregar al carrito</a>
                             </div>
-                        @endforeach
+                
                     </div>
                 </div>
             </div>

@@ -32,6 +32,10 @@ public function rol(){
     return $this->belongsTo(rol::class,'rol_id');
 }
 
+public function carritos(){
+    return $this->hasMany(Carrito::class,'id');
+}
+
 
 
 }

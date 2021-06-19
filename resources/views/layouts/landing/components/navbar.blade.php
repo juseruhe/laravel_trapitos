@@ -37,6 +37,15 @@
             <button class="btn btn-secondary">Ver Productos</button>            
             </form>
             </li>
+
+            <li class="nav-item"><form action="{{route('usuariologueado.carrito',session('id'))}}" method="post"> 
+            @csrf
+            <input type="hidden" name="email" value="{{session('correo')}}">
+            <input type="hidden" name="id" value="{{session('id')}}"> 
+            <button class="btn btn-secondary">Carrito</button>            
+            </form>
+            </li>
+       
        
 
 <!-- Rutas del Index Normal -->

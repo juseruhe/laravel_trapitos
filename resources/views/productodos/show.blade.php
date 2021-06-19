@@ -44,7 +44,17 @@
                     </tr>
 
                 </table>
-                <a class="btn btn-primary" href="#!">Añadir al carrito</a>
+                @if(session('correo') && session('id'))
+                <form action="{{route('carrito.store')}}" method="post">
+                @csrf
+                <input type="hidden" name="usuario_id"  value="{{session('id')}}">
+                <input type="hidden" name="producto_id"  value="{{$producto->id}}">
+                <input type="hidden" name="cantidades" value="1">
+                <button class="btn btn-primary" type="submit">Añadir al carrito</button>
+                </form>
+                @else
+                <a class="btn btn-primary" href="{{route('login.login')}}">Añadir al carrito</a>
+                @endif
             </div>
 
         </div>

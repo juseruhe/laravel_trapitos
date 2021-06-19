@@ -72,10 +72,18 @@ class UsuarioLogueadoController extends Controller
 
         $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
   
-          $productos = Producto::all();
   
           return redirect()->route('productodos.show',$id)->with('correo',$request->email)
           ->with('id',$usuario3->id);
+  
+      }
+
+      public function carrito(Request $request,$id){
+
+        $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
+
+        return redirect()->route('carrito.show',$id)->with('correo',$request->email)
+        ->with('id',$usuario3->id);
   
       }
 
