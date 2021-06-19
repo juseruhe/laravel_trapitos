@@ -69,18 +69,23 @@
 
 
                     <div class="row">
-                      
+                       @foreach($carritos as $carrito)
                             <div class="col-4" >
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $carrito->producto->imagen}}" alt="{{$carrito->producto->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$carrito->producto->nombre_producto}}</h6>
                                 <p class="card-text btn btn-light mb-4"> $ {{$carrito->producto->valor}} </p><br>
                                 <input type="text" name="" id="" value="{{$carrito->cantidades}}">
          
-                               
+                               <form action="{{route('carrito.destroy',$carrito->id)}}" method="post">
+                               @csrf 
+                               @method('DELETE')
+                               <input type="hidden" name="usuario_id" value="{{session('id')}}">
+                               <button type="submit" class="btn btn-danger">Eliminar Producto</button>
+                               </form>
                                 
                                 <a href="#" class="btn btn-primary mb-4">Agregar al carrito</a>
                             </div>
-                
+                @endforeach
                     </div>
                 </div>
             </div>

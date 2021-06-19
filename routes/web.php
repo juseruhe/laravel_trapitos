@@ -159,4 +159,6 @@ Route::post('usuariologueado/carrito/{id}',[UsuarioLogueadoController::class,'ca
 //Carrito
 Route::post('carrito',[CarritoController::class,'store'])->name('carrito.store');
 Route::get('carrito/{id}',[CarritoController::class,'show'])->name('carrito.show');
+Route::delete('carrito/{id}',[CarritoController::class,'destroy'])->name('carrito.destroy');
+
 

@@ -84,7 +84,18 @@
                                 @else 
                                 <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-success mb-4">Detalles</a>
                                 @endif
-                                <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-primary mb-4">Agregar al carrito</a>
+
+                                @if(session('correo') && session('id'))
+                                <form action="{{route('carrito.store')}}" method="post">
+                                 @csrf
+                         <input type="hidden" name="usuario_id"  value="{{session('id')}}">
+                         <input type="hidden" name="producto_id"  value="{{$productos->id}}">
+                            <input type="hidden" name="cantidades" value="1">
+                        <button class="btn btn-primary" type="submit">Añadir al carrito</button>
+                </form>
+                                @else 
+                                <a href="{{ route('login.login')}}" class="btn btn-primary mb-4">Agregar al carrito</a>
+                                @endif
                             </div>
                         @endforeach
                     </div>
