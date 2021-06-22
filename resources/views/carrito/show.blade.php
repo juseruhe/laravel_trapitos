@@ -1,6 +1,11 @@
 @extends('layouts.landing.app2')
 @section('content')
 
+
+
+
+
+
     <!-- Productos-->
     <section class="page-section bg-light" id="productos">
         <div class="container">
@@ -54,10 +59,18 @@
             <div class="col-md-12">
                 <div class="page-section ">
 
-                        <!-- Alertas  -->
-@if(session('mensaje')=="Producto insertado en el carrito")
+                      
+<!-- Alertas  -->
+@if(session('mensaje')=="Creado Correctamente")
 <div class="alert alert-success" role="alert">
 <i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@elseif(session('mensaje')=="Producto eliminado del carrito")
+<div class="alert alert-danger" role="alert">
+<i class="fas fa-times-circle"></i> {{session('mensaje')}}
 <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
 <span aria-hidden="true">&times;</span>
 </button>
@@ -83,7 +96,7 @@
                                <button type="submit" class="btn btn-danger">Eliminar Producto</button>
                                </form>
                                 
-                                <a href="#" class="btn btn-primary mb-4">Agregar al carrito</a>
+                                
                             </div>
                 @endforeach
                     </div>

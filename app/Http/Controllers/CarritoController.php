@@ -79,6 +79,6 @@ class CarritoController extends Controller
         $usuario3 = Usuario::select('id','email')->where('id',$request->usuario_id)->first();
 
         return redirect()->route('carrito.show',$usuario3->id)->with('correo',$usuario3->email)
-        ->with('id',$usuario3->id);
+        ->with('id',$usuario3->id)->with('mensaje','Producto eliminado del carrito');
     }
 }

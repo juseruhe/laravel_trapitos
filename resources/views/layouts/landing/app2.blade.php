@@ -25,9 +25,7 @@
 
 <!-- Masthead-->
 
-@if(session('correo') && session('id'))
-<h1>Bienvenido {{session('correo')}}</h1>  <p>{{session('id')}}</p>
-@endif
+
 
 @include('layouts.landing.components.navbar')
 @yield('content')
