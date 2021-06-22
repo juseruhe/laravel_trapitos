@@ -53,7 +53,7 @@ class UsuarioSeeder extends Seeder
                 'apellidos' => 'Espinosa Castro',
                 'genero_id' => '1',
                 'fecha_nacimiento' => '1998-05-15',
-                'email' => 'maespinosa@misena.edu.co',
+                'email' => 'maespinosa56@misena.edu.co',
                 'password' => '123',
                 'direccion' => 'Avenida Calabera',
                 'telefono' => '3174483117',
