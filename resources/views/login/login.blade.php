@@ -25,7 +25,7 @@
 
 
 
-                <h2>Registrar Usuario</h2><br>
+                <h2>Iniciar Sesión</h2><br>
                 <br>
                 <div class="login-form">
                     <form class="sign-in-htm" action="{{route('login.authenticate')}}" method="POST">
