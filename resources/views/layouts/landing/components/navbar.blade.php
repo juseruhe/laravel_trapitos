@@ -42,7 +42,7 @@
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
             <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-secondary">Carrito</button>            
+            <button class="btn btn-secondary">Carrito @if(session('carrito')) {{session('carrito')}} @else 0 @endif</button>            
             </form>
             </li>
        

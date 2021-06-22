@@ -10,7 +10,7 @@
     <section class="page-section bg-light" id="productos">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Nuestros productos @if(session('correo') && session('id')) {{session('correo')}} {{session('id')}}  @endif</h2>
+                <h2 class="section-heading text-uppercase">Nuestros productos @if(session('correo') && session('id')) {{session('correo')}}   @endif</h2>
                 <hr style="color:#ac8400" ;>
                 <div class="col-lg-8 mx-auto text-center"><p class="large ">Nuestros productos son totalmente hechos en COLOMBIA, Con materiales 100% originales, Hechos a medida uno de Nuestros Servicios Caracteristicos</p></div>
             </div>
@@ -87,7 +87,7 @@
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $carrito->producto->imagen}}" alt="{{$carrito->producto->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$carrito->producto->nombre_producto}}</h6>
                                 <p class="card-text btn btn-light mb-4"> $ {{$carrito->producto->valor}} </p><br>
-                                <input type="text" name="" id="" value="{{$carrito->cantidades}}">
+                                <p class="card-text btn btn-light mb-4"> Cantidad: {{$carrito->cantidades}} </p><br>
          
                                <form action="{{route('carrito.destroy',$carrito->id)}}" method="post">
                                @csrf 

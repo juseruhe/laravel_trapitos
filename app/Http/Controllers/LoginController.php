@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\Usuario;
 
+use App\Models\Carrito;
+
 
 class LoginController extends Controller
 {
@@ -41,8 +43,12 @@ class LoginController extends Controller
 
          $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
 
+         $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
+
+        
+
          return redirect()->route('index.index')->with('correo',$request->email)
-         ->with('id',$usuario3->id);
+         ->with('id',$usuario3->id)->with('carrito',$cantidades);
        }
 
        else {
