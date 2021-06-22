@@ -55,10 +55,13 @@ class CarritoController extends Controller
 
 
     $usuario3 = Usuario::select('id','email')->where('id',$request->usuario_id)->first();
+
+    $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
   
   
     return redirect()->route('productodos.index')->with('correo',$usuario3->email)
-    ->with('id',$usuario3->id)->with('mensaje','Producto insertado en el carrito');
+    ->with('id',$usuario3->id)->with('mensaje','Producto insertado en el carrito')
+    ->with('carrito',$cantidades);
         
         
 
@@ -78,7 +81,10 @@ class CarritoController extends Controller
 
         $usuario3 = Usuario::select('id','email')->where('id',$request->usuario_id)->first();
 
+        $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
+
         return redirect()->route('carrito.show',$usuario3->id)->with('correo',$usuario3->email)
-        ->with('id',$usuario3->id)->with('mensaje','Producto eliminado del carrito');
+        ->with('id',$usuario3->id)->with('mensaje','Producto eliminado del carrito')
+        ->with('carrito',$cantidades);;
     }
 }
