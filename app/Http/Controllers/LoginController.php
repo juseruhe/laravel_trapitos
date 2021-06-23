@@ -41,14 +41,15 @@ class LoginController extends Controller
         
        if(count($usuarios2) > 0){
 
-         $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
+         $usuario3 = Usuario::select('id','nombres','telefono')->where('email',$request->email)->first();
 
          $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
 
         
 
          return redirect()->route('index.index')->with('correo',$request->email)
-         ->with('id',$usuario3->id)->with('carrito',$cantidades);
+         ->with('id',$usuario3->id)->with('carrito',$cantidades)
+         ->with('nombres',$usuario3->nombres)->with('telefono',$usuario3->telefono);
        }
 
        else {

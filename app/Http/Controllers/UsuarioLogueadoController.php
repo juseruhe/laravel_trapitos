@@ -14,16 +14,21 @@ use App\Models\Producto;
 
 use App\Models\Carrito;
 
+use App\Models\Contacto;
+
 class UsuarioLogueadoController extends Controller
 {
     public function index(Request $request){
 
-        $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
+        $usuario3 = Usuario::select('id','nombres','telefono')->where('email',$request->email)->first();
 
         $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
 
-        return redirect()->route('index.index',$usuario3->id)->with('correo',$request->email)
-        ->with('id',$usuario3->id)->with('carrito',$cantidades);
+
+
+        return redirect()->route('index.index')->with('correo',$request->email)
+        ->with('id',$usuario3->id)->with('carrito',$cantidades)
+        ->with('nombres',$usuario3->nombres)->with('telefono',$usuario3->telefono);
     }
 
     public function store(Request $request){
@@ -55,12 +60,13 @@ class UsuarioLogueadoController extends Controller
 
         Usuario::find($id)->update($request->all());
 
-        $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
+        $usuario3 = Usuario::select('id','nombres','telefono')->where('email',$request->email)->first();
 
         $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
 
         return redirect()->route('index.index')->with('correo',$request->email)
-        ->with('id',$usuario3->id)->with('mensaje','Actualizado Correctamente')->with('carrito',$cantidades);
+        ->with('id',$usuario3->id)->with('mensaje','Actualizado Correctamente')->with('carrito',$cantidades)
+        ->with('nombres',$usuario3->nombres)->with('telefono',$usuario3->telefono);
     }
 
 
@@ -83,6 +89,7 @@ class UsuarioLogueadoController extends Controller
         $usuario3 = Usuario::select('id')->where('email',$request->email)->first();
   
         $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
+    
   
           return redirect()->route('productodos.show',$id)->with('correo',$request->email)
           ->with('id',$usuario3->id)->with('carrito',$cantidades);
@@ -98,6 +105,21 @@ class UsuarioLogueadoController extends Controller
         return redirect()->route('carrito.show',$id)->with('correo',$request->email)
         ->with('id',$usuario3->id)->with('carrito',$cantidades);
   
+      }
+
+      public function contacto(Request $request){
+
+        Contacto::create($request->all());
+
+        $usuario3 = Usuario::select('id','nombres','telefono')->where('email',$request->correo)->first();
+
+        $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
+
+        return redirect()->route('index.index')->with('correo',$request->correo)
+        ->with('id',$usuario3->id)->with('carrito',$cantidades)
+        ->with('nombres',$usuario3->nombres)->with('telefono',$usuario3->telefono)
+        ->with('mensaje','Mensaje Enviado');
+
       }
 
 

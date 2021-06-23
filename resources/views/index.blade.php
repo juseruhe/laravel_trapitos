@@ -71,36 +71,94 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contactanos</h2>
+ 
+                     <!-- Alertas  -->
+@if(session('mensaje')=="Mensaje Enviado")
+<div class="alert alert-success" role="alert">
+<i class="fas fa-check-square"></i> {{session('mensaje')}}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+@else
+@endif
+
+               
+               
                 <h3 class="section-subheading "  style="color:#cbb911";> Nos interesa saber tu opinion.</h3>
             </div>
-            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('contacto.store')}}" method="POST" >
-                <div class="row align-items-stretch mb-5">
+            @if(session('correo') && session('id'))
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('usuariologueado.contacto')}}" method="POST" >
+            @csrf
+            <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Nombre *"name="nombre" required="required" data-validation-required-message="Please enter your name." />
+                            <input class="form-control"  type="text" placeholder="Nombre *"name="nombre" value="{{session('nombres')}}" required />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Correo *" name="correo" required="required" data-validation-required-message="Please enter your email address." />
+                            <input class="form-control"  type="email" placeholder="Correo *" name="correo" value="{{session('correo')}}" required />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" type="tel" placeholder="Telefono *" name="telefono" required="required" data-validation-required-message="Please enter your phone number." />
+                            <input class="form-control"  type="tel" placeholder="Telefono *" name="telefono" value="{{session('telefono')}}" required />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="mensaje *" name="Mensaje"  required="required" data-validation-required-message="Please enter a message."></textarea>
+                            <textarea class="form-control"  placeholder="mensaje *" name="mensaje" required></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                 </div>
                 <div class="text-center">
-                    <div id="success"></div>
-                    <button class="btn btn-primary" id="sendMessageButton" type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+                    <div ></div>
+                    <button class="btn btn-primary"  type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
                 </div>
             </form>
+            
+
+
+
+
+
+
+
+
+            @else 
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('contactodos.store')}}" method="POST" >
+            @csrf
+
+           
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control"  type="text" placeholder="Nombre *"name="nombre" required />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control"  type="email" placeholder="Correo *" name="correo" required />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <input class="form-control"  type="tel" placeholder="Telefono *" name="telefono" required />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <textarea class="form-control"  placeholder="mensaje *" name="mensaje"  required></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div ></div>
+                    <button class="btn btn-primary"  type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+                </div>
+            </form>
+            @endif
         </div>
     </section>
 

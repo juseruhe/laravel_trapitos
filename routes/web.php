@@ -19,6 +19,12 @@ use App\Http\Controllers\RegistrarController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\UsuarioLogueadoController;
 use App\Http\Controllers\CarritoController;
+use App\Http\Controllers\ContactoDosController;
+
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -155,10 +161,15 @@ Route::put('usuariologueado/{id}',[UsuarioLogueadoController::class,'update'])->
 Route::post('usuariologueado/productos',[UsuarioLogueadoController::class,'productos'])->name('usuariologueado.productos');
 Route::post('usuariologueado/producto/{id}',[UsuarioLogueadoController::class,'producto'])->name('usuariologueado.producto');
 Route::post('usuariologueado/carrito/{id}',[UsuarioLogueadoController::class,'carrito'])->name('usuariologueado.carrito');
+Route::post('usuariologueado/contacto',[UsuarioLogueadoController::class,'contacto'])->name('usuariologueado.contacto');
+
+
 
 //Carrito
 Route::post('carrito',[CarritoController::class,'store'])->name('carrito.store');
 Route::get('carrito/{id}',[CarritoController::class,'show'])->name('carrito.show');
 Route::delete('carrito/{id}',[CarritoController::class,'destroy'])->name('carrito.destroy');
 
+//ContactoDos
+Route::post('contactodos',[ContactoDosController::class,'store'])->name('contactodos.store');
 
