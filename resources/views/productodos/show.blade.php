@@ -12,7 +12,7 @@
             <div class="col-lg-7 mt-4"><img src="{{asset('storage').'/'. $producto->imagen}}" alt="{{$producto->nombre_producto}}" width="100%" height="90%"></div>
             <div class="col-lg-5">
                 <h1 class="font-weight-light mt-4">{{$producto->nombre_producto }}</h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                <p>Nuestros productos son totalmente hechos en COLOMBIA, Con materiales 100% originales, Hechos a medida uno de Nuestros Servicios Caracteristicos</p>
                 <table class="table ">
                     <tr>
                         <th scope="col">Talla</th>
@@ -53,18 +53,19 @@
                 <button class="btn btn-primary" type="submit">Añadir al carrito</button>
                 </form>
                 @else
+                    <p style="color:#d40606" ;>Para realizar compras o acceder al carrito debes iniciar sesión</p>
                 <a class="btn btn-primary" href="{{route('login.login')}}">Añadir al carrito</a>
                 @endif
 
 
                 @if(session('correo') && session('id'))
-                          <form action="{{route('usuariologueado.index')}}" method="post"> 
+                          <form action="{{route('usuariologueado.index')}}" method="post">
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-warning mt-4 btn-lg">Volver</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-warning mt-4 btn-lg">Volver</button>
             </form>
-            @else 
+            @else
             <a href="{{route('index.index')}}" class="btn btn-warning">Volver</a>
             @endif
 

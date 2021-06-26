@@ -70,18 +70,18 @@
 
                     <div class="row">
                         @foreach($productos as $productos)
-                            <div class="col-4" >
+                            <div id="targeta" class="col-4">
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$productos->nombre_producto}}</h6>
                                 <p class="card-text btn btn-light mb-4"> $ {{$productos->valor}} </p><br>
                                 @if(session('correo') && session('id'))
-                                <form action="{{route('usuariologueado.producto',$productos->id)}}" method="post"> 
+                                <form action="{{route('usuariologueado.producto',$productos->id)}}" method="post">
                                     @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-success">Detalles</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-success mb-4">Detalles</button>
             </form>
-                                @else 
+                                @else
                                 <a href="{{ route('productodos.show',$productos->id)}}" class="btn btn-success mb-4">Detalles</a>
                                 @endif
 
@@ -91,25 +91,25 @@
                          <input type="hidden" name="usuario_id"  value="{{session('id')}}">
                          <input type="hidden" name="producto_id"  value="{{$productos->id}}">
                             <input type="hidden" name="cantidades" value="1">
-                        <button class="btn btn-primary" type="submit">Añadir al carrito</button>
+                        <button class="btn btn-primary mb-4" type="submit">Añadir al carrito</button>
                 </form>
 
-           
 
-                                @else 
+
+                                @else
                                 <a href="{{ route('login.login')}}" class="btn btn-primary mb-4">Agregar al carrito</a>
                                 @endif
                             </div>
                         @endforeach
 
                           @if(session('correo') && session('id'))
-                          <form action="{{route('usuariologueado.index')}}" method="post"> 
+                          <form action="{{route('usuariologueado.index')}}" method="post">
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-warning mt-4 btn-lg">Volver</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-warning mt-4 btn-lg">Volver</button>
             </form>
-            @else 
+            @else
             <a href="{{route('index.index')}}" class="btn btn-warning">Volver</a>
             @endif
 

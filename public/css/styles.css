@@ -10065,6 +10065,8 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fac60e;
 }
+
+
 /*NABVAR TRANSPARE*/
 @media (min-width: 992px) {
   #mainNav {
