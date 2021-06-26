@@ -84,7 +84,16 @@
                                 <input class="btn btn-warning" type="submit" class="button" value="Actualizar Usuario">
                             </div>
                             <br>
+
+                               
                     </form>
+
+                    <form action="{{route('usuariologueado.index')}}" method="post"> 
+            @csrf
+            <input type="hidden" name="email" value="{{session('correo')}}">
+            <input type="hidden" name="id" value="{{session('id')}}"> 
+            <button class="btn btn-warning mt-4 btn-lg">Volver</button>            
+            </form>
                     @endforeach
                 </div>
             </div>

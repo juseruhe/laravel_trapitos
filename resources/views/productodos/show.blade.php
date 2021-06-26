@@ -55,6 +55,21 @@
                 @else
                 <a class="btn btn-primary" href="{{route('login.login')}}">Añadir al carrito</a>
                 @endif
+
+
+                @if(session('correo') && session('id'))
+                          <form action="{{route('usuariologueado.index')}}" method="post"> 
+            @csrf
+            <input type="hidden" name="email" value="{{session('correo')}}">
+            <input type="hidden" name="id" value="{{session('id')}}"> 
+            <button class="btn btn-warning mt-4 btn-lg">Volver</button>            
+            </form>
+            @else 
+            <a href="{{route('index.index')}}" class="btn btn-warning">Volver</a>
+            @endif
+
+
+
             </div>
 
         </div>

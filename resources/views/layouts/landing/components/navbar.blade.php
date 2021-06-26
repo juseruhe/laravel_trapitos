@@ -45,8 +45,12 @@
             <button class="btn btn-secondary">Carrito @if(session('carrito')) {{session('carrito')}} @else 0 @endif</button>            
             </form>
             </li>
+          
+           <li class="nav-item">
+           <a href="{{route('index.index')}}" class="btn btn-secondary">Salir</a>
+           </li>
        
-       
+            
 
 <!-- Rutas del Index Normal -->
             @else

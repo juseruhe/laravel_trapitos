@@ -93,11 +93,28 @@
                             <input type="hidden" name="cantidades" value="1">
                         <button class="btn btn-primary" type="submit">Añadir al carrito</button>
                 </form>
+
+           
+
                                 @else 
                                 <a href="{{ route('login.login')}}" class="btn btn-primary mb-4">Agregar al carrito</a>
                                 @endif
                             </div>
                         @endforeach
+
+                          @if(session('correo') && session('id'))
+                          <form action="{{route('usuariologueado.index')}}" method="post"> 
+            @csrf
+            <input type="hidden" name="email" value="{{session('correo')}}">
+            <input type="hidden" name="id" value="{{session('id')}}"> 
+            <button class="btn btn-warning mt-4 btn-lg">Volver</button>            
+            </form>
+            @else 
+            <a href="{{route('index.index')}}" class="btn btn-warning">Volver</a>
+            @endif
+
+
+
                     </div>
                 </div>
             </div>

@@ -21,7 +21,7 @@
 @endif
             <div class="masthead-heading" style="font-size: 550%" ;>Mis Trapitos</div>
             @if(session('correo'))
-            <div class="masthead-subheading">Tienda de Ropa Online  {{session('correo')}}   </div>
+            <div class="masthead-subheading">Bienvenido  {{session('correo')}}   </div>
 
          @endif
 
