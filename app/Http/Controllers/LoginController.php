@@ -6,6 +6,8 @@ use App\Models\Producto;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Auth\CreatesUserProviders;
+
 
 use App\Models\Usuario;
 
@@ -41,15 +43,20 @@ class LoginController extends Controller
         
        if(count($usuarios2) > 0){
 
+        // Contacto
          $usuario3 = Usuario::select('id','nombres','telefono')->where('email',$request->email)->first();
 
+         // Carrito Cantidades
          $cantidades = Carrito::where('usuario_id',$usuario3->id)->count();
 
+        
+          
         
 
          return redirect()->route('index.index')->with('correo',$request->email)
          ->with('id',$usuario3->id)->with('carrito',$cantidades)
-         ->with('nombres',$usuario3->nombres)->with('telefono',$usuario3->telefono);
+         ->with('nombres',$usuario3->nombres)->with('telefono',$usuario3->telefono)
+         ->with('token',$request->_token);
        }
 
        else {
@@ -67,21 +74,15 @@ class LoginController extends Controller
             return redirect()->route('login.login')->with('mensaje','Correo o Contraseña Incorrecta Compruebe de Nuevo');
         }
 
-
-
-
-
-       /* $credentials = $request->only('email', 'password');
-       if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->route('usuario.index');
-        }
-            return back()->withErrors([
-            'email' => 'El correo no esta Inscrito',
-        ]);*/
-
     }
-  /*  public function logout(Request $request)
+
+
+     
+
+
+
+      
+  /* public function logout(Request $request)
     {
         Auth::logout();
 
@@ -92,9 +93,8 @@ class LoginController extends Controller
         return redirect('/');
     }*/
 
-  /*  public function __construct(){
+  /* public function __construct(){
         $this ->middleware('auth');
     }*/
 
-   
 }

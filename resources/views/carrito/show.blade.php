@@ -78,9 +78,11 @@
                                
                                 
                             </div>
-                @endforeach
-                <button type="submit" class="btn btn-success btn-lg mt-4">Pagar</button>
 
+                            
+                @endforeach
+               
+                <button type="submit" class="btn btn-success btn-lg mt-4">Pagar</button>
                
                     </div>
        

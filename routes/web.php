@@ -119,6 +119,8 @@ Route::post('registrar',[RegistrarController::class,'store'])->name('registrar.s
 
 Route::get('login',[LoginController::class,'login'])->name('login.login');
 Route::post('login/authenticate',[LoginController::class,'authenticate'])->name('login.authenticate');
+Route::post('login/logout',[LoginController::class,'logout'])->name('login.logout');
+
 
 
 

@@ -1,6 +1,7 @@
 @extends('layouts.landing.app2')
 @section('content')
-    <section>
+<link href="{{url('css/styles3.css')}}" rel="stylesheet" />
+    <section class="fondo">
         <div class="login-wrap">
             <div class="login-html">
 
@@ -92,7 +93,7 @@
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
             <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-warning mt-4 btn-lg">Volver</button>            
+            <button class="btn btn-warning  btn-lg">Volver</button>            
             </form>
                     @endforeach
                 </div>
@@ -101,5 +102,7 @@
         </div>
     </section>
 @endsection
+
+
 
 
