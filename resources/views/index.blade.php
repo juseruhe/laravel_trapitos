@@ -18,7 +18,9 @@
 </div>
 @else
 @endif
-            <div class="masthead-heading" style="font-size: 550%" ;>Mis Trapitos</div>
+
+            <div class="masthead-heading" style="font-size: 550%" ;>Mis Trapitos</div><br>
+
             @if(session('correo'))
             <div class="masthead-subheading">Bienvenido  {{session('correo')}}   </div>
 
@@ -70,7 +72,7 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contactanos</h2>
- 
+
                      <!-- Alertas  -->
 @if(session('mensaje')=="Mensaje Enviado")
 <div class="alert alert-success" role="alert">
@@ -82,8 +84,8 @@
 @else
 @endif
 
-               
-               
+
+
                 <h3 class="section-subheading "  style="color:#cbb911";> Nos interesa saber tu opinion.</h3>
             </div>
             @if(session('correo') && session('id'))
@@ -116,7 +118,6 @@
                     <button class="btn btn-primary"  type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
                 </div>
             </form>
-            
 
 
 
@@ -125,11 +126,12 @@
 
 
 
-            @else 
+
+            @else
             <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('contactodos.store')}}" method="POST" >
             @csrf
 
-           
+
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">

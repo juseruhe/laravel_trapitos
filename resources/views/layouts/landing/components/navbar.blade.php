@@ -9,48 +9,55 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
        <ul class="navbar-nav text-uppercase ml-auto">
-       
+
+
+           <div class="">
+               <img src="{{url('assets/img/iconos/logomt2.png')}}" alt="facebook" width="50%" ><br>
+           </div>
+
+
+
        <!-- Rutas del inicio Sesión Rol de Usuario -->
-            @if(session('correo')) 
+            @if(session('correo'))
 
-            <li class="nav-item"><form action="{{route('usuariologueado.index')}}" method="post"> 
+            <li class="nav-item"><form action="{{route('usuariologueado.index')}}" method="post">
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-secondary">Inicio</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-secondary">Inicio</button>
             </form>
             </li>
 
-            <li class="nav-item"><form action="{{route('usuariologueado.store')}}" method="post"> 
+            <li class="nav-item"><form action="{{route('usuariologueado.store')}}" method="post">
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-secondary">Actualizar Datos</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-secondary">Actualizar Datos</button>
             </form>
             </li>
 
 
-            <li class="nav-item"><form action="{{route('usuariologueado.productos')}}" method="post"> 
+            <li class="nav-item"><form action="{{route('usuariologueado.productos')}}" method="post">
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-secondary">Ver Productos</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-secondary">Ver Productos</button>
             </form>
             </li>
 
-            <li class="nav-item"><form action="{{route('usuariologueado.carrito',session('id'))}}" method="post"> 
+            <li class="nav-item"><form action="{{route('usuariologueado.carrito',session('id'))}}" method="post">
             @csrf
             <input type="hidden" name="email" value="{{session('correo')}}">
-            <input type="hidden" name="id" value="{{session('id')}}"> 
-            <button class="btn btn-secondary">Carrito @if(session('carrito')) {{session('carrito')}} @else 0 @endif</button>            
+            <input type="hidden" name="id" value="{{session('id')}}">
+            <button class="btn btn-secondary">Carrito @if(session('carrito')) {{session('carrito')}} @else 0 @endif</button>
             </form>
             </li>
-          
+
            <li class="nav-item">
            <a href="{{route('index.index')}}" class="btn btn-secondary">Salir</a>
            </li>
-       
-            
+
+
 
 <!-- Rutas del Index Normal -->
             @else

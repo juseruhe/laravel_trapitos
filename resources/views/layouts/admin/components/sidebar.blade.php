@@ -105,7 +105,21 @@
                     </ul>
                 </li>
 
+                <li>
+                    <a class="nav-link  active" href="#">
+                        <i class="metismenu-icon fas fa-bell" style="color:#04a6f1";></i>
+                        <p style="color:#660101";>PQR´S</p>
+                        <i class="metismenu-state-icon fas fa-arrow-circle-down "  style="color:#6eacfd";></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="{{route('contacto.index')}}">
+                                <i class="metismenu-icon"></i>Mostrar PQR
+                            </a>
+                        </li>
 
+                    </ul>
+                </li>
 
 
                 <li style="color:#ffffff"; class="app-sidebar__heading">Productos</li>

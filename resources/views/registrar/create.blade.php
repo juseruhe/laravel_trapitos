@@ -20,11 +20,10 @@
 
     @else
     @endif
+    <div class="login-html">
 
     <div class="login-wrap">
-
-        <h2>Registrar Usuario</h2><br>
-
+        <h2>Registrarme</h2>
         <div class="login-form">
             <!-- FORMULARIO-->
             <form action="{{route('registrar.store')}}" method="POST">
