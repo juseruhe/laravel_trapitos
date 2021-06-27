@@ -72,6 +72,7 @@
                         @foreach($productos as $productos)
                             <div id="targeta" class="col-4">
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
+                                <img class="rounded-lg" src="{{url('storage/imagenes/'). $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$productos->nombre_producto}}</h6>
                                 <p class="card-text btn btn-light mb-4"> $ {{$productos->valor}} </p><br>
                                 @if(session('correo') && session('id'))
