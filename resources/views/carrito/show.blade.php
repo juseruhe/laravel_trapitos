@@ -82,7 +82,7 @@
                             
                 @endforeach
 
-                <p>${{number_format($total)}}</p>
+                <p>${{number_format(n$total,2)}}</p>
                
                @if($total != 0)
                 <button type="submit" class="btn btn-success btn-lg mt-4">Pagar</button>
