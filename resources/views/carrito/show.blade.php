@@ -81,9 +81,13 @@
 
                             
                 @endforeach
+
+                {{$total}}
                
+               @if($total != 0)
                 <button type="submit" class="btn btn-success btn-lg mt-4">Pagar</button>
-               
+               @else
+               @endif
                     </div>
        
 
