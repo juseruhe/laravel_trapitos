@@ -73,7 +73,7 @@
                             <div id="targeta" class="col-4">
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $productos->imagen}}" alt="{{$productos->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$productos->nombre_producto}}</h6>
-                                <p class="card-text btn btn-light mb-4"> $ {{$productos->valor}} </p><br>
+                                <p class="card-text btn btn-light mb-4"> $ {{number_format($productos->valor,2)}} </p><br>
                                 @if(session('correo') && session('id'))
                                 <form action="{{route('usuariologueado.producto',$productos->id)}}" method="post">
                                     @csrf
