@@ -72,7 +72,7 @@
                       <td>{{$productos->Material->material}}</td>
                       <td>{{$productos->Categoria->Nombre}}</td>
                       <td>{{$productos->Clasificacion->Nombre}}</td>
-                      <td>{{$productos->valor}}</td>
+                      <td>${{number_format($productos->valor,2)}}</td>
                       <td>{{$productos->cantidad}}</td>
                       <td>{{$productos->updated_at}}</td>
                       <td>
