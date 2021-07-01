@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <th scope="col">Precio</th>
-                        <td>${{format_number($producto->valor,2) }}</td>
+                        <td>$ {{number_format($producto->valor,2) }}</td>
                     </tr>
                     <tr>
                         <th scope="col">Cantidad</th>
