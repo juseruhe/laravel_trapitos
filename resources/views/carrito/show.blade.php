@@ -65,7 +65,7 @@
                             <div class="col-4" >
                                 <img class="rounded-lg" src="{{asset('storage').'/'. $carrito->producto->imagen}}" alt="{{$carrito->producto->nombre_producto}}" width="250px" height="250px">
                                 <h6 class="card-title">{{$carrito->producto->nombre_producto}}</h6>
-                                <p class="card-text btn btn-light mb-4"> $ {{$carrito->producto->valor}} </p><br>
+                                <p class="card-text btn btn-light mb-4"> $ {{number_format($carrito->producto->valor,2)}} </p><br>
                                 <p class="card-text btn btn-light mb-4"> Cantidad: {{$carrito->cantidades}} </p><br>
          
                                <form action="{{route('carrito.destroy',$carrito->id)}}" method="post">
@@ -81,9 +81,13 @@
 
                             
                 @endforeach
+
+                <p>${{number_format($total,2)}}</p>
                
+               @if($total != 0)
                 <button type="submit" class="btn btn-success btn-lg mt-4">Pagar</button>
-               
+               @else
+               @endif
                     </div>
        
 

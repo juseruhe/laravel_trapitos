@@ -73,9 +73,11 @@ class CarritoController extends Controller
     public function show($id){
 
        $carritos =  Carrito::where('usuario_id',$id)->get();
+
+       $total = Carrito::select('valor')->join('productos','carritos.producto_id','=','productos.id')->where('usuario_id',$id)->sum('valor');
        
 
-        return view('carrito.show',compact('carritos'));
+        return view('carrito.show',compact('carritos','total'));
     }
     
     public function destroy(Request $request,$id){
